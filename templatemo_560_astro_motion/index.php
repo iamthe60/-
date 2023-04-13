@@ -473,7 +473,28 @@ https://templatemo.com/tm-560-astro-motion
               <div class="circle intro-circle-2"></div>
               <div class="circle intro-circle-3"></div>
               <div class="circle intro-circle-4"></div>
-       
+              <form action="cartdelete.php" method="get">
+
+    <tr>
+          <td class="product-thumbnail">
+          <img src="<?php echo $row['img']?>" alt="Image" class="img-fluid">
+          </td>
+          <td class="product-name">
+            <h2 class="h5 text-black"><?php echo $row['goodsName']?></h2>
+          </td>
+          <td><?php echo $row['goodsPrice']?></td>
+          <td>
+              <p align="center"><?php echo $row['amount'];?></p>
+          </td>
+          <td><?php echo $row['amount'] * $row['goodsPrice']?></td>                 
+          <td><button type="button" class="btn btn-primary height-auto btn-sm">
+            <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white">X</font></a></button></td>
+  
+    <?php 
+      }
+        ?>
+            </tr>
+      </form>
             </div>
           </li>
           <li data-page-no="4">
