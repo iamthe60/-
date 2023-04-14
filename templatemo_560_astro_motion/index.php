@@ -512,7 +512,7 @@ https://templatemo.com/tm-560-astro-motion
           <td>
             <input type="text"></input>
           </td>
-          <td><button type="button">
+          <td><div class="shape-ex1">按鈕</div>
             <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white">X</font></a></button></td>
   
     <?php 
