@@ -701,8 +701,8 @@ https://templatemo.com/tm-560-astro-motion
        <form action="cartdelete.php" method="get">
 
     <tr>
-          <td class="product-thumbnail">
-          <float:center><img src="img/<?php echo $row['image']?>" alt="Image" width="150px" height="150px"></float:center>
+          <td class="product-thumbnail" class="mx-auto">
+          <img src="img/<?php echo $row['image']?>" alt="Image" width="150px" height="150px">
           </td>
           <td class="product-name">
             <h2 class="h5 text-black"><?php echo $row['name']?></h2>
@@ -802,10 +802,8 @@ https://templatemo.com/tm-560-astro-motion
               </div>
             </div>
           </li>
-<<<<<<< HEAD
 
           
-=======
           <li data-page-no="5">
             <div class="mx-auto page-width-2">
               <div class="row">
@@ -876,7 +874,6 @@ https://templatemo.com/tm-560-astro-motion
               </div>
             </div>
           </li>
->>>>>>> faaff916f6aaffe9d6f125c0532a52fa0c6bb183
           
           
         </ul>
