@@ -478,19 +478,20 @@ https://templatemo.com/tm-560-astro-motion
                 <thead>
                   <tr>
                     <th class="product-thumbnail"><font color="white">Image</font></th>
-                    <th class="product-name"><font color="white">Product</font></th>
-                    <th class="product-price"><font color="white">Price</font></th>
-                    <th class="product-quantity"><font color="white">Quantity</font></th>
-                    <th class="product-remove"><font color="white">Remove</font></th>
+                    <th class="product-name"><font color="white">Product</th>
+                    <th class="product-price"><font color="white">Price</th>
+                    <th class="product-quantity"><font color="white">Quantity</th>
+                    <th class="product-total"><font color="white">Total</th>
+                    <th class="product-remove"><font color="white">Remove</th>
                   </tr>
 
                 </thead>
                 <tbody>
 
                 <?php
-              //  $memberid=$_SESSION['mem_id'];
-              $sql = "select * from item where num='$num';";
-              $link = @mysqli_connect('localhost','root','12345678','fjufreedge');
+            $memberid=$_SESSION['mem_id'];
+              $sql = "select * from Cart where memberid='$memberid';";
+              $link = @mysqli_connect('localhost','root','','OnlineShopping');
               $result = mysqli_query($link,$sql);
               While($row=mysqli_fetch_array($result))
               {
@@ -499,19 +500,20 @@ https://templatemo.com/tm-560-astro-motion
             
 
 </div>       
-       <form action="foodaction.php" method="get">
+       <form action="cartdelete.php" method="get">
 
     <tr>
           <td class="product-thumbnail">
           <img src="<?php echo $row['img']?>" alt="Image" class="img-fluid">
           </td>
           <td class="product-name">
-            <h2 class="h5 text-black"><?php echo $row['name']?></h2>
+            <h2 class="h5 text-black"><?php echo $row['goodsName']?></h2>
           </td>
-          <td><?php echo $row['amount']?></td>
+          <td><?php echo $row['goodsPrice']?></td>
           <td>
-              <p align="center"><?php echo $row['area'];?></p>
-          </td>     
+              <p align="center"><?php echo $row['amount'];?></p>
+          </td>
+          <td><?php echo $row['amount'] * $row['goodsPrice']?></td>                 
           <td><button type="button" class="btn btn-primary height-auto btn-sm">
             <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white">X</font></a></button></td>
   
