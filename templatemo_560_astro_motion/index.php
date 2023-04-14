@@ -139,6 +139,8 @@ https://templatemo.com/tm-560-astro-motion
               <div class="circle intro-circle-1"></div>
               <div class="circle intro-circle-2"></div>
               <div class="mx-auto tm-border-top gallery-slider">
+
+<!-- 第一區 -->
                 <figure class="effect-julia item">
                   <img src="img\S__47349853.jpg" alt="Image" />
                   <figcaption>
@@ -191,11 +193,12 @@ https://templatemo.com/tm-560-astro-motion
                     <a class="nav-link" href="#0" data-no="2.1">View more</a>
                   </figcaption>
                 </figure>
-              </li>
-</div>
 
 <!-- 第二區 -->
-<!-- <li data-page-no="2.1">
+              </li>
+
+<!-- 第二區 -->
+<li data-page-no="2.1">
   <div class="mx-auto position-relative gallery-container">
     <div class="circle intro-circle-1"></div>
     <div class="circle intro-circle-2"></div>
@@ -265,8 +268,8 @@ https://templatemo.com/tm-560-astro-motion
                     <a href="#">View more</a>
                   </figcaption>
                 </figure>
- 第三區 -->
-                <!-- <figure class="effect-julia item">
+<!-- 第三區 -->
+                <figure class="effect-julia item">
                   <img src="img/gallery-img-06.jpg" alt="Image" />
                   <figcaption>
                     <div>
@@ -310,9 +313,9 @@ https://templatemo.com/tm-560-astro-motion
                     </div>
                     <a href="#">View more</a>
                   </figcaption>
-                </figure> -->
+                </figure>
 <!-- 學院 -->
-                <!-- <figure class="effect-julia item">
+                <figure class="effect-julia item">
                   <img src="img/gallery-img-06.jpg" alt="Image" />
                   <figcaption>
                     <div>
@@ -459,7 +462,7 @@ https://templatemo.com/tm-560-astro-motion
 
               </div>
             </div>
-          </li>  -->
+          </li>
 <!-- 第三區 -->
                 <!-- <figure class="effect-julia item">
                   <img src="img/gallery-img-06.jpg" alt="Image" />
