@@ -489,9 +489,9 @@ https://templatemo.com/tm-560-astro-motion
                 <tbody>
 
                 <?php
-            $memberid=$_SESSION['mem_id'];
-              $sql = "select * from Cart where memberid='$memberid';";
-              $link = @mysqli_connect('localhost','root','','OnlineShopping');
+              //  $memberid=$_SESSION['mem_id'];
+              $sql = "select * from item where num='$num';";
+              $link = @mysqli_connect('localhost','root','12345678','fjufreedge');
               $result = mysqli_query($link,$sql);
               While($row=mysqli_fetch_array($result))
               {
