@@ -78,9 +78,6 @@ https://templatemo.com/tm-560-astro-motion
                       <a class="nav-link" href="#0" data-no="5">登入啦幹</a>
                       <div class="circle"></div>
                     </li>
-                    
-                    
-                    
                   </ul>
                 </div>
               </nav>
@@ -137,7 +134,7 @@ https://templatemo.com/tm-560-astro-motion
            
 
 <!-- 第一區 -->
-      <li data-page-no="2">
+      <li class="px-3" data-page-no="2">
             <div class="mx-auto position-relative gallery-container">
               <div class="circle intro-circle-1"></div>
               <div class="circle intro-circle-2"></div>
