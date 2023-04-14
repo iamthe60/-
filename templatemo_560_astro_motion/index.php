@@ -122,9 +122,8 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="circle intro-circle-2"></div>
                 <div class="circle intro-circle-3"></div>
                 <div class="circle intro-circle-4"></div>
-             
-              </div>
-            </div>
+              </div>         
+            </div>            
           </li>
           
             <!-- Image Carousel -->
