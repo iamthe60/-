@@ -281,7 +281,6 @@ https://templatemo.com/tm-560-astro-motion
                     <a href="#">View more</a>
                   </figcaption>
                 </figure>
-<<<<<<< HEAD:templatemo_560_astro_motion/index.html
 <!-- 第三區 -->
                 <figure class="effect-julia item">
                   <img src="img/gallery-img-06.jpg" alt="Image" />
@@ -474,8 +473,6 @@ https://templatemo.com/tm-560-astro-motion
                   </figcaption>
                 </figure>
 
-=======
->>>>>>> 777cda0f08e218e5d84e96b60868577e386f195f:templatemo_560_astro_motion/index.php
               </div>
             </div>
           </li>
