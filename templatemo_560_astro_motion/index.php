@@ -681,7 +681,6 @@ https://templatemo.com/tm-560-astro-motion
                     <th class="product-name"><font color="white">Name</font></th>
                     <th class="product-price"><font color="white">Area</font></th>
                     <th class="product-quantity"><font color="white">Amount</font></th>
-                    <th class="product-remove"><font color="white">Remove</font></th>
                   </tr>
 
                 </thead>
@@ -712,13 +711,14 @@ https://templatemo.com/tm-560-astro-motion
           <td>
             <input type="text"></input>
           </td>
-          <td><div class="shape-ex1">上傳</div>
-            <!-- <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white"></font></a></button></td>
-   -->
+         
     <?php 
       }
         ?>
             </tr>
+            <div class="shape-ex1">上傳</div>
+            <!-- <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white"></font></a></button></td>
+   -->
       </form>
 
                  
