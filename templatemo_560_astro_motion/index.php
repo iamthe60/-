@@ -477,7 +477,7 @@ https://templatemo.com/tm-560-astro-motion
               <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <th class="product-thumbnail">Image</th>
+                    <th class="product-thumbnail"><font color="white">Image</font></th>
                     <th class="product-name">Product</th>
                     <th class="product-price">Price</th>
                     <th class="product-quantity">Quantity</th>
