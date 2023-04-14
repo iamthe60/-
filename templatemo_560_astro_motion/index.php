@@ -74,41 +74,12 @@ https://templatemo.com/tm-560-astro-motion
                       <a class="nav-link" href="#0" data-no="4">聯絡我們</a>
                       <div class="circle"></div>
                     </li>
-                    
-                    
-                    <?php
-                    if($_SESSION['account']!=""){
-                        ?>
-						
-                        <?php
-                        if($_SESSION['level']=="admin"){
-                            ?>
-                        
-                        <li class="nav-item"><a href="#"><span style="color:White;">上下架</span></a></li> 
-                        <li class="nav-link"><a href="logouttest.php">Logout</a></li>
-                        <?php
-                        } 
-                        else{
-                        ?>
-                        <li class="nav-item">
-                        <a class="nav-link" href="logintest.php">登入啦幹</a>
-                        <div class="circle"></div>
-                        </li>
-                        <?php
-                        }
-                        ?>
-                    <?php 
-                    } 
-                    else{
-                        ?>
-                        
                     <li class="nav-item">
-                      <a class="nav-link" href="logintest.php">登入啦幹</a>
+                      <a class="nav-link" href="#0" data-no="5">登入啦幹</a>
                       <div class="circle"></div>
                     </li>
-                    <?php
-                        }
-                        ?>
+                    
+                    
                     
                   </ul>
                 </div>
@@ -718,7 +689,7 @@ https://templatemo.com/tm-560-astro-motion
                 <?php
               
               $sql = "select * from item ;";
-              $link = @mysqli_connect('localhost','root','','fjufreedge');
+              $link = @mysqli_connect('localhost','root','12345678','fjufreedge');
               $result = mysqli_query($link,$sql);
               While($row=mysqli_fetch_array($result))
               {
@@ -752,6 +723,9 @@ https://templatemo.com/tm-560-astro-motion
             <div class="shape-ex1">上傳</div>
             </div>
           </li>
+
+
+
           <li data-page-no="4">
             <div class="mx-auto page-width-2">
               <div class="row">
@@ -834,75 +808,41 @@ https://templatemo.com/tm-560-astro-motion
 
           
           <li data-page-no="5">
+          <div
+              class="position-relative page-width-1 tm-border-top tm-border-bottom" style="margin-left:25% ; margin-top:auto; #cccccc solid;"
+            >
+            <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="circle intro-circle-3"></div>
+              <div class="circle intro-circle-4"></div>
+            <div class="container-fluid tm-content-container">
+
             <div class="mx-auto page-width-2">
               <div class="row">
-                <div class="col-md-6 me-0 ms-auto">
-                  <h2 class="mb-4">登入</h2>
-                </div>
+              <div class="col-6.col-md-4">
+                <h2 class="mb-6">LogIn登入</h2>
+                <h2 class="mb-6">登入即可更改資料</h2>
+              </div>
               </div>
               <div class="row">
-                <div class="col-md-6 tm-contact-left">
-                  <form action="#" method="POST" class="contact-form">
+                <div class="col-6.col-md-4">
+                  <form action="loginchecktest.php" method="post" class="contact-form">
                     <div class="input-group tm-mb-30">
-                      <input
-                        name="帳號"
-                        type="text"
-                        class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                        placeholder="Name"
-                      />
+                      <input name="account" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Account 帳號" required>
                     </div>
                     <div class="input-group tm-mb-30">
-                      <input
-                        name="密碼"
-                        type="text"
-                        class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                        placeholder="Email"
-                      />
+                      <input name="password" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Password 密碼" required>
                     </div>
-                    <div class="input-group justify-content-end">
-                      <input
-                        type="submit"
-                        class="btn btn-primary tm-btn-pad-2"
-                        value="登入"
-                      />
+                    <div class="input-group justify-content-start">
+                      <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Login">
                     </div>
                   </form>
                 </div>
-                <div class="col-md-6 tm-contact-right">
-                  <p class="mb-4">
-                    有任何問題歡迎聯絡我們!
-                  </p>
-                  <div>
-                    Email:
-                    <a href="mailto:info@company.com" class="tm-link-white"
-                      >info@company.com</a
-                    >
-                  </div>
-                  <div class="tm-mb-45">
-                    Tel:
-                    <a href="tel:0100200340" class="tm-link-white"
-                      >010-020-0340</a
-                    >
-                  </div>
-                  <!-- Map -->
-                  <div class="map-outer">
-                    <div class="gmap-canvas">
-                      <iframe
-                        width="100%"
-                        height="400"
-                        id="gmap-canvas"
-                        src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0"
-                        scrolling="no"
-                        marginheight="0"
-                        marginwidth="0"
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-          </li>
+            </div>
+            </div>
+
           
           
         </ul>
