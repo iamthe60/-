@@ -689,7 +689,7 @@ https://templatemo.com/tm-560-astro-motion
 
                 <?php
               
-              $sql = "select * from item where num='$num';";
+              $sql = "select * from item ;";
               $link = @mysqli_connect('localhost','root','','fjufreedge');
               $result = mysqli_query($link,$sql);
               While($row=mysqli_fetch_array($result))
