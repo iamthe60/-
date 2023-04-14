@@ -467,7 +467,7 @@ https://templatemo.com/tm-560-astro-motion
 
           <li data-page-no="3" class="px-3">
             <div
-              class="position-relative page-width-1 tm-border-top tm-border-bottom" style="margin-left:25% ; margin-top:auto"
+              class="position-relative page-width-1 tm-border-top tm-border-bottom" style="margin-left:25% ; margin-top:auto; #cccccc solid;"
             >
               <div class="circle intro-circle-1"></div>
               <div class="circle intro-circle-2"></div>
