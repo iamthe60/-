@@ -696,9 +696,8 @@ https://templatemo.com/tm-560-astro-motion
             ?>
             
 
-</div>       
+     
        <form action="cartdelete.php" method="get">
-
     <tr>
           <td class="product-thumbnail" class="mx-auto">
           <img src="img/<?php echo $row['image']?>" alt="Image" width="150px" height="150px">
@@ -709,8 +708,7 @@ https://templatemo.com/tm-560-astro-motion
           <td><?php echo $row['area']?></td>
           <td>
             <input type="text" value="<?php echo $row['amount']?>"></input>
-          </td>
-         
+          </td> 
     <?php 
       }
         ?>
