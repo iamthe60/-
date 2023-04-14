@@ -81,11 +81,11 @@ https://templatemo.com/tm-560-astro-motion
                         ?>
 						
                         <?php
-                        if($_SESSION['level']==admin){
+                        if($_SESSION['level']=="admin"){
                             ?>
                         
                         <li class="nav-item"><a href="#"><span style="color:White;">上下架</span></a></li> 
-                        <li class="nav-item"><a href="logouttest.php"><span style="color:White;">Logout</span></a></li>
+                        <li class="nav-link"><a href="logouttest.php">Logout</a></li>
                         <?php
                         } 
                         else{
@@ -831,8 +831,6 @@ https://templatemo.com/tm-560-astro-motion
               </div>
             </div>
           </li>
-<<<<<<< HEAD
-=======
 
           
           <li data-page-no="5">
@@ -905,7 +903,6 @@ https://templatemo.com/tm-560-astro-motion
               </div>
             </div>
           </li>
->>>>>>> 462d9c2464e4c570f4a61bfa21b109601ff4f386
           
           
         </ul>
