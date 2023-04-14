@@ -510,7 +510,7 @@ https://templatemo.com/tm-560-astro-motion
           </td>
           <td><?php echo $row['goodsPrice']?></td>
           <td>
-              <p align="center"><?php echo $row['amount'];?></p>
+            <input type="text"></input>
           </td>
           <td><button type="button" class="btn btn-primary height-auto btn-sm">
             <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white">X</font></a></button></td>
