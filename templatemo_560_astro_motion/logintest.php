@@ -88,8 +88,11 @@ https://templatemo.com/tm-560-astro-motion
           </div>
         </div>
       </div>
-
-
+      <?php
+      $link = mysqli_connect('localhost','root','12345678','fjufreedge');
+      $sql = "select distinct * from login where account = '$account' and password = '$password'";
+      $result = mysqli_query($link, $sql);
+      ?>
       <div class="container-fluid tm-content-container">
 
             <div class="mx-auto page-width-2">
