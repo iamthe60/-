@@ -30,6 +30,7 @@ https://templatemo.com/tm-560-astro-motion
       <source src="video/refri_video.mp4" type="video/mp4" />
     </video>
     <div class="page-container">
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12">
@@ -85,6 +86,7 @@ https://templatemo.com/tm-560-astro-motion
           </div>
         </div>
       </div>
+
       <div class="container-fluid tm-content-container">
         <ul class="cd-hero-slider mb-0 py-5">
           <li class="px-3" data-page-no="1">
@@ -123,9 +125,7 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="circle intro-circle-2"></div>
                 <div class="circle intro-circle-3"></div>
                 <div class="circle intro-circle-4"></div>
-              </div>
-              <div class="text-center">
-                
+              <div class="text-center"></div>
               </div>
             </div>
           </li>
@@ -136,7 +136,7 @@ https://templatemo.com/tm-560-astro-motion
 <!-- 第一區 -->
       <li data-page-no="2">
             <div class="mx-auto position-relative gallery-container">
-              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-1">uu</div>
               <div class="circle intro-circle-2"></div>
               <div class="mx-auto tm-border-top gallery-slider">
 
@@ -838,10 +838,7 @@ https://templatemo.com/tm-560-astro-motion
               </div>
             </div>
             </div>
-            </div>
-
-          
-          
+            </div>   
         </ul>
       </div>
       <div class="container-fluid">
