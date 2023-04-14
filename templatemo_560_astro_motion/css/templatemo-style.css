@@ -778,12 +778,12 @@ figure.effect-julia:hover p {
   text-align: center;
   cursor: pointer;
   line-height: 40px;
-  color: #000;
+  color: #fff;
   background-color: transparent;
   border: 1px solid #000;
   transition: all .3s linear;
 }
 .shape-ex1:hover{
   background-color: #000;
-  color: #fff;
+  color: #000;
 }
