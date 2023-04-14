@@ -481,7 +481,6 @@ https://templatemo.com/tm-560-astro-motion
                     <th class="product-name"><font color="white">Product</font></th>
                     <th class="product-price"><font color="white">Price</font></th>
                     <th class="product-quantity"><font color="white">Quantity</font></th>
-                    <th class="product-total"><font color="white">Total</font></th>
                     <th class="product-remove"><font color="white">Remove</font></th>
                   </tr>
 
@@ -513,7 +512,6 @@ https://templatemo.com/tm-560-astro-motion
           <td>
               <p align="center"><?php echo $row['amount'];?></p>
           </td>
-          <td><?php echo $row['amount'] * $row['goodsPrice']?></td>                 
           <td><button type="button" class="btn btn-primary height-auto btn-sm">
             <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white">X</font></a></button></td>
   
