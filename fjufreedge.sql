@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- 主機： localhost
--- 產生時間： 
--- 伺服器版本： 8.0.17
--- PHP 版本： 7.3.10
+-- 產生時間： 2023 年 04 月 14 日 15:18
+-- 伺服器版本： 10.4.21-MariaDB
+-- PHP 版本： 8.0.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -30,30 +29,30 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `item` (
   `num` int(15) NOT NULL,
-  `image` varchar(50) NOT NULL,
-  `name` varchar(20) NOT NULL,
+  `image` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
   `amount` int(10) NOT NULL,
   `area` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 傾印資料表的資料 `item`
 --
 
 INSERT INTO `item` (`num`, `image`, `name`, `amount`, `area`) VALUES
-(1, '', '麵包/蛋糕', 10, 1),
-(2, '', '泡麵', 10, 1),
-(3, '', '便當', 10, 1),
-(4, '', '地瓜', 10, 1),
-(5, '', '蔬果', 10, 2),
-(6, '', '餅乾糖果', 10, 2),
-(7, '', '茶葉蛋', 10, 2),
-(8, '', '沙拉', 10, 2),
-(9, '', '冰淇淋', 10, 2),
-(10, '', '乳製品', 10, 3),
-(11, '', '茶', 10, 3),
-(12, '', '果汁', 10, 3),
-(13, '', '布丁果凍', 10, 3);
+(1, 'bread.jpg', '麵包/蛋糕', 10, 1),
+(2, 'cup.jpg', '泡麵', 10, 1),
+(3, 'foods.jpg', '便當', 10, 1),
+(4, 'sweetpotato.jpg', '地瓜', 10, 1),
+(5, 'vegetable.jpg', '蔬果', 10, 2),
+(6, 'snack.jpg', '餅乾糖果', 10, 2),
+(7, 'egg.jpg', '茶葉蛋', 10, 2),
+(8, 'salad.jpg', '沙拉', 10, 2),
+(9, 'icecream.jpg', '冰淇淋', 10, 2),
+(10, 'milk.jpg', '乳製品', 10, 3),
+(11, 'tea.jpg', '茶', 10, 3),
+(12, 'juice.jpg', '果汁', 10, 3),
+(13, 'pudding.jpg', '布丁果凍', 10, 3);
 
 -- --------------------------------------------------------
 
@@ -62,10 +61,10 @@ INSERT INTO `item` (`num`, `image`, `name`, `amount`, `area`) VALUES
 --
 
 CREATE TABLE `login` (
-  `account` varchar(10) NOT NULL,
-  `password` varchar(10) NOT NULL,
-  `level` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `account` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `level` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 傾印資料表的資料 `login`
@@ -82,11 +81,11 @@ INSERT INTO `login` (`account`, `password`, `level`) VALUES
 
 CREATE TABLE `volunteer` (
   `name` int(10) NOT NULL,
-  `id` varchar(30) NOT NULL,
-  `time` varchar(10) NOT NULL,
-  `date` varchar(15) NOT NULL,
-  `location` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `id` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `time` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `location` text COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 已傾印資料表的索引
