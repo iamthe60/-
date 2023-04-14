@@ -784,6 +784,6 @@ figure.effect-julia:hover p {
   transition: all .3s linear;
 }
 .shape-ex1:hover{
-  background-color: #fff;
+  background-color: #000;
   color: #000;
 }
