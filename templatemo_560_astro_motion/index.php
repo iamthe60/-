@@ -678,9 +678,9 @@ https://templatemo.com/tm-560-astro-motion
                 <thead>
                   <tr>
                     <th class="product-thumbnail"><font color="white">Image</font></th>
-                    <th class="product-name"><font color="white">Product</font></th>
-                    <th class="product-price"><font color="white">Price</font></th>
-                    <th class="product-quantity"><font color="white">Quantity</font></th>
+                    <th class="product-name"><font color="white">Name</font></th>
+                    <th class="product-price"><font color="white">Area</font></th>
+                    <th class="product-quantity"><font color="white">Amount</font></th>
                     <th class="product-remove"><font color="white">Remove</font></th>
                   </tr>
 
@@ -688,9 +688,9 @@ https://templatemo.com/tm-560-astro-motion
                 <tbody>
 
                 <?php
-               $memberid=$_SESSION['mem_id'];
-              $sql = "select * from Cart where memberid='$memberid';";
-              $link = @mysqli_connect('localhost','root','','OnlineShopping');
+              
+              $sql = "select * from item ;";
+              $link = @mysqli_connect('localhost','root','','fjufreedge');
               $result = mysqli_query($link,$sql);
               While($row=mysqli_fetch_array($result))
               {
@@ -706,15 +706,15 @@ https://templatemo.com/tm-560-astro-motion
           <img src="<?php echo $row['img']?>" alt="Image" class="img-fluid">
           </td>
           <td class="product-name">
-            <h2 class="h5 text-black"><?php echo $row['goodsName']?></h2>
+            <h2 class="h5 text-black"><?php echo $row['num']?></h2>
           </td>
-          <td><?php echo $row['goodsPrice']?></td>
+          <td><?php echo $row['amount']?></td>
           <td>
             <input type="text"></input>
           </td>
-          <td><div class="shape-ex1">按鈕</div>
-            <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white">X</font></a></button></td>
-  
+          <td><div class="shape-ex1">上傳</div>
+            <!-- <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white"></font></a></button></td>
+   -->
     <?php 
       }
         ?>
