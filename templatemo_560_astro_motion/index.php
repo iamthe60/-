@@ -817,33 +817,22 @@ https://templatemo.com/tm-560-astro-motion
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 tm-contact-left">
-                  <form action="#" method="POST" class="contact-form">
-                    <div class="input-group tm-mb-30">
-                      <input
-                        name="帳號"
-                        type="text"
-                        class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div class="input-group tm-mb-30">
-                      <input
-                        name="密碼"
-                        type="text"
-                        class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div class="input-group justify-content-end">
-                      <input
-                        type="submit"
-                        class="btn btn-primary tm-btn-pad-2"
-                        value="登入"
-                      />
-                    </div>
-                  </form>
+              <div class="col-md-6 login-right">
+                <h2>Sign In會員登入</h2>
+                <form method="post" action="logincheck.php">
+                      <input type=hidden name="dbaction" value="insert">
+                <p>會員登入即可快速結帳 / 查看訂單 / 修改個人帳戶及更多功能。</p>
+                <div>
+                <input type=text placeholder="Email Address/Account  電子信箱/帳號" name="account" required>
                 </div>
+                <div>
+                <input type=text placeholder="Password  會員密碼(6碼至15碼英數字)" name="password" required>
+                </div>
+                <input type=submit value="Login">
+                <a class="forgot" href="#">Forgot Password?忘記密碼</a>
+                </form>
+              </div>
+              
                 <div class="col-md-6 tm-contact-right">
                   <p class="mb-4">
                     有任何問題歡迎聯絡我們!
