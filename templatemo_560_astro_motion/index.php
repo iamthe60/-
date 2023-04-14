@@ -679,8 +679,8 @@ https://templatemo.com/tm-560-astro-motion
                   <tr>
                     <th class="product-thumbnail"><font color="white">Image</font></th>
                     <th class="product-name"><font color="white">Name</font></th>
-                    <th class="product-price"><font color="white">Amount</font></th>
-                    <th class="product-quantity"><font color="white">Quantity</font></th>
+                    <th class="product-price"><font color="white">Area</font></th>
+                    <th class="product-quantity"><font color="white">Amount</font></th>
                     <th class="product-remove"><font color="white">Remove</font></th>
                   </tr>
 
