@@ -705,11 +705,11 @@ https://templatemo.com/tm-560-astro-motion
           <img src="<?php echo $row['img']?>" alt="Image" class="img-fluid">
           </td>
           <td class="product-name">
-            <h2 class="h5 text-black"><?php echo $row['num']?></h2>
+            <h2 class="h5 text-black"><?php echo $row['name']?></h2>
           </td>
-          <td><?php echo $row['amount']?></td>
+          <td><?php echo $row['area']?></td>
           <td>
-            <input type="text"></input>
+            <input type="text" value="<?php echo $row['amount']?>"></input>
           </td>
          
     <?php 
