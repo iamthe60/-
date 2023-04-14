@@ -63,15 +63,15 @@ https://templatemo.com/tm-560-astro-motion
                       <div class="circle"></div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#0" data-no="2">領取物資</a>
+                      <a class="nav-link" href="index.php#0" data-no="2">領取物資</a>
                       <div class="circle"></div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#0" data-no="3">關於</a>
+                      <a class="nav-link" href="index.php#0" data-no="3">關於</a>
                       <div class="circle"></div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#0" data-no="4">聯絡我們</a>
+                      <a class="nav-link" href="index.php#0" data-no="4">聯絡我們</a>
                       <div class="circle"></div>
                     </li>
                     <li>
@@ -101,12 +101,12 @@ https://templatemo.com/tm-560-astro-motion
               </div>
               <div class="row">
                 <div class="col-md-6 tm-contact-left">
-                  <form action="#" method="POST" class="contact-form">
+                  <form action="loginchecktest.php" method="post" class="contact-form">
                     <div class="input-group tm-mb-30">
-                      <input name="account" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Account 帳號">
+                      <input name="account" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Account 帳號" required>
                     </div>
                     <div class="input-group tm-mb-30">
-                      <input name="password" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Password 密碼">
+                      <input name="password" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Password 密碼" required>
                     </div>
                     <div class="input-group justify-content-start">
                       <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Login">
