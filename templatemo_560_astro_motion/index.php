@@ -481,7 +481,6 @@ https://templatemo.com/tm-560-astro-motion
                     <th class="product-name"><font color="white">Product</font></th>
                     <th class="product-price"><font color="white">Price</font></th>
                     <th class="product-quantity"><font color="white">Quantity</font></th>
-                    <th class="product-total"><font color="white">Total</font></th>
                     <th class="product-remove"><font color="white">Remove</font></th>
                   </tr>
 
@@ -500,20 +499,19 @@ https://templatemo.com/tm-560-astro-motion
             
 
 </div>       
-       <form action="cartdelete.php" method="get">
+       <form action="foodaction.php" method="get">
 
     <tr>
           <td class="product-thumbnail">
           <img src="<?php echo $row['img']?>" alt="Image" class="img-fluid">
           </td>
           <td class="product-name">
-            <h2 class="h5 text-black"><?php echo $row['goodsName']?></h2>
+            <h2 class="h5 text-black"><?php echo $row['name']?></h2>
           </td>
-          <td><?php echo $row['goodsPrice']?></td>
+          <td><?php echo $row['amount']?></td>
           <td>
-              <p align="center"><?php echo $row['amount'];?></p>
-          </td>
-          <td><?php echo $row['amount'] * $row['goodsPrice']?></td>                 
+              <p align="center"><?php echo $row['area'];?></p>
+          </td>     
           <td><button type="button" class="btn btn-primary height-auto btn-sm">
             <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white">X</font></a></button></td>
   
