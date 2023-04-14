@@ -139,8 +139,6 @@ https://templatemo.com/tm-560-astro-motion
               <div class="circle intro-circle-1"></div>
               <div class="circle intro-circle-2"></div>
               <div class="mx-auto tm-border-top gallery-slider">
-
-<!-- 第一區 -->
                 <figure class="effect-julia item">
                   <img src="img\S__47349853.jpg" alt="Image" />
                   <figcaption>
