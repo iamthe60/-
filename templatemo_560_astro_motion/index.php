@@ -473,14 +473,62 @@ https://templatemo.com/tm-560-astro-motion
               <div class="circle intro-circle-2"></div>
               <div class="circle intro-circle-3"></div>
               <div class="circle intro-circle-4"></div>
-       <form>
-      <table>
-        <tr>
-          <td>hh</td>
-        </tr>
-      </table>
+              <div class="site-blocks-table">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="product-thumbnail">Image</th>
+                    <th class="product-name">Product</th>
+                    <th class="product-price">Price</th>
+                    <th class="product-quantity">Quantity</th>
+                    <th class="product-total">Total</th>
+                    <th class="product-remove">Remove</th>
+                  </tr>
 
+                </thead>
+                <tbody>
+
+                <?php
+            $memberid=$_SESSION['mem_id'];
+              $sql = "select * from Cart where memberid='$memberid';";
+              $link = @mysqli_connect('localhost','root','','OnlineShopping');
+              $result = mysqli_query($link,$sql);
+              While($row=mysqli_fetch_array($result))
+              {
+                
+            ?>
+            
+
+</div>       
+       <form action="cartdelete.php" method="get">
+
+    <tr>
+          <td class="product-thumbnail">
+          <img src="<?php echo $row['img']?>" alt="Image" class="img-fluid">
+          </td>
+          <td class="product-name">
+            <h2 class="h5 text-black"><?php echo $row['goodsName']?></h2>
+          </td>
+          <td><?php echo $row['goodsPrice']?></td>
+          <td>
+              <p align="center"><?php echo $row['amount'];?></p>
+          </td>
+          <td><?php echo $row['amount'] * $row['goodsPrice']?></td>                 
+          <td><button type="button" class="btn btn-primary height-auto btn-sm">
+            <a href="cartdelete.php?goodsNum=<?php echo $row['goodsNum']?>"><font color="white">X</font></a></button></td>
+  
+    <?php 
+      }
+        ?>
+            </tr>
       </form>
+
+                 
+
+                 
+                </tbody>
+              </table>
+            </div>
 
             </div>
           </li>
