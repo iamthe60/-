@@ -702,7 +702,7 @@ https://templatemo.com/tm-560-astro-motion
 
     <tr>
           <td class="product-thumbnail">
-          <img src="<?php echo $row['image']?>" alt="Image" class="img-fluid">
+          <img src="img/<?php echo $row['image']?>" alt="Image" class="img-fluid">
           </td>
           <td class="product-name">
             <h2 class="h5 text-black"><?php echo $row['name']?></h2>
