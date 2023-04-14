@@ -76,7 +76,7 @@ https://templatemo.com/tm-560-astro-motion
                     </li>
                     <li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#0" data-no="5">登入啦幹</a>
+                      <a class="nav-link" href="logintest.php">登入啦幹</a>
                       <div class="circle"></div>
                     </li>
 
@@ -810,33 +810,7 @@ https://templatemo.com/tm-560-astro-motion
             </div>
           </li>
 
-          <li data-page-no="5">
-            <div class="mx-auto page-width-2">
-              <div class="row">
-              <div class="col-md-6 me-0 ms-auto">
-                <h2 class="mb-6">LogIn登入</h2>
-                <h2 class="mb-6">登入即可更改資料</h2>
-              </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 tm-contact-left">
-                  <form action="#" method="POST" class="contact-form">
-                    <div class="input-group tm-mb-30">
-                      <input name="account" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Account 帳號">
-                    </div>
-                    <div class="input-group tm-mb-30">
-                      <input name="password" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Password 密碼">
-                    </div>
-                    <div class="input-group justify-content-start">
-                      <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Login">
-                    </div>
-                  </form>
-                </div>
-              </div>
-
-              
-            </div>
-          </li>
+          
           
           
         </ul>
