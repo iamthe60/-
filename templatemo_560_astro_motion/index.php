@@ -688,9 +688,9 @@ https://templatemo.com/tm-560-astro-motion
                 <tbody>
 
                 <?php
-               $memberid=$_SESSION['mem_id'];
-              $sql = "select * from Cart where memberid='$memberid';";
-              $link = @mysqli_connect('localhost','root','','OnlineShopping');
+              
+              $sql = "select * from item where num='$num';";
+              $link = @mysqli_connect('localhost','root','','fjufreedge');
               $result = mysqli_query($link,$sql);
               While($row=mysqli_fetch_array($result))
               {
@@ -706,9 +706,9 @@ https://templatemo.com/tm-560-astro-motion
           <img src="<?php echo $row['img']?>" alt="Image" class="img-fluid">
           </td>
           <td class="product-name">
-            <h2 class="h5 text-black"><?php echo $row['goodsName']?></h2>
+            <h2 class="h5 text-black"><?php echo $row['num']?></h2>
           </td>
-          <td><?php echo $row['goodsPrice']?></td>
+          <td><?php echo $row['amount']?></td>
           <td>
             <input type="text"></input>
           </td>
