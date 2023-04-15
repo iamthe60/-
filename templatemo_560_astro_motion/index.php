@@ -484,19 +484,19 @@ https://templatemo.com/tm-560-astro-motion
                 </thead>
                   <tbody>
 <?php
-                    $sql = "select * from item ;";
+                    $sql = "select * from item;";
                     $link = @mysqli_connect('localhost', 'root', '', 'fjufreedge');
                     $result = mysqli_query($link, $sql);
                     while ($row = mysqli_fetch_array($result)) {
-
                       ?>
-                      <form action="cartdelete.php" method="get">
+                      <form action="foodaction.php" method="get">
+                      <input type=hidden name="foodaction" value="上傳">
                         <tr>
                           <td class="product-thumbnail" class="mx-auto">
                             <img src="img/<?php echo $row['image'] ?>" alt="Image" width="150px" height="150px">
                           </td>
                           <td class="product-name">
-                            <h2 class="h5 text-black">
+                            <h2 class="h5 text-black" >
                             <font color="white"><?php echo $row['name'] ?></font>
                             </h2>
                           </td>
@@ -513,9 +513,9 @@ https://templatemo.com/tm-560-astro-motion
                   </tbody>
                 </table>
                 <div class="input-group justify-content-end">
-                        <input type="submit" class="btn btn-primary tm-btn-pad-2" value="上傳">
+                        <input type="submit" name="foodaction" class="btn btn-primary tm-btn-pad-2" value="上傳">
                         &nbsp;
-                        <input type="submit" class="btn btn-primary tm-btn-pad-2" value="下架">
+                        <input type="submit" name="foodaction" class="btn btn-primary tm-btn-pad-2" value="下架">
                     </div>
               </div> 
               </form>
