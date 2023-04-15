@@ -115,7 +115,7 @@ https://templatemo.com/tm-560-astro-motion
 
               <!-- 第一區 -->
               <figure class="effect-julia item">
-                <img src="img\S__47349853.jpg" alt="Image" />
+                <img src="img/bread.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>麵包/蛋捲</p>
@@ -124,7 +124,7 @@ https://templatemo.com/tm-560-astro-motion
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
-                <img src="img\S__47349855.jpg" alt="Image" />
+                <img src="img/foods.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>便當</p>
@@ -133,7 +133,7 @@ https://templatemo.com/tm-560-astro-motion
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
-                <img src="img\S__47349856.jpg" alt="Image" />
+                <img src="img/cup.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>泡麵</p>
@@ -142,7 +142,7 @@ https://templatemo.com/tm-560-astro-motion
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
-                <img src="img\S__47349857.jpg" alt="Image" />
+                <img src="img/sweetpotato.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>地瓜</p>
@@ -470,7 +470,7 @@ https://templatemo.com/tm-560-astro-motion
                 <tbody>
                   <?php
                   $sql = "select * from item;";
-                  $link = @mysqli_connect('localhost', 'root', '', 'fjufreedge');
+                  $link = @mysqli_connect('localhost', 'root', '12345678', 'fjufreedge');
                   $result = mysqli_query($link, $sql);
                   while ($row = mysqli_fetch_array($result)) {
                     ?>
