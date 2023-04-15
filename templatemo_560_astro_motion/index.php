@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/slick.css" type="text/css" />
   <link rel="stylesheet" href="css/templatemo-style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
 
   <!--
     
@@ -23,27 +21,7 @@ TemplateMo 560 Astro Motion
 https://templatemo.com/tm-560-astro-motion
 
 -->
-<?php
- include "foodaction.php";
- if(isset($_POST['but_update'])){
-    if(isset($_POST['update'])){
-      foreach($_POST['update'] as $updatenum){
-        $amount = $_POST['amount_'.$updatenum];
-        $name = $_POST['name_'.$updatenum];
-        $area = $_POST['area_'.$updatenum];
 
-        if($name !='' && $area != '' ){
-          $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
-          mysqli_query($conn,$updateUser);
-        }
-
-      }
-      $alert = '<div class="alert alert-success" role="alert">Records sucessfully updated</div>';
-    }
- }
-
-
-?>
 </head>
 
 <body>
@@ -470,15 +448,11 @@ https://templatemo.com/tm-560-astro-motion
             <div class="circle intro-circle-2"></div>
             <div class="circle intro-circle-3"></div>
             <div class="circle intro-circle-4"></div>
-            <form method='post' action=''>
-            <input type="submit" name="but_update" class="btn btn-primary tm-btn-pad-2" value="上傳">
-                &nbsp;
-           
+            <div class="tm-bg-dark content-pad">
 
               <table class="table table-bordered">
-              
-                  <tr style='background: black;'>
-                    <th><input type='checkbox' id='checkAll' ><font color="white">Check</font></th>
+                <thead>
+                  <tr>
                     <th class="product-thumbnail">
                       <font color="white">Image</font>
                     </th>
@@ -492,59 +466,47 @@ https://templatemo.com/tm-560-astro-motion
                       <font color="white">Amount</font>
                     </th>
                   </tr>
+                </thead>
+                <tbody>
                   <?php
-                  $query = "SELECT * FROM item;";
-                  $result = mysqli_query($conn,$query);
-
-                  while($row = mysqli_fetch_array($result)){
-                    $num = $row['num'];
-                    $name = $row['name'];
-                    $image = $row['image'];
-                    $area = $row['area'];
-                    $amount = $row['amount'];
-                 
+                  $sql = "select * from item;";
+                  $link = @mysqli_connect('localhost', 'root', '', 'fjufreedge');
+                  $result = mysqli_query($link, $sql);
+                  while ($row = mysqli_fetch_array($result)) {
+                    ?>
+                    <form action="foodaction.php" method="get">
+                    <input type=hidden name="num" value="<?php echo $row['num']?>">
+                      <tr>
+                        <td class="product-thumbnail" class="mx-auto">
+                          <img src="img/<?php echo $row['image'] ?>" alt="Image" width="150px" height="150px">
+                        </td>
+                        <td class="product-name">
+                          <h2 class="h5 text-black">
+                            <font color="white">
+                              <?php echo $row['name'] ?>
+                            </font>
+                          </h2>
+                        </td>
+                        <td>
+                          <font color="white">
+                            <?php echo $row['area'] ?>
+                          </font>
+                        </td>
+                        <td>
+                          <input type="text" name="amount" size="10" value="<?php echo $row['amount'] ?>"></input>
+                        </td>
+                        <?php
+                  }
                   ?>
-                    <tr>
-                      <td><input type='checkbox' name='update[]' value='<?= $num?>'></td>
-                      <td><img src="img/<?= $image ?>" alt="Image" width="150px" height="150px">></td>
-                      <td><input type='text' name='name_<?= $num?>' value='<?= $name?>'></td>
-                      <td><input type='text' name='area_<?= $num?>' value='<?= $area?>'></td>
-                      <td><input type='text' name='amount_<?= $num?>' value='<?= $amount?>'></td>
                     </tr>
-              <?php
-                  }
-                  ?>
-          
+                </tbody>
               </table>
-       
-            <script type="text/javascript">
-              $(document).ready(function(){
-                $('#checkAll').change(function(){
-                  if($(this).is(':checked')){
-                    $('input[name="update[]"]').prop('checked',true);
-                  }else{
-                    $('input[name="update[]"]').each(function(){
-                        $(this).prop('checked',false);
-                    });
-                  }
-              });
-
-
-              $('input[name="update[]"]').click(function(){
-                  var total_checkboxes = $('input[name="update[]"]').length;
-                  var total_checkboxes_checked = $('input[name="update[]"]:checked').length;
-
-                  if(total_checkboxes_checked == total_checkboxes){
-                    $('#checkAll').prop('checked',true);
-                  }else{
-                    $('#checkAll').prop('checked',false);
-                  
-
-                  }
-                });
-              });
-        
- </script>
+              <div class="input-group justify-content-end">
+                <input type="submit" name="foodaction" class="btn btn-primary tm-btn-pad-2" value="上傳">
+                &nbsp;
+                <input type="submit" name="foodaction" class="btn btn-primary tm-btn-pad-2" value="下架">
+              </div>
+            </div>
             </form>
           </div>
         </li>
