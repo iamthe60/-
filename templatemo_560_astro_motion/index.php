@@ -475,7 +475,7 @@ https://templatemo.com/tm-560-astro-motion
                   while ($row = mysqli_fetch_array($result)) {
                     ?>
                     <form action="foodaction.php" method="get">
-                    <input type=hidden name="num" value="<?php echo $row['num'] ?>">
+                    <input type=hidden name="num" value="<?php echo $row['num']?>">
                       <tr>
                         <td class="product-thumbnail" class="mx-auto">
                           <img src="img/<?php echo $row['image'] ?>" alt="Image" width="150px" height="150px">
