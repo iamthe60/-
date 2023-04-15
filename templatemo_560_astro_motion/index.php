@@ -466,7 +466,7 @@ https://templatemo.com/tm-560-astro-motion
 
 
 <li data-page-no="3" class="px-3">
-          <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
+          <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom" style="margin-left: 340px;";>
             <div class="circle intro-circle-1"></div>
             <div class="circle intro-circle-2"></div>
             <div class="circle intro-circle-3"></div>
@@ -510,8 +510,8 @@ https://templatemo.com/tm-560-astro-motion
                       <td><input type='checkbox' name='update[]' value='<?= $num?>'></td>
                       <td><img src="img/<?= $image ?>" alt="Image" width="150px" height="150px">></td>
                       <td><input type='text' name='name_<?= $num?>' value='<?= $name?>'></td>
-                      <td><input type='text' name='area_<?= $num?>' value='<?= $area?>'></td>
-                      <td><input type='text' name='amount_<?= $num?>' value='<?= $amount?>'></td>
+                      <td><input type='text' size=3 name='area_<?= $num?>' value='<?= $area?>'></td>
+                      <td><input type='text' size=10 name='amount_<?= $num?>' value='<?= $amount?>'></td>
                     </tr>
               <?php
                   }
