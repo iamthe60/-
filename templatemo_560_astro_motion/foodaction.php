@@ -5,7 +5,7 @@
         $num = $_GET['num'];
         if($foodaction =="上傳"){
             $link = mysqli_connect('localhost','root','','fjufreedge');
-            $sql = "UPDATE `item` SET `amount`='$amount' WHERE `num`='$num'";
+            $sql = "UPDATE `item` SET `amount`='$amount' WHERE `num`='1';";
             $result = mysqli_query($link, $sql);
             if(mysqli_query($link,$sql))
             {
