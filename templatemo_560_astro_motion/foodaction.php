@@ -1,18 +1,28 @@
 <?php
     if(!empty($_GET['foodaction'])){
+        $foodaction = $_GET['foodaction'];
         $num = $_GET['num'];
-        $image = $_GET['image'];
         $name = $_GET['name'];
         $amount = $_GET['amount'];
         $area = $_GET['area'];
 
-        if($foodaction =="update"){
-            $link = mysqli_connect('localhost','root','12345678','fjufreedge');
-            $sql = "INSERT INTO `item`(`num`, `image`, `name`, `amount`, `area`) VALUES ('$num','$image','$name','$amount','$area');";
+        if($foodaction =="上傳"){
+            $link = mysqli_connect('localhost','root','','fjufreedge');
+            $sql = "UPDATE `item` SET amount='$amount' where num = '$num';";
             $result = mysqli_query($link, $sql);
             $row=mysqli_fetch_assoc($result);
+            if(mysqli_query($link,$sql))
+            {
+                header("Location: message.php?message=上傳完成");
+               
+            }
+            else
+            {
+                header("Location: message.php?message=上傳失敗");
+                
+            }
         }else{
-            $sql = "UPDATE `item` SET amount='$amount' where num = '$num';";
+            $sql = "UPDATE `item` SET amount='0' where num = '$num';";
         }
     }
 
