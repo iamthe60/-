@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <title>Astro Motion by TemplateMo</title>
+    <title>輔大食享冰箱</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap"
       rel="stylesheet"
