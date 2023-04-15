@@ -664,60 +664,60 @@ https://templatemo.com/tm-560-astro-motion
 
 
 
-          <li data-page-no="3" class="px-3">
-            <div
-              class="position-relative page-width-1 tm-border-top tm-border-bottom" style="margin-left:25% ; margin-top:auto; #cccccc solid;"
-            >
+                <li data-page-no="3" class="px-3"> 
+            <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
               <div class="circle intro-circle-1"></div>
               <div class="circle intro-circle-2"></div>
               <div class="circle intro-circle-3"></div>
               <div class="circle intro-circle-4"></div>
-              <div class="site-blocks-table">
-              <table class="table table-bordered">
-                <thead>
+              <div class="tm-bg-dark content-pad">
+            
+               <table class="table table-bordered">
+               <thead>
                   <tr>
                     <th class="product-thumbnail"><font color="white">Image</font></th>
                     <th class="product-name"><font color="white">Name</font></th>
                     <th class="product-price"><font color="white">Area</font></th>
                     <th class="product-quantity"><font color="white">Amount</font></th>
                   </tr>
-
                 </thead>
-                <tbody>
+                  <tbody>
+<?php
+                    $sql = "select * from item ;";
+                    $link = @mysqli_connect('localhost', 'root', '', 'fjufreedge');
+                    $result = mysqli_query($link, $sql);
+                    while ($row = mysqli_fetch_array($result)) {
 
-                <?php
+                      ?>
+                      <form action="cartdelete.php" method="get">
+                        <tr>
+                          <td class="product-thumbnail" class="mx-auto">
+                            <img src="img/<?php echo $row['image'] ?>" alt="Image" width="150px" height="150px">
+                          </td>
+                          <td class="product-name">
+                            <h2 class="h5 text-black">
+                            <font color="white"><?php echo $row['name'] ?></font>
+                            </h2>
+                          </td>
+                          <td>
+                          <font color="white"><?php echo $row['area'] ?></font>
+                          </td>
+                          <td>
+                            <input type="text" value="<?php echo $row['amount'] ?>"></input>
+                          </td>
+                        <?php
+                    }
+                    ?>
+                      </tr>
+                  </tbody>
+                </table>
+                <div class="input-group justify-content-end">
+                        <input type="submit" class="btn btn-primary tm-btn-pad-2" value="上傳">
+                    </div>
+          
+              </div> 
               
-              $sql = "select * from item ;";
-              $link = @mysqli_connect('localhost','root','12345678','fjufreedge');
-              $result = mysqli_query($link,$sql);
-              While($row=mysqli_fetch_array($result))
-              {
-                
-            ?>
-            
-
-     
-       <form action="cartdelete.php" method="get">
-    <tr>
-          <td class="product-thumbnail" class="mx-auto">
-          <img src="img/<?php echo $row['image']?>" alt="Image" width="150px" height="150px">
-          </td>
-          <td class="product-name">
-            <h2 class="h5 text-black"><?php echo $row['name']?></h2>
-          </td>
-          <td><?php echo $row['area']?></td>
-          <td>
-            <input type="text" value="<?php echo $row['amount']?>"></input>
-          </td> 
-    <?php 
-      }
-        ?>
-            </tr>
-      </form>
-                </tbody>
-              </table>
-            </div>
-            <div class="shape-ex1">上傳</div>
+              </form>
             </div>
           </li>
 
