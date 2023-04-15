@@ -23,9 +23,9 @@ TemplateMo 560 Astro Motion
 https://templatemo.com/tm-560-astro-motion
 
 -->
-<?php
+<?
  include "foodaction.php";
- $conn = new mysqli('localhost','root','','fjufreedge');
+ $conn = new mysqli('localhost','root','12345678','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
