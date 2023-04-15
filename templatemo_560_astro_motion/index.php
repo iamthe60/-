@@ -98,13 +98,14 @@ https://templatemo.com/tm-560-astro-motion
       <ul class="cd-hero-slider mb-0 py-5">
         <li class="px-3" data-page-no="1">
           <div class="page-width-1 page-left">
-            <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+            <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container"  style="margin-left:35% ;width:100%;">
               <div class="circle intro-circle-1"></div>
               <div class="circle intro-circle-2"></div>
               <div class="circle intro-circle-3"></div>
               <div class="circle intro-circle-4"></div>
               <div class="intro-left tm-bg-dark content-pad">
-                <h2 class="mb-4">About us</h2>
+                <h2 class="mb-4">食饗冰箱是什麼?
+                </h2>
                 <p class="mb-4">
                   為了避免食物浪費，輔仁大學社科院與興毅基金會忠信食物銀行合作設立了全台第一座「校園食享冰箱」，食物的提供來源為各界的即期食品，提供地點主要在樹德樓1樓LW110教室以及進修部大樓ES502，每日14:30及18:10開放輔大教職員及學生領取。
                 </p>
@@ -137,7 +138,7 @@ https://templatemo.com/tm-560-astro-motion
 
               <!-- 第一區 -->
               <figure class="effect-julia item">
-                <img src="img\S__47349853.jpg" alt="Image" />
+                <img src="img/bread.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>麵包/蛋捲</p>
@@ -146,7 +147,7 @@ https://templatemo.com/tm-560-astro-motion
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
-                <img src="img\S__47349855.jpg" alt="Image" />
+                <img src="img/foods.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>便當</p>
@@ -155,7 +156,7 @@ https://templatemo.com/tm-560-astro-motion
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
-                <img src="img\S__47349856.jpg" alt="Image" />
+                <img src="img/cup.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>泡麵</p>
@@ -164,7 +165,7 @@ https://templatemo.com/tm-560-astro-motion
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
-                <img src="img\S__47349857.jpg" alt="Image" />
+                <img src="img/sweetpotato.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>地瓜</p>
@@ -615,8 +616,8 @@ https://templatemo.com/tm-560-astro-motion
             <div class="circle intro-circle-4"></div>
             <div class="container-fluid tm-content-container">
 
-              <div class="mx-auto page-width-2">
-                <div class="row">
+              <div class="mx-auto page-width-2 tm-bg-dark">
+                <div class="row ">
                   <div class="col-6.col-md-4">
                     <h2 class="mb-6">LogIn登入</h2>
                     <h2 class="mb-6">登入即可更改資料</h2>
