@@ -99,7 +99,7 @@ https://templatemo.com/tm-560-astro-motion
       <ul class="cd-hero-slider mb-0 py-5">
         <li class="px-3" data-page-no="1">
           <div class="page-width-1 page-left">
-            <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+            <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container" style="margin-left:35% ;width:100%;">
               <div class="circle intro-circle-1"></div>
               <div class="circle intro-circle-2"></div>
               <div class="circle intro-circle-3"></div>
@@ -138,7 +138,7 @@ https://templatemo.com/tm-560-astro-motion
 
               <!-- 第一區 -->
               <figure class="effect-julia item">
-                <img src="img\S__47349853.jpg" alt="Image" />
+                <img src="img/bread.jpg" alt="Image" />
                 <figcaption>
                   <div>
                   <!-- <a href="#0" data-page-no="3"> -->
@@ -149,7 +149,7 @@ https://templatemo.com/tm-560-astro-motion
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
-                <img src="img\S__47349855.jpg" alt="Image" />
+                <img src="img/foods.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>便當</p>
@@ -158,7 +158,7 @@ https://templatemo.com/tm-560-astro-motion
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
-                <img src="img\S__47349856.jpg" alt="Image" />
+                <img src="img/cup.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>泡麵</p>
@@ -167,7 +167,7 @@ https://templatemo.com/tm-560-astro-motion
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
-                <img src="img\S__47349857.jpg" alt="Image" />
+                <img src="img/sweetpotato.jpg" alt="Image" />
                 <figcaption>
                   <div>
                     <p>地瓜</p>
