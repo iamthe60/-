@@ -141,11 +141,9 @@ https://templatemo.com/tm-560-astro-motion
                 <img src="img/bread.jpg" alt="Image" />
                 <figcaption>
                   <div>
-                  <!-- <a href="#0" data-page-no="3"> -->
                     <p>麵包/蛋捲</p>
                   </a>
                   </div>
-                  <!-- <a class="nav-link" href="#0" data-no="2.1">View more</a> -->
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
@@ -154,7 +152,6 @@ https://templatemo.com/tm-560-astro-motion
                   <div>
                     <p>便當</p>
                   </div>
-                  <a class="nav-link" href="#0" data-no="2.1">View more</a>
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
@@ -163,7 +160,6 @@ https://templatemo.com/tm-560-astro-motion
                   <div>
                     <p>泡麵</p>
                   </div>
-                  <a class="nav-link" href="#0" data-no="2.1">View more</a>
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
@@ -172,7 +168,6 @@ https://templatemo.com/tm-560-astro-motion
                   <div>
                     <p>地瓜</p>
                   </div>
-                  <a class="nav-link" href="#0" data-no="2.1">View more</a>
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
@@ -188,11 +183,14 @@ https://templatemo.com/tm-560-astro-motion
                       <div>
                         <p>不領取</p>
                       </div>
-                      <a class="nav-link" href="#0" data-no="2.1">View more</a>
                     </figcaption>
               </figure>
+              <!-- <div style="margin-left:10% ;">
+              <input type="submit" name="but_update" class="btn btn-primary tm-btn-pad-2" value="下一頁" >
+              </div> -->
+              
         </li>
-
+        
         <!-- 第二區 -->
         <li data-page-no="2.1">
           <div class="mx-auto position-relative gallery-container">
