@@ -68,23 +68,23 @@ https://templatemo.com/tm-560-astro-motion
               <div class="collapse navbar-collapse" id="navbar-supported-content">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                   <li class="nav-item selected">
-                    <a class="nav-link" aria-current="page" href="#0" data-no="1">首頁</a>
+                    <a class="nav-link" aria-current="page" href="#0" data-no="1" style="padding-left: 60px; padding-right: 60px">首頁</a>
                     <div class="circle"></div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#0" data-no="2">領取物資</a>
+                    <a class="nav-link" href="#0" data-no="2" style="padding-left: 60px; padding-right: 60px">領取物資</a>
                     <div class="circle"></div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#0" data-no="3">關於</a>
+                    <a class="nav-link" href="#0" data-no="3" style="padding-left: 60px; padding-right: 60px">關於</a>
                     <div class="circle"></div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#0" data-no="4">聯絡我們</a>
+                    <a class="nav-link" href="#0" data-no="4" style="padding-left: 60px; padding-right: 60px">聯絡我們</a>
                     <div class="circle"></div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#0" data-no="5">登入啦幹</a>
+                    <a class="nav-link" href="#0" data-no="5" style="padding-left: 60px; padding-right: 60px">登入</a>
                     <div class="circle"></div>
                   </li>
                 </ul>
