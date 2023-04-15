@@ -481,6 +481,7 @@ https://templatemo.com/tm-560-astro-motion
               
                   <tr style='background: black;'>
                     <th><input type='checkbox' id='checkAll' ><font color="white">Check</font></th>
+                    <p>
                     <th class="product-thumbnail">
                       <font color="white">Image</font>
                     </th>
