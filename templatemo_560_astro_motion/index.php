@@ -141,9 +141,11 @@ https://templatemo.com/tm-560-astro-motion
                 <img src="img/bread.jpg" alt="Image" />
                 <figcaption>
                   <div>
+                  <!-- <a href="#0" data-page-no="3"> -->
                     <p>麵包/蛋捲</p>
+                  </a>
                   </div>
-                  <a class="nav-link" href="#0" data-no="2.1">View more</a>
+                  <!-- <a class="nav-link" href="#0" data-no="2.1">View more</a> -->
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
