@@ -90,7 +90,7 @@ https://templatemo.com/tm-560-astro-motion
                         if($_SESSION['level']=="admin"){
                             ?>
                           <li class="nav-item">
-                          <a class="nav-link" href="#0" data-no="6" style="padding-left: 50px; padding-right: 50px">登出</a>
+                          <a class="nav-link" href="logouttest.php" data-no="6" style="padding-left: 50px; padding-right: 50px">登出</a>
                           <div class="circle"></div>
                           </li>
                         <?php
