@@ -1,16 +1,19 @@
 <?php
-
+session_start();
 
  $account=$_POST['account'];
  $password=$_POST['password'];
- echo $account , $password;
 
  $link = mysqli_connect('localhost','root','12345678','fjufreedge');
  $sql = "select distinct * from login where account = '$account' and password = '$password'";
  $result = mysqli_query($link, $sql);
  if($row = mysqli_fetch_assoc($result))
  {
+<<<<<<< HEAD
 session_start();
+=======
+
+>>>>>>> 6a2ed315a9de86fda74d70c56f8ffc431ab570b6
    $_SESSION['account'] = $row['account'];
    $_SESSION['password'] = $row['password'];
    $_SESSION['level'] = $row['level'];
@@ -19,6 +22,6 @@ session_start();
  }
  else
  {
-   header("location:index.php#0?method=message&message=登入失敗");
+   header("location:index.php?method=message&message=登入失敗");
  }
 ?>
