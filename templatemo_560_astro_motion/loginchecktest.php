@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
  $account=$_POST['account'];
  $password=$_POST['password'];
@@ -10,7 +10,7 @@ session_start();
  $result = mysqli_query($link, $sql);
  if($row = mysqli_fetch_assoc($result))
  {
-
+session_start();
    $_SESSION['name'] = $row['name'];
    $_SESSION['password'] = $row['password'];
    $_SESSION['level'] = $row['level'];
