@@ -39,7 +39,7 @@ https://templatemo.com/tm-560-astro-motion
         }
 
       }
-      $alert = '<div class="alert alert-success" role="alert">Records sucessfully updated</div>';
+      $alert = '';
     }
  }
 
