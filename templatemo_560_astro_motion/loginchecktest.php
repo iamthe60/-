@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
  $account=$_POST['account'];
  $password=$_POST['password'];
@@ -10,7 +10,7 @@
  $result = mysqli_query($link, $sql);
  if($row = mysqli_fetch_assoc($result))
  {
-session_start();
+
    $_SESSION['name'] = $row['name'];
    $_SESSION['password'] = $row['password'];
    $_SESSION['level'] = $row['level'];
@@ -19,6 +19,6 @@ session_start();
  }
  else
  {
-   header("location:index.php#0?method=message&message=登入失敗");
+   header("location:index.php?method=message&message=登入失敗");
  }
 ?>
