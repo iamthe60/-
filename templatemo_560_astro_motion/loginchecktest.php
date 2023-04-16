@@ -12,7 +12,9 @@ session_start();
  {
 
    $_SESSION['name'] = $row['name'];
+   $_SESSION['password'] = $row['password'];
    $_SESSION['level'] = $row['level'];
+
    header("location:index.php?method=message&message=登入成功");
  }
  else
