@@ -11,7 +11,7 @@
  if($row = mysqli_fetch_assoc($result))
  {
 session_start();
-   $_SESSION['name'] = $row['name'];
+   $_SESSION['account'] = $row['account'];
    $_SESSION['password'] = $row['password'];
    $_SESSION['level'] = $row['level'];
 
