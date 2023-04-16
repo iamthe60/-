@@ -9,11 +9,7 @@ session_start();
  $result = mysqli_query($link, $sql);
  if($row = mysqli_fetch_assoc($result))
  {
-<<<<<<< HEAD
 session_start();
-=======
-
->>>>>>> 6a2ed315a9de86fda74d70c56f8ffc431ab570b6
    $_SESSION['account'] = $row['account'];
    $_SESSION['password'] = $row['password'];
    $_SESSION['level'] = $row['level'];
