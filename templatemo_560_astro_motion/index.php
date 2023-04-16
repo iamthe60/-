@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 -->
 <?
  include "foodaction.php";
- $conn = new mysqli('localhost','root','','fjufreedge');
+ $conn = new mysqli('localhost','root','12345678','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -45,6 +45,8 @@ https://templatemo.com/tm-560-astro-motion
 
 
 ?>
+
+
 </head>
 
 <body>
@@ -83,9 +85,26 @@ https://templatemo.com/tm-560-astro-motion
                     <a class="nav-link" href="#0" data-no="4" style="padding-left: 50px; padding-right: 50px">聯絡我們</a>
                     <div class="circle"></div>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#0" data-no="5" style="padding-left: 50px; padding-right: 50px">登入</a>
-                    <div class="circle"></div>
+					
+                        <?php
+                        if($_SESSION['level']=="admin"){
+                            ?>
+                          <li class="nav-item">
+                          <a class="nav-link" href="#0" data-no="6" style="padding-left: 50px; padding-right: 50px">登出</a>
+                          <div class="circle"></div>
+                          </li>
+                        <?php
+                        } 
+                        else{
+                        ?>
+                          <li class="nav-item">
+                          <a class="nav-link" href="#0" data-no="5" style="padding-left: 50px; padding-right: 50px">登入</a>
+                          <div class="circle"></div>
+                          </li>
+                        <?php
+                        }
+                        ?>
+
                   </li>
                 </ul>
               </div>
@@ -644,8 +663,26 @@ https://templatemo.com/tm-560-astro-motion
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
+        </li>
+
+
+        <li data-page-no="6">
+          <div class="position-relative page-width-1 tm-border-top tm-border-bottom"
+            style="margin-left:25% ; margin-top:auto; #cccccc solid;">
+            <div class="circle intro-circle-1"></div>
+            <div class="circle intro-circle-2"></div>
+            <div class="circle intro-circle-3"></div>
+            <div class="circle intro-circle-4"></div>
+            <div class="container-fluid tm-content-container">
+              <h2>登出拉</h2>
+            </div>
+          </div>
+        </li>
+
+
       </ul>
     </div>
     <div class="container-fluid">
