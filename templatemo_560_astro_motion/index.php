@@ -68,45 +68,54 @@ https://templatemo.com/tm-560-astro-motion
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbar-supported-content">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item selected">
-                    <a class="nav-link" aria-current="page" href="#0" data-no="1" style="padding-left: 50px; padding-right: 50px">首頁</a>
-                    <div class="circle"></div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#0" data-no="2" style="padding-left: 50px; padding-right: 50px">領取物資</a>
-                    <div class="circle"></div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#0" data-no="3" style="padding-left: 50px; padding-right: 50px">上架/下架</a>
-                    <div class="circle"></div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#0" data-no="4" style="padding-left: 50px; padding-right: 50px">聯絡我們</a>
-                    <div class="circle"></div>
-                  </li>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+               
 					
-                        <?php
-                        if($_SESSION['level']=="admin"){
-                            ?>
-                          <li class="nav-item">
-                          <a class="nav-link" href="logouttest.php" data-no="6" style="padding-left: 50px; padding-right: 50px">登出</a>
-                          <div class="circle"></div>
-                          </li>
-                        <?php
-                        } 
-                        else{
-                        ?>
-                          <li class="nav-item">
-                          <a class="nav-link" href="#0" data-no="5" style="padding-left: 50px; padding-right: 50px">登入</a>
-                          <div class="circle"></div>
-                          </li>
-                        <?php
-                        }
-                        ?>
+               <?php
+               if($_SESSION['level']="admin"){
+                   ?>
+                      <li class="nav-item selected">
+           <a class="nav-link" aria-current="page" href="#0" data-no="1" style="padding-left: 50px; padding-right: 50px">首頁</a>
+           <div class="circle"></div>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#0" data-no="2" style="padding-left: 50px; padding-right: 50px">領取物資</a>
+           <div class="circle"></div>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#0" data-no="3" style="padding-left: 50px; padding-right: 50px">上架/下架</a>
+           <div class="circle"></div>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#0" data-no="4" style="padding-left: 50px; padding-right: 50px">聯絡我們</a>
+           <div class="circle"></div>
+         </li>
+                 <li class="nav-item">
+                 <a class="nav-link" href="logouttest.php" data-no="5" style="padding-left: 50px; padding-right: 50px">登出</a>
+                 <div class="circle"></div>
+                 </li>
+               <?php
+               } 
+               else{
+               ?>
+                  <li class="nav-item selected">
+           <a class="nav-link" aria-current="page" href="#0" data-no="1" style="padding-left: 130px; padding-right: 130ox; padding-right: 130px">首頁</a>
+           <div class="circle"></div>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#0" data-no="4" style="padding-left: 130px; padding-right: 130px">聯絡我們</a>
+           <div class="circle"></div>
+         </li>
+                 <li class="nav-item">
+                 <a class="nav-link" href="#0" data-no="5" style="padding-left: 130px; padding-right: 130px">登入</a>
+                 <div class="circle"></div>
+                 </li>
+               <?php
+               }
+               ?>
 
-                  </li>
-                </ul>
+         </li>
+       </ul>
               </div>
             </nav>
           </div>
