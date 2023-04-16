@@ -178,14 +178,19 @@ https://templatemo.com/tm-560-astro-motion
                   <div>
                     <p>無</p>
                     <p>蔬菜</p>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="effect-julia item">
                     <img src="img/x.jpg" alt="Image" />
                     <figcaption>
                       <div>
-                        <p>不領取</p>
+                        <p>不領取/下一頁
+                        </p>
                       </div>
                     </figcaption>
               </figure>
-              <!-- <div style="margin-left:10% ;">
+              <!-- <div style="width:100%; high: auto; margin-left: 0%; ">
               <input type="submit" name="but_update" class="btn btn-primary tm-btn-pad-2" value="下一頁" >
               </div> -->
               
