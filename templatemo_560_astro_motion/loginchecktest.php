@@ -19,6 +19,6 @@ session_start();
  }
  else
  {
-   header("location:index.php?method=message&message=登入失敗");
+   header("location:index.php#0?method=message&message=登入失敗");
  }
 ?>
