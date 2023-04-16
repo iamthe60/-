@@ -70,8 +70,8 @@ https://templatemo.com/tm-560-astro-motion
               <div class="collapse navbar-collapse" id="navbar-supported-content">
               <ul class="navbar-nav mb-2 mb-lg-0">
                  
-					
                  <?php
+                  session_start();
                  if($_SESSION['level']=="admin"){
                      ?>
                       <li class="nav-item selected">
