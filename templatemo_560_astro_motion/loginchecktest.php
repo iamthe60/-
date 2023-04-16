@@ -3,7 +3,6 @@ session_start();
 
  $account=$_POST['account'];
  $password=$_POST['password'];
- echo $account , $password;
 
  $link = mysqli_connect('localhost','root','12345678','fjufreedge');
  $sql = "select distinct * from login where account = '$account' and password = '$password'";
@@ -11,7 +10,7 @@ session_start();
  if($row = mysqli_fetch_assoc($result))
  {
 
-   $_SESSION['name'] = $row['name'];
+   $_SESSION['account'] = $row['account'];
    $_SESSION['password'] = $row['password'];
    $_SESSION['level'] = $row['level'];
 
