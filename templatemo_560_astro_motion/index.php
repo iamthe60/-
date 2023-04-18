@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 -->
 <?
  include "foodaction.php";
- $conn = new mysqli('localhost','root','12345678','fjufreedge');
+ $conn = new mysqli('localhost','root','','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -665,7 +665,7 @@ https://templatemo.com/tm-560-astro-motion
                           placeholder="Account 帳號" required>
                       </div>
                       <div class="input-group tm-mb-30">
-                        <input name="password" type="text"
+                        <input name="password" type="password"
                           class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
                           placeholder="Password 密碼" required>
                       </div>
