@@ -527,7 +527,7 @@ https://templatemo.com/tm-560-astro-motion
                     </th>
                   </tr>
                   <?php
-                  $conn = new mysqli('localhost','root','','fjufreedge');
+                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
                   $query = "SELECT * FROM item";
                   $result = mysqli_query($conn,$query);
 
