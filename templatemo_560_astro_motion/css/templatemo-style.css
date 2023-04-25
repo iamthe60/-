@@ -187,7 +187,7 @@ h2 {
   padding-top: 48px;
 }
 
-.navbar .navbar-nav .nav-item.selected .nav-link,
+.navbar .navbar-nav .nav-item.selected .nav-link ,
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #99ff66;
   border-bottom: 1px solid #99ff66;
