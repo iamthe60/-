@@ -122,8 +122,6 @@ https://templatemo.com/tm-560-astro-motion
     </div>
 
     <div class="container-fluid tm-content-container">
-      <ul class="cd-hero-slider mb-0 py-5">
-        <li class="px-3" data-page-no="1">
           <div class="page-width-1 page-left">
             <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container" style="margin-left:35% ;width:100%;">
               <div class="circle intro-circle-1"></div>
@@ -150,15 +148,9 @@ https://templatemo.com/tm-560-astro-motion
             </div>
 
           </div>
-        </li>
+  
 
         <!-- Image Carousel -->
-
-
-
-
-
-      </ul>
     </div>
     <div class="container-fluid">
       <footer class="row mx-auto tm-footer">
