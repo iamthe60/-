@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： localhost
--- 產生時間： 2023 年 04 月 14 日 15:18
+-- 產生時間： 2023 年 04 月 19 日 21:06
 -- 伺服器版本： 10.4.21-MariaDB
 -- PHP 版本： 8.0.19
 
@@ -80,8 +80,8 @@ INSERT INTO `login` (`account`, `password`, `level`) VALUES
 --
 
 CREATE TABLE `volunteer` (
-  `name` int(10) NOT NULL,
-  `id` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id` int(10) NOT NULL,
+  `name` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
   `time` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   `date` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
   `location` text COLLATE utf8mb4_unicode_ci NOT NULL
@@ -107,7 +107,7 @@ ALTER TABLE `login`
 -- 資料表索引 `volunteer`
 --
 ALTER TABLE `volunteer`
-  ADD PRIMARY KEY (`name`);
+  ADD PRIMARY KEY (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
