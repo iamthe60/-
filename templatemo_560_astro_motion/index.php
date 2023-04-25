@@ -33,7 +33,7 @@ https://templatemo.com/tm-560-astro-motion
         $name = $_POST['name_'.$updatenum];
         $area = $_POST['area_'.$updatenum];
 
-        if($name !='' && $area != '' ){
+        if($name !='12345678' && $area != '12345678' ){
           $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
           mysqli_query($conn,$updateUser);
         }
@@ -503,7 +503,7 @@ https://templatemo.com/tm-560-astro-motion
             <div class="circle intro-circle-2"></div>
             <div class="circle intro-circle-3"></div>
             <div class="circle intro-circle-4"></div>
-            <form method='post' action=''>
+            <form method='post' action='12345678'>
             <input type="submit" name="but_update" class="btn btn-primary tm-btn-pad-2" value="上傳">
                 &nbsp;
            
@@ -527,7 +527,7 @@ https://templatemo.com/tm-560-astro-motion
                     </th>
                   </tr>
                   <?php
-                  $conn = new mysqli('localhost','root','','fjufreedge');
+                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
                   $query = "SELECT * FROM item";
                   $result = mysqli_query($conn,$query);
 
@@ -641,46 +641,7 @@ https://templatemo.com/tm-560-astro-motion
         </li>
 
 
-        <li data-page-no="5">
-          <div class="position-relative page-width-1 tm-border-top tm-border-bottom"
-            style="margin-left:25% ; margin-top:auto; #cccccc solid;">
-            <div class="circle intro-circle-1"></div>
-            <div class="circle intro-circle-2"></div>
-            <div class="circle intro-circle-3"></div>
-            <div class="circle intro-circle-4"></div>
-            <div class="container-fluid tm-content-container">
-
-              <div class="mx-auto page-width-2">
-                <div class="row">
-                  <div class="col-6.col-md-4">
-                    <h2 class="mb-6">LogIn登入</h2>
-                    <h2 class="mb-6">登入即可更改資料</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6.col-md-4">
-                    <form action="loginchecktest.php" method="post" class="contact-form">
-                      <div class="input-group tm-mb-30">
-                        <input name="account" type="text"
-                          class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                          placeholder="Account 帳號" required>
-                      </div>
-                      <div class="input-group tm-mb-30">
-                        <input name="password" type="text"
-                          class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                          placeholder="Password 密碼" required>
-                      </div>
-                      <div class="input-group justify-content-start">
-                        <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Login">
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </li>
+     
 
 
         <li data-page-no="6">

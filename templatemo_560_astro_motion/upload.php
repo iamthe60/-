@@ -33,7 +33,7 @@ https://templatemo.com/tm-560-astro-motion
         $name = $_POST['name_'.$updatenum];
         $area = $_POST['area_'.$updatenum];
 
-        if($name !='' && $area != '' ){
+        if($name !='12345678' && $area != '12345678' ){
           $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
           mysqli_query($conn,$updateUser);
         }
