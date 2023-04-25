@@ -24,7 +24,7 @@ https://templatemo.com/tm-560-astro-motion
 
 -->
 <?
- include "foodaction.php";
+include "foodaction.php";
  $conn = new mysqli('localhost','root','12345678','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
@@ -36,13 +36,8 @@ https://templatemo.com/tm-560-astro-motion
         if($name !='12345678' && $area != '12345678' ){
           $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
           mysqli_query($conn,$updateUser);
-        }
-      }
-    }
- }
+          ?>
 
-
-?>
 
 
 </head>
@@ -135,8 +130,9 @@ https://templatemo.com/tm-560-astro-motion
             <div class="circle intro-circle-2"></div>
             <div class="circle intro-circle-3"></div>
             <div class="circle intro-circle-4"></div>
-            <form method='post' action='12345678'>
+            <form method='post' action='loginchecktest.php'>
             <input type="submit" name="but_update" class="btn btn-primary tm-btn-pad-2" value="上傳">
+            <input type="password" name="password2">
                 &nbsp;
            
 
@@ -159,7 +155,7 @@ https://templatemo.com/tm-560-astro-motion
                     </th>
                   </tr>
                   <?php
-                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
+                  $conn = new mysqli('localhost','root','12345678 ','fjufreedge');
                   $query = "SELECT * FROM item";
                   $result = mysqli_query($conn,$query);
 
