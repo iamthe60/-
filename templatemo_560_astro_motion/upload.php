@@ -52,7 +52,6 @@ https://templatemo.com/tm-560-astro-motion
     <source src="video/refri_video.mp4" type="video/mp4" />
   </video>
   <div class="page-container">
-
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12">
