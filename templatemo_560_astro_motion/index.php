@@ -28,6 +28,7 @@ https://templatemo.com/tm-560-astro-motion
  
  $conn = new mysqli('localhost','root','12345678','fjufreedge');
  include "foodaction.php";
+ $conn = new mysqli('localhost','root','','fjufreedge');
 
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
