@@ -24,8 +24,13 @@ https://templatemo.com/tm-560-astro-motion
 
 -->
 <?
+<<<<<<< Updated upstream
  
- $conn = new mysqli('localhost','root','12345678 ','fjufreedge');
+ $conn = new mysqli('localhost','root','12345678','fjufreedge');
+=======
+ include "foodaction.php";
+ $conn = new mysqli('localhost','root','e20030225','fjufreedge');
+>>>>>>> Stashed changes
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -531,7 +536,7 @@ https://templatemo.com/tm-560-astro-motion
                     </th>
                   </tr>
                   <?php
-                  $conn = new mysqli('localhost','root','12345678 ','fjufreedge');
+                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
                   $query = "SELECT * FROM item";
                   $result = mysqli_query($conn,$query);
 
