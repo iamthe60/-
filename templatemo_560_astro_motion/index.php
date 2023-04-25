@@ -77,15 +77,15 @@ https://templatemo.com/tm-560-astro-motion
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#0" data-no="2" style="padding-left: 50px; padding-right: 50px">領取物資</a>
+             <a class="nav-link" href="item.php" data-no="2" style="padding-left: 50px; padding-right: 50px">領取物資</a>
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#0" data-no="3" style="padding-left: 50px; padding-right: 50px">上架/下架</a>
+             <a class="nav-link" href="upload.php" data-no="3" style="padding-left: 50px; padding-right: 50px">上架/下架</a>
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#0" data-no="4" style="padding-left: 50px; padding-right: 50px">聯絡我們</a>
+             <a class="nav-link" href="volunteer.php" data-no="4" style="padding-left: 50px; padding-right: 50px">聯絡我們</a>
              <div class="circle"></div>
            </li>
                    <li class="nav-item">
@@ -97,15 +97,15 @@ https://templatemo.com/tm-560-astro-motion
                  else{
                  ?>
                   <li class="nav-item selected">
-             <a class="nav-link" aria-current="page" href="#0" data-no="1" style="padding-left: 130px; padding-right: 130ox;padding-right: 130px">首頁</a>
+             <a class="nav-link" aria-current="page" href="index.php" data-no="1" style="padding-left: 130px; padding-right: 130ox;padding-right: 130px">首頁</a>
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#0" data-no="4" style="padding-left: 130px; padding-right: 130px">聯絡我們</a>
+             <a class="nav-link" href="volunteer.php" data-no="4" style="padding-left: 130px; padding-right: 130px">聯絡我們</a>
              <div class="circle"></div>
            </li>
                    <li class="nav-item">
-                   <a class="nav-link" href="#0" data-no="5" style="padding-left: 130px; padding-right: 130px">登入</a>
+                   <a class="nav-link" href="login.php" data-no="5" style="padding-left: 130px; padding-right: 130px">登入</a>
                    <div class="circle"></div>
                    </li>
                  <?php
