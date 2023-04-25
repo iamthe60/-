@@ -120,4 +120,122 @@ https://templatemo.com/tm-560-astro-motion
         </div>
       </div>
     </div>
+    <div class="container-fluid tm-content-container">
+
+    <li data-page-no="3" class="px-3">
+          <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom" style="margin-left: 340px;";>
+            <div class="circle intro-circle-1"></div>
+            <div class="circle intro-circle-2"></div>
+            <div class="circle intro-circle-3"></div>
+            <div class="circle intro-circle-4"></div>
+            <form method='post' action='12345678'>
+            <input type="submit" name="but_update" class="btn btn-primary tm-btn-pad-2" value="上傳">
+                &nbsp;
+           
+
+              <table class="table table-bordered">
+              
+                  <tr style='background: black;'>
+                    <th><input type='checkbox' id='checkAll' ><font color="white">Check</font></th>
+                    <p>
+                    <th class="product-thumbnail">
+                      <font color="white">Image</font>
+                    </th>
+                    <th class="product-name">
+                      <font color="white">Name</font>
+                    </th>
+                    <th class="product-price">
+                      <font color="white">Area</font>
+                    </th>
+                    <th class="product-quantity">
+                      <font color="white">Amount</font>
+                    </th>
+                  </tr>
+                  <?php
+                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
+                  $query = "SELECT * FROM item";
+                  $result = mysqli_query($conn,$query);
+
+                  while($row = mysqli_fetch_array($result)){
+                    $num = $row['num'];
+                    $name = $row['name'];
+                    $image = $row['image'];
+                    $area = $row['area'];
+                    $amount = $row['amount'];
+                 
+                  ?>
+                    <tr>
+                      <td><input type='checkbox' name='update[]' value='<?= $num?>'></td>
+                      <td><img src="img/<?= $image ?>" alt="Image" width="150px" height="150px">></td>
+                      <td><input type='text' name='name_<?= $num?>' value='<?= $name?>'></td>
+                      <td><input type='text' size=3 name='area_<?= $num?>' value='<?= $area?>'></td>
+                      <td><input type='text' size=10 name='amount_<?= $num?>' value='<?= $amount?>'></td>
+                    </tr>
+              <?php
+                  }
+                  ?>
+          
+              </table>
+       
+            <script type="text/javascript">
+              $(document).ready(function(){
+                $('#checkAll').change(function(){
+                  if($(this).is(':checked')){
+                    $('input[name="update[]"]').prop('checked',true);
+                  }else{
+                    $('input[name="update[]"]').each(function(){
+                        $(this).prop('checked',false);
+                    });
+                  }
+              });
+
+
+              $('input[name="update[]"]').click(function(){
+                  var total_checkboxes = $('input[name="update[]"]').length;
+                  var total_checkboxes_checked = $('input[name="update[]"]:checked').length;
+
+                  if(total_checkboxes_checked == total_checkboxes){
+                    $('#checkAll').prop('checked',true);
+                  }else{
+                    $('#checkAll').prop('checked',false);
+                  
+
+                  }
+                });
+              });
+        
+ </script>
+            </form>
+          </div>
+        </li>
+
+
+
     
+
+</div>
+<div class="container-fluid">
+  <footer class="row mx-auto tm-footer">
+    <div class="col-md-6 px-0">
+      Copyright 2021 Astro Motion Company Limited. All rights reserved.
+    </div>
+    <div class="col-md-6 px-0 tm-footer-right">
+      Designed by
+      <a rel="sponsored" href="https://templatemo.com" target="_blank" class="tm-link-white">TemplateMo</a>
+    </div>
+  </footer>
+</div>
+</div>
+<!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+<div id="loader-wrapper">
+<div id="loader"></div>
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/templatemo-script.js"></script>
+</body>
+
+</html>
