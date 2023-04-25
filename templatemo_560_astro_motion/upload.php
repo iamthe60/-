@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 -->
 <?
 include "foodaction.php";
- $conn = new mysqli('localhost','root','12345678','fjufreedge');
+ $conn = new mysqli('localhost','root','','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -36,6 +36,7 @@ include "foodaction.php";
         if($name !='12345678' && $area != '12345678' ){
           $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
           mysqli_query($conn,$updateUser);
+        }}}}
           ?>
 
 
