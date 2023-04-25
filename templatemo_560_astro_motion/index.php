@@ -33,7 +33,7 @@ https://templatemo.com/tm-560-astro-motion
         $name = $_POST['name_'.$updatenum];
         $area = $_POST['area_'.$updatenum];
 
-        if($name !='' && $area != '' ){
+        if($name !='12345678' && $area != '12345678' ){
           $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
           mysqli_query($conn,$updateUser);
         }
@@ -77,15 +77,15 @@ https://templatemo.com/tm-560-astro-motion
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#0" data-no="2" style="padding-left: 50px; padding-right: 50px">領取物資</a>
+             <a class="nav-link" href="item.php" data-no="2" style="padding-left: 50px; padding-right: 50px">領取物資</a>
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#0" data-no="3" style="padding-left: 50px; padding-right: 50px">上架/下架</a>
+             <a class="nav-link" href="upload.php" data-no="3" style="padding-left: 50px; padding-right: 50px">上架/下架</a>
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#0" data-no="4" style="padding-left: 50px; padding-right: 50px">聯絡我們</a>
+             <a class="nav-link" href="volunteer.php" data-no="4" style="padding-left: 50px; padding-right: 50px">聯絡我們</a>
              <div class="circle"></div>
            </li>
                    <li class="nav-item">
@@ -97,15 +97,15 @@ https://templatemo.com/tm-560-astro-motion
                  else{
                  ?>
                   <li class="nav-item selected">
-             <a class="nav-link" aria-current="page" href="#0" data-no="1" style="padding-left: 130px; padding-right: 130ox;padding-right: 130px">首頁</a>
+             <a class="nav-link" aria-current="page" href="index.php" data-no="1" style="padding-left: 130px; padding-right: 130ox;padding-right: 130px">首頁</a>
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#0" data-no="4" style="padding-left: 130px; padding-right: 130px">聯絡我們</a>
+             <a class="nav-link" href="volunteer.php" data-no="4" style="padding-left: 130px; padding-right: 130px">聯絡我們</a>
              <div class="circle"></div>
            </li>
                    <li class="nav-item">
-                   <a class="nav-link" href="#0" data-no="5" style="padding-left: 130px; padding-right: 130px">登入</a>
+                   <a class="nav-link" href="login.php" data-no="5" style="padding-left: 130px; padding-right: 130px">登入</a>
                    <div class="circle"></div>
                    </li>
                  <?php
@@ -497,13 +497,13 @@ https://templatemo.com/tm-560-astro-motion
 
 
 
-<li data-page-no="3" class="px-3">
+      <li data-page-no="3" class="px-3">
           <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom" style="margin-left: 340px;";>
             <div class="circle intro-circle-1"></div>
             <div class="circle intro-circle-2"></div>
             <div class="circle intro-circle-3"></div>
             <div class="circle intro-circle-4"></div>
-            <form method='post' action=''>
+            <form method='post' action='12345678'>
             <input type="submit" name="but_update" class="btn btn-primary tm-btn-pad-2" value="上傳">
                 &nbsp;
            
@@ -643,60 +643,6 @@ https://templatemo.com/tm-560-astro-motion
         </li>
 
 
-        <li data-page-no="5">
-          <div class="position-relative page-width-1 tm-border-top tm-border-bottom"
-            style="margin-left:25% ; margin-top:auto; #cccccc solid;">
-            <div class="circle intro-circle-1"></div>
-            <div class="circle intro-circle-2"></div>
-            <div class="circle intro-circle-3"></div>
-            <div class="circle intro-circle-4"></div>
-            <div class="container-fluid tm-content-container">
-
-              <div class="mx-auto page-width-2">
-                <div class="row">
-                  <div class="col-6.col-md-4">
-                    <h2 class="mb-6">LogIn登入</h2>
-                    <h2 class="mb-6">登入即可更改資料</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-6.col-md-4">
-                    <form action="loginchecktest.php" method="post" class="contact-form">
-                      <div class="input-group tm-mb-30">
-                        <input name="account" type="text"
-                          class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                          placeholder="Account 帳號" required>
-                      </div>
-                      <div class="input-group tm-mb-30">
-                        <input name="password" type="text"
-                          class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                          placeholder="Password 密碼" required>
-                      </div>
-                      <div class="input-group justify-content-start">
-                        <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Login">
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </li>
-
-
-        <li data-page-no="6">
-          <div class="position-relative page-width-1 tm-border-top tm-border-bottom"
-            style="margin-left:25% ; margin-top:auto; #cccccc solid;">
-            <div class="circle intro-circle-1"></div>
-            <div class="circle intro-circle-2"></div>
-            <div class="circle intro-circle-3"></div>
-            <div class="circle intro-circle-4"></div>
-            <div class="container-fluid tm-content-container">
-              <h2>登出拉</h2>
-            </div>
-          </div>
-        </li>
 
 
       </ul>
