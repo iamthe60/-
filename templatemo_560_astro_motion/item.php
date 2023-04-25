@@ -124,7 +124,7 @@ https://templatemo.com/tm-560-astro-motion
     <div class="container-fluid tm-content-container">
 
         <!-- 第一區 -->
-        <li data-page-no="2">
+       
           <div class="mx-auto position-relative gallery-container">
             <div class="circle intro-circle-1"></div>
             <div class="circle intro-circle-2"></div>
@@ -455,8 +455,7 @@ https://templatemo.com/tm-560-astro-motion
               </figure>
             </div>
           </div>
-        </li>
-
+  
 
 
 

@@ -122,7 +122,7 @@ https://templatemo.com/tm-560-astro-motion
     </div>
     <div class="container-fluid tm-content-container">
 
-    <li data-page-no="3" class="px-3">
+   
           <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom" style="margin-left: 340px;";>
             <div class="circle intro-circle-1"></div>
             <div class="circle intro-circle-2"></div>
@@ -207,8 +207,7 @@ https://templatemo.com/tm-560-astro-motion
  </script>
             </form>
           </div>
-        </li>
-
+    
 
 
     
