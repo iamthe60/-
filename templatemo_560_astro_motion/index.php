@@ -24,8 +24,8 @@ https://templatemo.com/tm-560-astro-motion
 
 -->
 <?
- include "foodaction.php";
- $conn = new mysqli('localhost','root','12345678','fjufreedge');
+ 
+ $conn = new mysqli('localhost','root','12345678 ','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -33,13 +33,13 @@ https://templatemo.com/tm-560-astro-motion
         $name = $_POST['name_'.$updatenum];
         $area = $_POST['area_'.$updatenum];
 
-        if($name !='12345678' && $area != '12345678' ){
+        if($name !='' && $area != '' )
           $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
           mysqli_query($conn,$updateUser);
         }
       }
     }
- }
+ 
 
 
 ?>
@@ -101,11 +101,9 @@ https://templatemo.com/tm-560-astro-motion
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-<<<<<<< HEAD
+
              <a class="nav-link" href="#0" data-no="4" style="padding-left: 130px; padding-right: 130px">加入志工</a>
-=======
              <a class="nav-link" href="volunteer.php" data-no="4" style="padding-left: 130px; padding-right: 130px">聯絡我們</a>
->>>>>>> 7663ca5a7318343cd7ea8c2772117512ebd490eb
              <div class="circle"></div>
            </li>
                    <li class="nav-item">
@@ -159,7 +157,7 @@ https://templatemo.com/tm-560-astro-motion
 
         <!-- Image Carousel -->
 
-<<<<<<< HEAD
+
 
         <!-- 第一區 -->
         <li data-page-no="2">
@@ -533,7 +531,7 @@ https://templatemo.com/tm-560-astro-motion
                     </th>
                   </tr>
                   <?php
-                  $conn = new mysqli('localhost','root','','fjufreedge');
+                  $conn = new mysqli('localhost','root','12345678 ','fjufreedge');
                   $query = "SELECT * FROM item";
                   $result = mysqli_query($conn,$query);
 
