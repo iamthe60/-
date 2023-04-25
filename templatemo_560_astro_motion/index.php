@@ -641,21 +641,6 @@ https://templatemo.com/tm-560-astro-motion
         </li>
 
 
-     
-
-
-        <li data-page-no="6">
-          <div class="position-relative page-width-1 tm-border-top tm-border-bottom"
-            style="margin-left:25% ; margin-top:auto; #cccccc solid;">
-            <div class="circle intro-circle-1"></div>
-            <div class="circle intro-circle-2"></div>
-            <div class="circle intro-circle-3"></div>
-            <div class="circle intro-circle-4"></div>
-            <div class="container-fluid tm-content-container">
-              <h2>登出拉</h2>
-            </div>
-          </div>
-        </li>
 
 
       </ul>
