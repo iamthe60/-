@@ -128,10 +128,12 @@ https://templatemo.com/tm-560-astro-motion
     <div class="container-fluid tm-content-container">
 
           <div class="mx-auto page-width-2">
-            <div class="row">
-              <div class="col-md-6 me-0 ms-auto">
-                <h2 class="mb-4">Contact us</h2>
-                <h2 class="mb-4">聯絡我們</h2>
+          <div class="row justify-content-evenly">
+              <div class="col-4">
+              <h2>志工意願填寫</h2>
+              </div>
+              <div class="col-4">
+              <h2>聯絡我們Contact us</h2>
               </div>
             </div>
             <div class="row">
