@@ -121,7 +121,7 @@ https://templatemo.com/tm-560-astro-motion
       </div>
     </div>
     <div class="container-fluid tm-content-container">
-
+    <div class="page-width-1 page-left">
    
           <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom" style="margin-left: 340px;";>
             <div class="circle intro-circle-1"></div>
@@ -207,7 +207,7 @@ https://templatemo.com/tm-560-astro-motion
  </script>
             </form>
           </div>
-    
+            </div>
 
 
     
