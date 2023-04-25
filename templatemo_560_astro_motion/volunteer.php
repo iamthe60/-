@@ -58,7 +58,7 @@ https://templatemo.com/tm-560-astro-motion
         <div class="col-xs-12">
           <div class="cd-slider-nav">
             <nav class="navbar navbar-expand-lg" id="tm-nav">
-              <a class="navbar-brand" href="#">輔大食享冰箱</a>
+              <a class="navbar-brand" href="index.php">輔大食享冰箱</a>
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -73,7 +73,7 @@ https://templatemo.com/tm-560-astro-motion
                  if($_SESSION['level']=="admin"){
                      ?>
                       <li class="nav-item selected">
-             <a class="nav-link" aria-current="page" href="#0" data-no="1" style="padding-left: 50px; padding-right: 50px">首頁</a>
+             <a class="nav-link" aria-current="page" href="index.php" data-no="1" style="padding-left: 50px; padding-right: 50px">首頁</a>
              <div class="circle"></div>
            </li>
            <li class="nav-item">

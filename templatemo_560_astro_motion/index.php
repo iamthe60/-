@@ -151,6 +151,7 @@ https://templatemo.com/tm-560-astro-motion
   
 
         <!-- Image Carousel -->
+
     </div>
     <div class="container-fluid">
       <footer class="row mx-auto tm-footer">
