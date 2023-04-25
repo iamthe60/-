@@ -101,7 +101,7 @@ https://templatemo.com/tm-560-astro-motion
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#0" data-no="4" style="padding-left: 130px; padding-right: 130px">聯絡我們</a>
+             <a class="nav-link" href="#0" data-no="4" style="padding-left: 130px; padding-right: 130px">加入志工</a>
              <div class="circle"></div>
            </li>
                    <li class="nav-item">
@@ -590,31 +590,39 @@ https://templatemo.com/tm-560-astro-motion
           <div class="mx-auto page-width-2">
             <div class="row">
               <div class="col-md-6 me-0 ms-auto">
-                <h2 class="mb-4">Contact us</h2>
-                <h2 class="mb-4">聯絡我們</h2>
+                <h2 class="mb-4">Join Us</h2>
+                <h2 class="mb-4">加入志工</h2>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6 tm-contact-left">
-                <form action="#" method="POST" class="contact-form">
+                <form action="insert_v.php" method="POST" class="contact-form">
                   <div class="input-group tm-mb-30">
-                    <input name="name" type="text"
-                      class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Name" />
+                    <input name="name" type="text" 
+                      class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Name" required/>
                   </div>
                   <div class="input-group tm-mb-30">
-                    <input name="email" type="text"
-                      class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Email" />
+                    <input name="id" type="text" 
+                      class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Id" required/>
                   </div>
                   <div class="input-group tm-mb-30">
-                    <textarea rows="5" name="message"
-                      class="textarea form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                      placeholder="Message"></textarea>
+                    <input name="time" type="text" 
+                      class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Time" required/>
+                  </div>
+                  <div class="input-group tm-mb-30">
+                    <input name="date" type="text"
+                      class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Date" required/>
+                  </div>
+                  <div class="input-group tm-mb-30">
+                    <input name="location" type="text" 
+                      class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Location" required/>
                   </div>
                   <div class="input-group justify-content-end">
                     <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Send" />
                   </div>
                 </form>
               </div>
+
               <div class="col-md-6 tm-contact-right">
                 <p class="mb-4">
                   有任何問題歡迎聯絡我們!
