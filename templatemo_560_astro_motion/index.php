@@ -168,8 +168,6 @@ https://templatemo.com/tm-560-astro-motion
 
 
       </ul>
-=======
->>>>>>> 7663ca5a7318343cd7ea8c2772117512ebd490eb
     </div>
     <div class="container-fluid">
       <footer class="row mx-auto tm-footer">
