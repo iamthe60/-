@@ -164,10 +164,156 @@ https://templatemo.com/tm-560-astro-motion
 
 
 
+<li data-page-no="3" class="px-3">
+          <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom" style="margin-left: 340px;";>
+            <div class="circle intro-circle-1"></div>
+            <div class="circle intro-circle-2"></div>
+            <div class="circle intro-circle-3"></div>
+            <div class="circle intro-circle-4"></div>
+            <form method='post' action=''>
+            <input type="submit" name="but_update" class="btn btn-primary tm-btn-pad-2" value="上傳">
+                &nbsp;
+           
 
+              <table class="table table-bordered">
+              
+                  <tr style='background: black;'>
+                    <th><input type='checkbox' id='checkAll' ><font color="white">Check</font></th>
+                    <p>
+                    <th class="product-thumbnail">
+                      <font color="white">Image</font>
+                    </th>
+                    <th class="product-name">
+                      <font color="white">Name</font>
+                    </th>
+                    <th class="product-price">
+                      <font color="white">Area</font>
+                    </th>
+                    <th class="product-quantity">
+                      <font color="white">Amount</font>
+                    </th>
+                  </tr>
+                  <?php
+                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
+                  $query = "SELECT * FROM item";
+                  $result = mysqli_query($conn,$query);
+
+                  while($row = mysqli_fetch_array($result)){
+                    $num = $row['num'];
+                    $name = $row['name'];
+                    $image = $row['image'];
+                    $area = $row['area'];
+                    $amount = $row['amount'];
+                 
+                  ?>
+                    <tr>
+                      <td><input type='checkbox' name='update[]' value='<?= $num?>'></td>
+                      <td><img src="img/<?= $image ?>" alt="Image" width="150px" height="150px">></td>
+                      <td><input type='text' name='name_<?= $num?>' value='<?= $name?>'></td>
+                      <td><input type='text' size=3 name='area_<?= $num?>' value='<?= $area?>'></td>
+                      <td><input type='text' size=10 name='amount_<?= $num?>' value='<?= $amount?>'></td>
+                    </tr>
+              <?php
+                  }
+                  ?>
+          
+              </table>
+       
+            <script type="text/javascript">
+              $(document).ready(function(){
+                $('#checkAll').change(function(){
+                  if($(this).is(':checked')){
+                    $('input[name="update[]"]').prop('checked',true);
+                  }else{
+                    $('input[name="update[]"]').each(function(){
+                        $(this).prop('checked',false);
+                    });
+                  }
+              });
+
+
+              $('input[name="update[]"]').click(function(){
+                  var total_checkboxes = $('input[name="update[]"]').length;
+                  var total_checkboxes_checked = $('input[name="update[]"]:checked').length;
+
+                  if(total_checkboxes_checked == total_checkboxes){
+                    $('#checkAll').prop('checked',true);
+                  }else{
+                    $('#checkAll').prop('checked',false);
+                  
+
+                  }
+                });
+              });
+        
+ </script>
+            </form>
+          </div>
+        </li>
+
+
+
+        
+
+        <li data-page-no="5">
+          <div class="position-relative page-width-1 tm-border-top tm-border-bottom"
+            style="margin-left:25% ; margin-top:auto; #cccccc solid;">
+            <div class="circle intro-circle-1"></div>
+            <div class="circle intro-circle-2"></div>
+            <div class="circle intro-circle-3"></div>
+            <div class="circle intro-circle-4"></div>
+            <div class="container-fluid tm-content-container">
+
+              <div class="mx-auto page-width-2">
+                <div class="row">
+                  <div class="col-6.col-md-4">
+                    <h2 class="mb-6">LogIn登入</h2>
+                    <h2 class="mb-6">登入即可更改資料</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6.col-md-4">
+                    <form action="loginchecktest.php" method="post" class="contact-form">
+                      <div class="input-group tm-mb-30">
+                        <input name="account" type="text"
+                          class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
+                          placeholder="Account 帳號" required>
+                      </div>
+                      <div class="input-group tm-mb-30">
+                        <input name="password" type="text"
+                          class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
+                          placeholder="Password 密碼" required>
+                      </div>
+                      <div class="input-group justify-content-start">
+                        <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Login">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </li>
+
+
+        <li data-page-no="6">
+          <div class="position-relative page-width-1 tm-border-top tm-border-bottom"
+            style="margin-left:25% ; margin-top:auto; #cccccc solid;">
+            <div class="circle intro-circle-1"></div>
+            <div class="circle intro-circle-2"></div>
+            <div class="circle intro-circle-3"></div>
+            <div class="circle intro-circle-4"></div>
+            <div class="container-fluid tm-content-container">
+              <h2>登出拉</h2>
+            </div>
+          </div>
+        </li>
 
 
       </ul>
+=======
+>>>>>>> 7663ca5a7318343cd7ea8c2772117512ebd490eb
     </div>
     <div class="container-fluid">
       <footer class="row mx-auto tm-footer">
