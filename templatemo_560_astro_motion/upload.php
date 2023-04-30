@@ -132,9 +132,10 @@ https://templatemo.com/tm-560-astro-motion
             <div class="circle intro-circle-2"></div>
             <div class="circle intro-circle-3"></div>
             <div class="circle intro-circle-4"></div>
-            <form method='post' action='loginchecktest.php'>
+            <form method='post' action='upload.php'>
             <input type="submit" name="but_update" class="btn btn-primary tm-btn-pad-2" value="上傳">
-            <input type="password" name="password2">
+            
+
                 &nbsp;
            
 
