@@ -88,7 +88,7 @@ https://templatemo.com/tm-560-astro-motion
                                     </li>
                                     <li class="nav-item selected">
                                         <a class="nav-link" href="volunteer.php" data-no="4"
-                                            style="padding-left: 50px; padding-right: 50px">聯絡我們</a>
+                                            style="padding-left: 50px; padding-right: 50px">加入我們</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
