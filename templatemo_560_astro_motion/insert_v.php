@@ -8,7 +8,7 @@
               $sql="insert into volunteer (name,id,time,date,location)
                   values ('$name','$id','$time','$date','$location') ";
 
-              $link = mysqli_connect('localhost','root','','fjufreedge');
+              $link = mysqli_connect('localhost','root','12345678','fjufreedge');
 
               if(mysqli_query($link,$sql))
               {
