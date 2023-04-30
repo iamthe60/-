@@ -27,9 +27,6 @@ https://templatemo.com/tm-560-astro-motion
 
 
  $conn = new mysqli('localhost','root','12345678','fjufreedge');
-include "foodaction.php";
-
- $conn = new mysqli('localhost','root','','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -160,7 +157,7 @@ include "foodaction.php";
                     </th>
                   </tr>
                   <?php
-                  $conn = new mysqli('localhost','root','','fjufreedge');
+                  $conn = new mysqli('localhost','root','e20030225','fjufreedge');
                   $query = "SELECT * FROM item";
                   $result = mysqli_query($conn,$query);
 
