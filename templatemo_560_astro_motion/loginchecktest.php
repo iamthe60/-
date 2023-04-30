@@ -13,7 +13,7 @@ session_start();
  {
 
    $_SESSION['account'] = $row['account'];
-   $_SESSION['password'] = $row['password'];
+   $_SESSION[''] = $row['password'];
    $_SESSION['level'] = $row['level'];
 
    header("location:index.php?method=message&message=登入成功");
