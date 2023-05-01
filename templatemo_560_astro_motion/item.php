@@ -126,6 +126,7 @@ https://templatemo.com/tm-560-astro-motion
                     <p>麵包/蛋捲</p>
                   </a>
                   </div>
+                  <!-- <a href="item2.php"></a> -->
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
@@ -134,6 +135,7 @@ https://templatemo.com/tm-560-astro-motion
                   <div>
                     <p>便當</p>
                   </div>
+                  <!-- <a href="item2.php"></a> -->
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
@@ -142,6 +144,7 @@ https://templatemo.com/tm-560-astro-motion
                   <div>
                     <p>泡麵</p>
                   </div>
+                  <!-- <a href="item2.php"></a> -->
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
@@ -150,6 +153,7 @@ https://templatemo.com/tm-560-astro-motion
                   <div>
                     <p>地瓜</p>
                   </div>
+                  <!-- <a href="item2.php"></a> -->
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
@@ -161,6 +165,7 @@ https://templatemo.com/tm-560-astro-motion
                     <p>無</p>
                     <p>蔬菜</p>
                   </div>
+                  <!-- <a href="item2.php"></a> -->
                 </figcaption>
               </figure>
               <figure class="effect-julia item">
@@ -170,7 +175,7 @@ https://templatemo.com/tm-560-astro-motion
                     <p>不領取/下一頁
                     </p>
                   </div>
-                  <a href="#" data-no="2.1"></a>
+                  <a href="item2.php"></a>
                 </figcaption>
               </figure>
               <!-- <div style="width:100%; high: auto; margin-left: 0%; ">
