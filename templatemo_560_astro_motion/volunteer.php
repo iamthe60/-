@@ -23,25 +23,6 @@ TemplateMo 560 Astro Motion
 https://templatemo.com/tm-560-astro-motion
 
 -->
-    <?
- $conn = new mysqli('localhost','root','12345678','fjufreedge');
- if(isset($_POST['but_update'])){
-    if(isset($_POST['update'])){
-      foreach($_POST['update'] as $updatenum){
-        $amount = $_POST['amount_'.$updatenum];
-        $name = $_POST['name_'.$updatenum];
-        $area = $_POST['area_'.$updatenum];
-
-        if($name !=' ' && $area != ' ' ){
-          $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
-          mysqli_query($conn,$updateUser);
-        }
-      }
-    }
- }
-
-
-?>
 
 
 </head>
@@ -144,7 +125,7 @@ https://templatemo.com/tm-560-astro-motion
                 </div>
                 <div class="row">
                     <div class="col-md-6 tm-contact-left">
-                        <form action="insert_v.php" method="POST" class="contact-form">
+                        <form action="insert_v.php" method="GET" class="contact-form">
                             <div class="input-group tm-mb-30">
                                 <input name="name" type="text"
                                     class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
@@ -171,7 +152,7 @@ https://templatemo.com/tm-560-astro-motion
                                     placeholder="Location" required />
                             </div>
                             <div class="input-group justify-content-end">
-                                <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Send" />
+                                <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Send" name="send">
                             </div>
                         </form>
                     </div>
