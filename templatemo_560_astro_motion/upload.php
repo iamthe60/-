@@ -125,7 +125,7 @@ https://templatemo.com/tm-560-astro-motion
                 <form method='post' action='upload.php'>
                     <input type="submit" name="but_update" class="btn btn-primary tm-btn-pad-2" value="上傳">
                     <div class="input-group tm-mb-30">
-                        <input name="password" type="text"
+                        <input name="password" type="password"
                             class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
                             placeholder="Password 密碼" required>
                         <?php
