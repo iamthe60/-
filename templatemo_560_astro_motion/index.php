@@ -169,12 +169,10 @@ https://templatemo.com/tm-560-astro-motion
               <div class="circle intro-circle-4"></div>
                 
                 
-                <table class="table table-bordered">
-                <h2 class="mb-4">剩餘存貨量</h2>
+              <table class="List" width=1200>
+                <caption class="ListCap">剩餘數量
                         <tr style='background: black;'>
-                                <th class="product-thumbnail">
-                                    <font color="white">Image</font>
-                                </th>
+                                
                                 <th class="product-name">
                                     <font color="white">Name</font>
                                 </th>
@@ -185,13 +183,14 @@ https://templatemo.com/tm-560-astro-motion
                                     <font color="white">Area</font>
                                 </th>
                         </tr>
+                        </caption>
                         <?php
                   $conn = new mysqli('localhost','root','12345678','fjufreedge');
                   $query = "SELECT * FROM item";
                   $result = mysqli_query($conn,$query);
                   while($row=mysqli_fetch_array($result))
                   {
-                    $img = $row['img'];
+                    $num = $row['num'];
                     echo "<tr><th>"
                     ,$row['name']
                     ,"</th><th>"
