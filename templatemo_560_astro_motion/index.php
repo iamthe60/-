@@ -23,8 +23,26 @@ TemplateMo 560 Astro Motion
 https://templatemo.com/tm-560-astro-motion
 
 -->
+<?
+
+ $conn = new mysqli('localhost','root','12345678','fjufreedge');
+ if(isset($_POST['but_update'])){
+    if(isset($_POST['update'])){
+      foreach($_POST['update'] as $updatenum){
+        $amount = $_POST['amount_'.$updatenum];
+        $name = $_POST['name_'.$updatenum];
+        $area = $_POST['area_'.$updatenum];
+
+        if($name !='' && $area != '' ){
+          $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
+          mysqli_query($conn,$updateUser);
+        }
+      }
+    }
+ }
 
 
+?>
 
 
 </head>
@@ -125,7 +143,6 @@ https://templatemo.com/tm-560-astro-motion
                 <img src="img/refref.JPG" alt="Image" class="img-fluid intro-img-1" />
                 <img src="img/IMG_4738.JPG" alt="Image" class="img-fluid intro-img-2" />
               </div>
-
               
               <div class="circle intro-circle-1"></div>
               <div class="circle intro-circle-2"></div>
@@ -143,19 +160,68 @@ https://templatemo.com/tm-560-astro-motion
 
 
       </ul>
+      <ul class="cd-hero-slider mb-0 py-5">
+          <div class="page-width-1 page-left">
+            <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container" style="margin-left:35% ;width:100%;">
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="circle intro-circle-3"></div>
+              <div class="circle intro-circle-4"></div>
+                
+                
+                <table class="table table-bordered">
+                <h2 class="mb-4">剩餘存貨量</h2>
+                        <tr style='background: black;'>
+                                <th class="product-thumbnail">
+                                    <font color="white">Image</font>
+                                </th>
+                                <th class="product-name">
+                                    <font color="white">Name</font>
+                                </th>
+                                <th class="product-quantity">
+                                    <font color="white">Amount</font>
+                                </th>
+                                <th class="product-price">
+                                    <font color="white">Area</font>
+                                </th>
+                        </tr>
+                        <?php
+                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
+                  $query = "SELECT * FROM item";
+                  $result = mysqli_query($conn,$query);
+                  while($row=mysqli_fetch_array($result))
+                  {
+                    $img = $row['img'];
+                    echo "<tr><th>"
+                    ,$row['name']
+                    ,"</th><th>"
+                    ,$row['amount']
+                    ,"</th><th>"
+                    ,$row['area']
+                    ,"</th></tr>";
+                  }
+                  ?>
+
+
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="circle intro-circle-3"></div>
+              <div class="circle intro-circle-4"></div>
+            </div>
+
+          </div>
+        
+
+        <!-- Image Carousel -->
+
+
+
+
+
+      </ul>
     </div>
 
-    <div class="container-fluid">
-      <footer class="row mx-auto tm-footer">
-        <div class="col-md-6 px-0">
-          Copyright 2021 Astro Motion Company Limited. All rights reserved.
-        </div>
-        <div class="col-md-6 px-0 tm-footer-right">
-          Designed by
-          <a rel="sponsored" href="https://templatemo.com" target="_blank" class="tm-link-white">TemplateMo</a>
-        </div>
-      </footer>
-    </div>
+    
   </div>
   <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
   <div id="loader-wrapper">
