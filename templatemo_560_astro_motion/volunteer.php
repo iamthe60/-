@@ -130,7 +130,7 @@ https://templatemo.com/tm-560-astro-motion
 
 
 
-        < &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <div class="container-fluid tm-content-container">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <div class="container-fluid tm-content-container">
 
 
             <div class="mx-auto page-width-2">
