@@ -168,22 +168,21 @@ https://templatemo.com/tm-560-astro-motion
               <div class="circle intro-circle-3"></div>
               <div class="circle intro-circle-4"></div>
                 
-                
+              
               <table class="List" width=1200>
-                <caption class="ListCap">剩餘數量
                         <tr style='background: black;'>
                                 
                                 <th class="product-name">
-                                    <font color="white">Name</font>
+                                    <font color="white">剩餘物資</font>
                                 </th>
                                 <th class="product-quantity">
-                                    <font color="white">Amount</font>
+                                    <font color="white">數量</font>
                                 </th>
                                 <th class="product-price">
-                                    <font color="white">Area</font>
+                                    <font color="white">區域</font>
                                 </th>
                         </tr>
-                        </caption>
+
                         <?php
                   $conn = new mysqli('localhost','root','12345678','fjufreedge');
                   $query = "SELECT * FROM item";
