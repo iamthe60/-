@@ -97,15 +97,19 @@ https://templatemo.com/tm-560-astro-motion
                  else{
                  ?>
                   <li class="nav-item selected">
-             <a class="nav-link" aria-current="page" href="index.php" data-no="1" style="padding-left: 130px; padding-right: 130ox;padding-right: 130px">首頁</a>
+             <a class="nav-link" aria-current="page" href="index.php" data-no="1" style="padding-left: 90px; padding-right: 90px;padding-right: 90px">首頁</a>
              <div class="circle"></div>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="volunteer.php" data-no="4" style="padding-left: 130px; padding-right: 130px">加入我們</a>
+             <a class="nav-link" href="volunteer.php" data-no="4" style="padding-left: 90px; padding-right: 90px">加入我們</a>
+             <div class="circle"></div>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="inventory.php" data-no="6" style="padding-left: 90px; padding-right: 90px">庫存查詢</a>
              <div class="circle"></div>
            </li>
                    <li class="nav-item">
-                   <a class="nav-link" href="login.php" data-no="5" style="padding-left: 130px; padding-right: 130px">登入</a>
+                   <a class="nav-link" href="login.php" data-no="5" style="padding-left: 90px; padding-right: 90px">登入</a>
                    <div class="circle"></div>
                    </li>
                  <?php
@@ -160,63 +164,7 @@ https://templatemo.com/tm-560-astro-motion
 
 
       </ul>
-      <ul class="cd-hero-slider mb-0 py-5">
-          <div class="page-width-1 page-left">
-            <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container" style="margin-left:35% ;width:100%;">
-              <div class="circle intro-circle-1"></div>
-              <div class="circle intro-circle-2"></div>
-              <div class="circle intro-circle-3"></div>
-              <div class="circle intro-circle-4"></div>
-                
-              
-              <table class="List" width=1200>
-                        <tr style='background: black;'>
-                                
-                                <th class="product-name">
-                                    <font color="white">剩餘物資</font>
-                                </th>
-                                <th class="product-quantity">
-                                    <font color="white">數量</font>
-                                </th>
-                                <th class="product-price">
-                                    <font color="white">區域</font>
-                                </th>
-                        </tr>
-
-                        <?php
-                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
-                  $query = "SELECT * FROM item";
-                  $result = mysqli_query($conn,$query);
-                  while($row=mysqli_fetch_array($result))
-                  {
-                    $num = $row['num'];
-                    echo "<tr><th>"
-                    ,$row['name']
-                    ,"</th><th>"
-                    ,$row['amount']
-                    ,"</th><th>"
-                    ,$row['area']
-                    ,"</th></tr>";
-                  }
-                  ?>
-
-
-              <div class="circle intro-circle-1"></div>
-              <div class="circle intro-circle-2"></div>
-              <div class="circle intro-circle-3"></div>
-              <div class="circle intro-circle-4"></div>
-            </div>
-
-          </div>
-        
-
-        <!-- Image Carousel -->
-
-
-
-
-
-      </ul>
+      
     </div>
 
     
