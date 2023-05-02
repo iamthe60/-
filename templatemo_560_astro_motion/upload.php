@@ -78,22 +78,22 @@ https://templatemo.com/tm-560-astro-motion
                  } 
                  else{
                  ?>
-                                    <li class="nav-item selected">
-             <a class="nav-link" aria-current="page" href="index.php" data-no="1" style="padding-left: 90px; padding-right: 90px;padding-right: 90px">首頁</a>
-             <div class="circle"></div>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="volunteer.php" data-no="4" style="padding-left: 90px; padding-right: 90px">加入我們</a>
-             <div class="circle"></div>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="inventory.php" data-no="6" style="padding-left: 90px; padding-right: 90px">庫存查詢</a>
-             <div class="circle"></div>
-           </li>
-                   <li class="nav-item">
-                   <a class="nav-link" href="login.php" data-no="5" style="padding-left: 90px; padding-right: 90px">登入</a>
-                   <div class="circle"></div>
-                   </li>
+                    <li class="nav-item selected">
+                        <a class="nav-link" aria-current="page" href="index.php" data-no="1" style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inventory.php" data-no="6" style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="volunteer.php" data-no="4" style="padding-left: 85px; padding-right: 85px">加入我們</a>
+                        <div class="circle"></div>
+                    </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="login.php" data-no="5" style="padding-left: 85px; padding-right: 85px">登入</a>
+                            <div class="circle"></div>
+                            </li>
                                     <?php
                  }
                  ?>
