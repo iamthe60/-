@@ -147,6 +147,7 @@ if (isset($_POST['password'])) {
           $amount = $_POST['amount_'.$updatenum];
           $name = $_POST['name_'.$updatenum];
           $area = $_POST['area_'.$updatenum];
+          $image = $_POST['image_'.$updatenum];
 
           if($name !='' && $area != '' ){
             $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
@@ -201,12 +202,28 @@ if (isset($_POST['password'])) {
                  
                   ?>
                         <tr>
-                            <td><input type='checkbox' name='update[]' value='<?= $num?>'></td>
-                            <td><img src="img/<?= $image ?>" alt="Image" width="150px" height="150px">></td>
-                            <td><input type='text' name='name_<?= $num?>' value='<?= $name?>'></td>
-                            <td><input type='text' size=3 name='area_<?= $num?>' value='<?= $area?>'></td>
-                            <td><input type='text' size=10 name='amount_<?= $num?>' value='<?= $amount?>'></td>
-                        </tr>
+                            <td><input type='checkbox' name='update[]' value='<?= $num ?>'></td>
+                                <td>
+                                    <div>
+                                        <p><input type="file" accept="image/*" name='image_<?= $num ?>' value='<?= $image ?>'/></p>
+                                </td>
+                                <script>
+                                    $("input[type=file]").on("change", function () {
+                                        function getObjectURL(file) {
+                                            if (window.URL != undefined) {
+                                                url = window.URL.createObjectURL(file);
+                                                return url;
+                                            }
+                                        }
+                                        var objURL = getObjectURL(this.files[0]);
+                                        document.getElementById("image").src = objURL;
+                                        document.getElementById("imgBlob").textContent = objURL;
+                                    });
+                                </script>
+                                <td><input type='text' name='name_<?= $num ?>' value='<?= $name ?>'></td>
+                                <td><input type='text' size=3 name='area_<?= $num ?>' value='<?= $area ?>'></td>
+                                <td><input type='text' size=10 name='amount_<?= $num ?>' value='<?= $amount ?>'></td>
+                            </tr>
                         <?php
                   }
                   ?>
