@@ -126,7 +126,7 @@ https://templatemo.com/tm-560-astro-motion
 
                     <!-- 學院 -->
                     <figure class="effect-julia item">
-                        <img src="img/milk.jpg" alt="Image" />
+                        <img src="img/teacher.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>教職員工</p>
@@ -136,7 +136,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/tea.jpg" alt="Image" />
+                        <img src="img/word.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>文學院</p>
@@ -144,7 +144,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/juice.jpg" alt="Image" />
+                        <img src="img/art.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>藝術學院</p>
@@ -152,7 +152,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
+                        <img src="img/media.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>傳播學院</p>
@@ -160,8 +160,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="data:image/png;base64,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"
-                            alt="Image" />
+                    <img src="img/teaching.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>教育學院</p>
@@ -169,8 +168,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="data:image/png;base64,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"
-                            alt="Image" />
+                    <img src="img/code.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>理工學院</p>
@@ -178,7 +176,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
+                        <img src="img/eng.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>外語學院</p>
@@ -186,7 +184,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
+                        <img src="img/life.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>民生學院</p>
@@ -194,7 +192,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
+                        <img src="img/law.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>法律學院</p>
@@ -202,7 +200,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
+                        <img src="img/wtf.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>社科學院</p>
@@ -210,7 +208,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
+                        <img src="img/mmagane.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>管理學院</p>
@@ -218,7 +216,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
+                        <img src="img/clothes.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>織品服裝學院</p>
@@ -226,23 +224,16 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
+                        <img src="img/medical.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>醫學院</p>
                             </div>
                         </figcaption>
                     </figure>
+                    
                     <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
-                        <figcaption>
-                            <div>
-                                <p>教育學院</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
+                        <img src="img/study.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>進修部</p>
@@ -250,7 +241,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
+                        <img src="img/guest.png" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>其他/訪客</p>
