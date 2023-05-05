@@ -132,7 +132,7 @@ https://templatemo.com/tm-560-astro-motion
                                 <p>乳製品</p>
                                 </a>
                             </div>
-                            <!-- <a href="item2.php"></a> -->
+                            <a href="college.php"></a>
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
@@ -141,6 +141,7 @@ https://templatemo.com/tm-560-astro-motion
                             <div>
                                 <p>茶</p>
                             </div>
+                            <a href="college.php"></a>
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
@@ -149,6 +150,7 @@ https://templatemo.com/tm-560-astro-motion
                             <div>
                                 <p>果汁</p>
                             </div>
+                            <a href="college.php"></a>
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
@@ -157,6 +159,7 @@ https://templatemo.com/tm-560-astro-motion
                             <div>
                                 <p>布丁果凍</p>
                             </div>
+                            <a href="college.php"></a>
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">

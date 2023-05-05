@@ -137,7 +137,7 @@ https://templatemo.com/tm-560-astro-motion
                 <p>麵包/蛋捲</p>
                 </a>
               </div>
-              <!-- <a href="item2.php"></a> -->
+              <a href="item2.php"></a>
             </figcaption>
           </figure>
           <figure class="effect-julia item">
@@ -146,7 +146,7 @@ https://templatemo.com/tm-560-astro-motion
               <div>
                 <p>便當</p>
               </div>
-              <!-- <a href="item2.php"></a> -->
+              <a href="item2.php"></a>
             </figcaption>
           </figure>
           <figure class="effect-julia item">
@@ -155,7 +155,7 @@ https://templatemo.com/tm-560-astro-motion
               <div>
                 <p>泡麵</p>
               </div>
-              <!-- <a href="item2.php"></a> -->
+              <a href="item2.php"></a>
             </figcaption>
           </figure>
           <figure class="effect-julia item">
@@ -164,7 +164,7 @@ https://templatemo.com/tm-560-astro-motion
               <div>
                 <p>地瓜</p>
               </div>
-              <!-- <a href="item2.php"></a> -->
+              <a href="item2.php"></a>
             </figcaption>
           </figure>
           <figure class="effect-julia item">
@@ -173,7 +173,7 @@ https://templatemo.com/tm-560-astro-motion
               <div>
                 <p>蔬菜</p>
               </div>
-              <!-- <a href="item2.php"></a> -->
+              <a href="item2.php"></a>
             </figcaption>
           </figure>
           <figure class="effect-julia item">
