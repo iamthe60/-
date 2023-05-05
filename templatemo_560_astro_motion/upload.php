@@ -150,7 +150,7 @@ if (isset($_POST['password'])) {
           $image = $_POST['image_'.$updatenum];
 
           if($name !='' && $area != '' ){
-            $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
+            $updateUser = "UPDATE item SET `amount`='".$amount."', `image`='".$image."' WHERE `num`=".$updatenum;
             mysqli_query($conn,$updateUser);
           }
         }
