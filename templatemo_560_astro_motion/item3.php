@@ -118,8 +118,13 @@ https://templatemo.com/tm-560-astro-motion
         &nbsp;
         <div class="container-fluid tm-content-container">
 
+            <div style=" padding-left: 10%;">
+                <h1>第三區</h1>
+                <h4>請點選領取的食物，若沒在這一區領取請點選下一頁</h4>
+            </div>
 
-            <div class="mx-auto position-relative gallery-container tm-border-bottom">
+
+            <div class="mx-auto position-relative gallery-container">
                 <div class="circle intro-circle-1"></div>
                 <div class="circle intro-circle-2"></div>
                 <div class="mx-auto tm-border-top gallery-slider ">
@@ -163,7 +168,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                    <img src="img/x.jpg" alt="Image" />
+                        <img src="img/x.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>不領取/下一頁</p>
@@ -171,8 +176,6 @@ https://templatemo.com/tm-560-astro-motion
                             <a href="college.php"></a>
                         </figcaption>
                     </figure>
-                    <div class="circle intro-circle-3"></div>
-                    <div class="circle intro-circle-4"></div>
                     </li>
 
                 </div>

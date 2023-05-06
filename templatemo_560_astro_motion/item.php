@@ -121,6 +121,11 @@ https://templatemo.com/tm-560-astro-motion
     &nbsp;
     &nbsp;
     <div class="container-fluid tm-content-container">
+      <div style=" padding-left: 10%;">
+        <h1>第一區</h1>
+        <h4>請點選領取的食物，若沒在這一區領取請點選下一頁</h4>
+      </div>
+
 
       <!-- 第一區 -->
 
@@ -168,7 +173,7 @@ https://templatemo.com/tm-560-astro-motion
             </figcaption>
           </figure>
           <figure class="effect-julia item">
-          <img src="img/vege.jpg" alt="Image" />
+            <img src="img/vege.jpg" alt="Image" />
             <figcaption>
               <div>
                 <p>蔬菜</p>

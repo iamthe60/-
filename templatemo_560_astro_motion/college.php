@@ -118,6 +118,11 @@ https://templatemo.com/tm-560-astro-motion
         &nbsp;
         <div class="container-fluid tm-content-container">
 
+            <div style=" padding-left: 10%;">
+                <h1>是誰來領取的</h1>
+                <h4>請點選您的學院</h4>
+            </div>
+
 
             <div class="mx-auto position-relative gallery-container tm-border-bottom">
                 <div class="circle intro-circle-1"></div>
@@ -160,7 +165,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                    <img src="img/teaching.jpg" alt="Image" />
+                        <img src="img/teaching.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>教育學院</p>
@@ -168,7 +173,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
-                    <img src="img/code.jpg" alt="Image" />
+                        <img src="img/code.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>理工學院</p>
@@ -231,7 +236,7 @@ https://templatemo.com/tm-560-astro-motion
                             </div>
                         </figcaption>
                     </figure>
-                    
+
                     <figure class="effect-julia item">
                         <img src="img/study.jpg" alt="Image" />
                         <figcaption>
