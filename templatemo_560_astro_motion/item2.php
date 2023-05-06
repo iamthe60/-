@@ -176,7 +176,7 @@ https://templatemo.com/tm-560-astro-motion
                             <a href="item3.php"></a>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
+                    <figure class="effect-julia item"  style="margin-top:25px">
                         <img src="img/x.jpg" alt="Image" />
                         <figcaption>
                             <div>
