@@ -172,7 +172,7 @@ https://templatemo.com/tm-560-astro-motion
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
+                    <figure class="effect-julia item"  style="margin-top:25px">
                         <img src="img/code.jpg" alt="Image" />
                         <figcaption>
                             <div>
@@ -180,7 +180,7 @@ https://templatemo.com/tm-560-astro-motion
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
+                    <figure class="effect-julia item" style="margin-top:25px">
                         <img src="img/eng.jpg" alt="Image" />
                         <figcaption>
                             <div>
@@ -188,7 +188,7 @@ https://templatemo.com/tm-560-astro-motion
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
+                    <figure class="effect-julia item" style="margin-top:25px">
                         <img src="img/life.jpg" alt="Image" />
                         <figcaption>
                             <div>
@@ -196,7 +196,7 @@ https://templatemo.com/tm-560-astro-motion
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
+                    <figure class="effect-julia item" style="margin-top:25px">
                         <img src="img/law.jpg" alt="Image" />
                         <figcaption>
                             <div>
@@ -204,7 +204,7 @@ https://templatemo.com/tm-560-astro-motion
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
+                    <figure class="effect-julia item" style="margin-top:25px">
                         <img src="img/wtf.jpg" alt="Image" />
                         <figcaption>
                             <div>
@@ -212,15 +212,15 @@ https://templatemo.com/tm-560-astro-motion
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
-                        <img src="img/mmagane.jpg" alt="Image" />
+                    <figure class="effect-julia item" style="margin-top:25px">
+                        <img src="img/manage.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>管理學院</p>
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
+                    <figure class="effect-julia item" style="margin-top:25px">
                         <img src="img/clothes.jpg" alt="Image" />
                         <figcaption>
                             <div>
@@ -228,7 +228,7 @@ https://templatemo.com/tm-560-astro-motion
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
+                    <figure class="effect-julia item" style="margin-top:25px">
                         <img src="img/medical.jpg" alt="Image" />
                         <figcaption>
                             <div>
@@ -237,7 +237,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
 
-                    <figure class="effect-julia item">
+                    <figure class="effect-julia item" style="margin-top:25px">
                         <img src="img/study.jpg" alt="Image" />
                         <figcaption>
                             <div>
@@ -245,7 +245,7 @@ https://templatemo.com/tm-560-astro-motion
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
+                    <figure class="effect-julia item" style="margin-top:25px">
                         <img src="img/guest.png" alt="Image" />
                         <figcaption>
                             <div>
