@@ -128,8 +128,33 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="circle intro-circle-1"></div>
                 <div class="circle intro-circle-2"></div>
                 <div class="mx-auto tm-border-top gallery-slider ">
+                <?php
+          $conn = new mysqli('localhost','root','12345678','fjufreedge');
+                  $query = "SELECT * FROM item where area = 3;";
+                  $result = mysqli_query($conn,$query);
 
-                    <!-- 第三區 -->
+                  while($row = mysqli_fetch_array($result)){
+                    $num = $row['num'];
+                    $name = $row['name'];
+                    $image = $row['image'];
+                    $area = $row['area'];
+                    $amount = $row['amount'];
+                 
+                  ?>
+     
+
+           <form action="count.php" method="post">
+            <figure class="effect-julia item">
+            <img src="img/<?php echo $image; ?>" alt="Image" />
+            <input type="submit" name="submitButton" value="<?=$name?>">
+          </figure>
+            </form>
+
+
+           <?php
+                  }
+?>
+                    <!-- 第三區
                     <figure class="effect-julia item">
                         <img src="img/milk.jpg" alt="Image" />
                         <figcaption>
@@ -166,7 +191,7 @@ https://templatemo.com/tm-560-astro-motion
                             </div>
                             <a href="college.php"></a>
                         </figcaption>
-                    </figure>
+                    </figure> -->
                     <figure class="effect-julia item">
                         <img src="img/x.jpg" alt="Image" />
                         <figcaption>

@@ -135,17 +135,40 @@ https://templatemo.com/tm-560-astro-motion
         <div class="mx-auto tm-border-top gallery-slider">
 
           <!-- 第一區 -->
-          <figure class="effect-julia item">
-            <img src="img/bread.jpg" alt="Image" />
-            <figcaption>
+          <?php
+          $conn = new mysqli('localhost','root','12345678','fjufreedge');
+                  $query = "SELECT * FROM item where area = 1;";
+                  $result = mysqli_query($conn,$query);
+
+                  while($row = mysqli_fetch_array($result)){
+                    $num = $row['num'];
+                    $name = $row['name'];
+                    $image = $row['image'];
+                    $area = $row['area'];
+                    $amount = $row['amount'];
+                 
+                  ?>
+     
+
+           <form action="count.php" method="post">
+            <figure class="effect-julia item">
+            <img src="img/<?php echo $image; ?>" alt="Image" />
+            <input type="submit" name="submitButton" value="<?=$name?>">
+          </figure>
+            </form>
+
+
+           <?php
+                  }
+?>
+       <!-- <figcaption>
               <div>
                 <p>麵包/蛋捲</p>
                 </a>
               </div>
               <a href="item2.php"></a>
-            </figcaption>
-          </figure>
-          <figure class="effect-julia item">
+            </figcaption> -->
+          <!-- <figure class="effect-julia item">
             <img src="img/foods.jpg" alt="Image" />
             <figcaption>
               <div>
@@ -181,6 +204,7 @@ https://templatemo.com/tm-560-astro-motion
               <a href="item2.php"></a>
             </figcaption>
           </figure>
+           -->
           <figure class="effect-julia item" style="margin-top:25px">
             <img src="img/x.jpg" alt="Image" />
             <figcaption>
