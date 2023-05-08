@@ -107,7 +107,7 @@ https://templatemo.com/tm-560-astro-motion
                     </div>
                 </div>
             </div>
-        </div>
+        
         &nbsp;
         &nbsp;
         &nbsp;
@@ -148,7 +148,7 @@ https://templatemo.com/tm-560-astro-motion
 
            <form action="count.php" method="post">
             <figure class="effect-julia item">
-            <img src="img/<?php echo $image; ?>" alt="Image" />
+            <img src="img/<?php echo $image; ?>" alt="Image" width="195" height="200"/>
             <input type="submit" name="submitButton" value="<?=$name?>">
           </figure>
             </form>
@@ -204,19 +204,18 @@ https://templatemo.com/tm-560-astro-motion
                             <a href="item3.php"></a>
                         </figcaption>
                     </figure> -->
-                    <figure class="effect-julia item"  style="margin-top:25px">
-                        <img src="img/x.jpg" alt="Image" />
-                        <figcaption>
-                            <div>
-                                <p>不領取/下一頁
-                                </p>
-                            </div>
-                            <a href="item3.php"></a>
-                        </figcaption>
+                    <form method="POST" action="count.php">
+                    <figure class="effect-julia item">
+                    <img src="img/x.jpg" alt="Image" width="195" height="200"/>
+                  <input type="submit" name="next_2" value="不領取/下一頁">
+                </form>
                     </figure>
-                    
                     </li>
-
+               
+                    
+                </div>
+                </div>
+                </div>
                 </div>
                 <div class="container-fluid">
                     <footer class="row mx-auto tm-footer">

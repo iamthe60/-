@@ -190,7 +190,7 @@ if (isset($_POST['password'])) {
                         </tr>
                         <?php
                   $conn = new mysqli('localhost','root','12345678','fjufreedge');
-                  $query = 
+                  $query = "SELECT * from item ;";
                   $result = mysqli_query($conn,$query);
 
                   while($row = mysqli_fetch_array($result)){

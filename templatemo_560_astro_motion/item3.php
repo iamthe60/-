@@ -107,16 +107,16 @@ https://templatemo.com/tm-560-astro-motion
                     </div>
                 </div>
             </div>
-        </div>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        <div class="container-fluid tm-content-container">
+   
+            &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+        <div class="container tm-content-container">
 
             <div style=" padding-left: 10%;">
                 <h1>第三區</h1>
@@ -128,6 +128,11 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="circle intro-circle-1"></div>
                 <div class="circle intro-circle-2"></div>
                 <div class="mx-auto tm-border-top gallery-slider ">
+            
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
                 <?php
           $conn = new mysqli('localhost','root','12345678','fjufreedge');
                   $query = "SELECT * FROM item where area = 3;";
@@ -142,10 +147,10 @@ https://templatemo.com/tm-560-astro-motion
                  
                   ?>
      
-
+                
            <form action="count.php" method="post">
             <figure class="effect-julia item">
-            <img src="img/<?php echo $image; ?>" alt="Image" />
+            <img src="img/<?php echo $image; ?>" alt="Image" width="195" height="200"/>
             <input type="submit" name="submitButton" value="<?=$name?>">
           </figure>
             </form>
@@ -192,18 +197,21 @@ https://templatemo.com/tm-560-astro-motion
                             <a href="college.php"></a>
                         </figcaption>
                     </figure> -->
+                    <form method="POST" action="count.php">
                     <figure class="effect-julia item">
-                        <img src="img/x.jpg" alt="Image" />
-                        <figcaption>
-                            <div>
-                                <p>不領取/下一頁</p>
-                            </div>
-                            <a href="college.php"></a>
-                        </figcaption>
-                    </figure>
-                    </li>
+                    <img src="img/x.jpg" alt="Image" width="195" height="200"/>
+                  <input type="submit" name="next_3" value="不領取/下一頁">
+                </form>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
 
                 </div>
+                </div>
+                </div>
+                
                 <div class="container-fluid">
                     <footer class="row mx-auto tm-footer">
                         <div class="col-md-6 px-0">
@@ -217,6 +225,7 @@ https://templatemo.com/tm-560-astro-motion
                     </footer>
                 </div>
             </div>
+            
             <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
             <div id="loader-wrapper">
                 <div id="loader"></div>

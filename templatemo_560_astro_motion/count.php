@@ -39,6 +39,15 @@ if(mysqli_query($conn,$updateUser)){
 }
 }
     }
+if(isset($_POST['next_1'])){
+    header("Location: item2.php");
+}
+if(isset($_POST['next_2'])){
+    header("Location: item3.php");
+}
+if(isset($_POST['next_3'])){
+    header("Location: college.php");
+}
 
 
         ?>
