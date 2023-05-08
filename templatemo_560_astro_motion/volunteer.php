@@ -142,7 +142,7 @@ https://templatemo.com/tm-560-astro-motion
                                     placeholder="Id" required />
                             </div>
                             <div class="input-group tm-mb-30">
-                                <input name="time" type="text"
+                                <input name="time" type="time"
                                     class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
                                     placeholder="Time" required />
                             </div>
