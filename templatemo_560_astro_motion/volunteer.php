@@ -82,19 +82,23 @@ https://templatemo.com/tm-560-astro-motion
                  else{
                  ?>
                                     <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1" style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
+                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
+                                            style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="inventory.php" data-no="6" style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
+                                        <a class="nav-link" href="inventory.php" data-no="6"
+                                            style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="volunteer.php" data-no="4" style="padding-left: 85px; padding-right: 85px">加入我們</a>
+                                        <a class="nav-link" href="volunteer.php" data-no="4"
+                                            style="padding-left: 85px; padding-right: 85px">加入我們</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="login.php" data-no="5" style="padding-left: 85px; padding-right: 85px">登入</a>
+                                        <a class="nav-link" href="login.php" data-no="5"
+                                            style="padding-left: 85px; padding-right: 85px">登入</a>
                                         <div class="circle"></div>
                                     </li>
                                     <?php
@@ -116,13 +120,13 @@ https://templatemo.com/tm-560-astro-motion
 
 
             <div class="mx-auto page-width-2">
-            <div class="row justify-content-evenly">
-              <div class="col-4">
-              <h2>志工意願填寫</h2>
-              </div>
-              <div class="col-4">
-              <h2>聯絡我們Contact us</h2>
-                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-4">
+                        <h2>志工意願填寫</h2>
+                    </div>
+                    <div class="col-4">
+                        <h2>聯絡我們Contact us</h2>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 tm-contact-left">
@@ -143,9 +147,11 @@ https://templatemo.com/tm-560-astro-motion
                                     placeholder="Time" required />
                             </div>
                             <div class="input-group tm-mb-30">
-                                <input name="date" type="text"
-                                    class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                                    placeholder="Date" required />
+
+                                <input type="date" value="<?= isset($_POST['date']) ? $_POST['date'] : ''; ?>"
+                                    name="date" min="<?= date('Y-m-d'); ?>"
+                                    class="form-control rounded-0 border-top-0 border-end-0 border-start-0">
+
                             </div>
                             <div class="input-group tm-mb-30">
                                 <input name="location" type="text"
@@ -188,18 +194,19 @@ https://templatemo.com/tm-560-astro-motion
 
 
 
-    </div>
-    <div class="container-fluid">
-        <footer class="row mx-auto tm-footer">
-            <div class="col-md-6 px-0">
-                Copyright 2021 Astro Motion Company Limited. All rights reserved.
-            </div>
-            <div class="col-md-6 px-0 tm-footer-right">
-                Designed by
-                <a rel="sponsored" href="https://templatemo.com" target="_blank" class="tm-link-white">TemplateMo</a>
-            </div>
-        </footer>
-    </div>
+        </div>
+        <div class="container-fluid">
+            <footer class="row mx-auto tm-footer">
+                <div class="col-md-6 px-0">
+                    Copyright 2021 Astro Motion Company Limited. All rights reserved.
+                </div>
+                <div class="col-md-6 px-0 tm-footer-right">
+                    Designed by
+                    <a rel="sponsored" href="https://templatemo.com" target="_blank"
+                        class="tm-link-white">TemplateMo</a>
+                </div>
+            </footer>
+        </div>
     </div>
     <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
     <div id="loader-wrapper">
