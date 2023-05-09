@@ -130,34 +130,7 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="mx-auto tm-border-top gallery-slider ">
 
 
-
-                <?php
-          $conn = new mysqli('localhost','root','12345678','fjufreedge');
-                  $query = "SELECT * FROM item where area = 2;";
-                  $result = mysqli_query($conn,$query);
-
-                  while($row = mysqli_fetch_array($result)){
-                    $num = $row['num'];
-                    $name = $row['name'];
-                    $image = $row['image'];
-                    $area = $row['area'];
-                    $amount = $row['amount'];
-                 
-                  ?>
-     
-
-           <form action="count.php" method="post">
-            <figure class="effect-julia item">
-            <img src="img/<?php echo $image; ?>" alt="Image" width="195" height="200"/>
-            <input type="submit" name="submitButton" value="<?=$name?>">
-          </figure>
-            </form>
-
-
-           <?php
-                  }
-?>
-                    <!-- 第二區
+                    
                     <figure class="effect-julia item">
                         <img src="img/veget.jpg" alt="Image" />
                         <figcaption>
@@ -165,7 +138,7 @@ https://templatemo.com/tm-560-astro-motion
                                 <p>蔬菜/水果</p>
                                 </a>
                             </div>
-                            <a href="item3.php"></a>
+                            <a href="count.php?itemname=蔬果"></a>
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
@@ -174,7 +147,7 @@ https://templatemo.com/tm-560-astro-motion
                             <div>
                                 <p>餅乾/糖果</p>
                             </div>
-                            <a href="item3.php"></a>
+                            <a href="count.php?itemname=餅乾糖果"></a>
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
@@ -183,7 +156,7 @@ https://templatemo.com/tm-560-astro-motion
                             <div>
                                 <p>茶葉蛋</p>
                             </div>
-                            <a href="item3.php"></a>
+                            <a href="count.php?itemname=茶葉蛋"></a>
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
@@ -192,7 +165,7 @@ https://templatemo.com/tm-560-astro-motion
                             <div>
                                 <p>沙拉</p>
                             </div>
-                            <a href="item3.php"></a>
+                            <a href="count.php?itemname=沙拉"></a>
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item">
@@ -201,15 +174,19 @@ https://templatemo.com/tm-560-astro-motion
                             <div>
                                 <p>冰淇淋</p>
                             </div>
-                            <a href="item3.php"></a>
+                            <a href="count.php?itemname=冰淇淋"></a>
                         </figcaption>
-                    </figure> -->
-                    <form method="POST" action="count.php">
-                    <figure class="effect-julia item">
-                    <img src="img/x.jpg" alt="Image" width="195" height="200"/>
-                  <input type="submit" name="next_2" value="不領取/下一頁">
-                </form>
                     </figure>
+                    <figure class="effect-julia item">
+            <img src="img/x.jpg" alt="Image" />
+            <figcaption>
+              <div>
+                <p>不領取/下一頁</p>
+              </div>
+              <a href="item3.php"></a>
+            </figcaption>
+          </figure>
+
                     </li>
                
                     
