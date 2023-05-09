@@ -107,113 +107,106 @@ https://templatemo.com/tm-560-astro-motion
                     </div>
                 </div>
             </div>
-   
-            &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-        <div class="container tm-content-container">
 
-            <div style=" padding-left: 10%;">
-                <h1>第三區</h1>
-                <h4>請點選領取的食物，若沒在這一區領取請點選下一頁</h4>
-            </div>
+         
+            <div class="container tm-content-container">
 
-
-            <div class="mx-auto position-relative gallery-container">
-                <div class="circle intro-circle-1"></div>
-                <div class="circle intro-circle-2"></div>
-                <div class="mx-auto tm-border-top gallery-slider ">
-            
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                    <figure class="effect-julia item">
-                        <img src="img/milk.jpg" alt="Image" />
-                        <figcaption>
-                            <div>
-                                <p>乳製品</p>
-                                </a>
-                            </div>
-                            <a href="count.php?itemname=乳製品"></a>
-                        </figcaption>
-                    </figure>
-                    <figure class="effect-julia item">
-                        <img src="img/tea.jpg" alt="Image" />
-                        <figcaption>
-                            <div>
-                                <p>茶</p>
-                            </div>
-                            <a href="count.php?itemname=茶"></a>
-                        </figcaption>
-                    </figure>
-                    <figure class="effect-julia item">
-                        <img src="img/juice.jpg" alt="Image" />
-                        <figcaption>
-                            <div>
-                                <p>果汁</p>
-                            </div>
-                            <a href="count.php?itemname=果汁"></a>
-                        </figcaption>
-                    </figure>
-                    <figure class="effect-julia item">
-                        <img src="img/pudding.jpg" alt="Image" />
-                        <figcaption>
-                            <div>
-                                <p>布丁果凍</p>
-                            </div>
-                            <a href="count.php?itemname=布丁果凍"></a>
-                        </figcaption>
-                    </figure>
-                    <figure class="effect-julia item">
-            <img src="img/x.jpg" alt="Image" />
-            <figcaption>
-              <div>
-                <p>不領取/下一頁</p>
-              </div>
-              <a href="college.php"></a>
-            </figcaption>
-          </figure>
-                  
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-
-
+                <div style=" padding-left: 10%;">
+                    <h1>第三區</h1>
+                    <h4>請點選領取的食物，若沒在這一區領取請點選下一頁</h4>
                 </div>
-                </div>
-                </div>
-                
-                <div class="container-fluid">
-                    <footer class="row mx-auto tm-footer">
-                        <div class="col-md-6 px-0">
-                            Copyright 2021 Astro Motion Company Limited. All rights reserved.
+
+
+                <div class="mx-auto position-relative gallery-container">
+                    <div class="circle intro-circle-1"></div>
+                    <div class="circle intro-circle-2"></div>
+                    <div class="mx-auto tm-border-top gallery-slider ">
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <figure class="effect-julia item">
+                                        <img src="img/milk.jpg" alt="Image" />
+                                        <figcaption>
+                                            <div>
+                                                <p>乳製品</p>
+                                                </a>
+                                            </div>
+                                            <a href="count.php?itemname=乳製品"></a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-julia item">
+                                        <img src="img/tea.jpg" alt="Image" />
+                                        <figcaption>
+                                            <div>
+                                                <p>茶</p>
+                                            </div>
+                                            <a href="count.php?itemname=茶"></a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-julia item">
+                                        <img src="img/juice.jpg" alt="Image" />
+                                        <figcaption>
+                                            <div>
+                                                <p>果汁</p>
+                                            </div>
+                                            <a href="count.php?itemname=果汁"></a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-julia item">
+                                        <img src="img/pudding.jpg" alt="Image" />
+                                        <figcaption>
+                                            <div>
+                                                <p>布丁果凍</p>
+                                            </div>
+                                            <a href="count.php?itemname=布丁果凍"></a>
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="effect-julia item">
+                                        <img src="img/x.jpg" alt="Image" />
+                                        <figcaption>
+                                            <div>
+                                                <p>不領取/下一頁</p>
+                                            </div>
+                                            <a href="college.php"></a>
+                                        </figcaption>
+                                    </figure>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 px-0 tm-footer-right">
-                            Designed by
-                            <a rel="sponsored" href="https://templatemo.com" target="_blank"
-                                class="tm-link-white">TemplateMo</a>
-                        </div>
-                    </footer>
+                    </div>
+
+
                 </div>
             </div>
-            
-            <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
-            <div id="loader-wrapper">
-                <div id="loader"></div>
-                <div class="loader-section section-left"></div>
-                <div class="loader-section section-right"></div>
-            </div>
-            <script src="js/jquery-3.5.1.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/slick.js"></script>
-            <script src="js/templatemo-script.js"></script>
+        </div>
+
+        <div class="container-fluid">
+            <footer class="row mx-auto tm-footer">
+                <div class="col-md-6 px-0">
+                    Copyright 2021 Astro Motion Company Limited. All rights reserved.
+                </div>
+                <div class="col-md-6 px-0 tm-footer-right">
+                    Designed by
+                    <a rel="sponsored" href="https://templatemo.com" target="_blank"
+                        class="tm-link-white">TemplateMo</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/templatemo-script.js"></script>
 </body>
 
 </html>
