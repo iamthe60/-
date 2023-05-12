@@ -1,3 +1,15 @@
+<?php
+if (isset($_POST['submit'])) {
+    $itemname = $_POST['itemname'];
+    $amount = $_POST['amount'];
+    setcookie('itemname', $itemname, time() + 3600);
+    setcookie('amount', $amount, time() + 3600);
+    header('Location: confirm.php');
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -172,10 +184,13 @@ https://templatemo.com/tm-560-astro-motion
                                             <a href="college.php"></a>
                                         </figcaption>
                                     </figure>
+                                    
+                                    
 
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
 
 

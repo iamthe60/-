@@ -1,3 +1,15 @@
+<?php
+if (isset($_POST['submit'])) {
+    $itemname = $_POST['itemname'];
+    $amount = $_POST['amount'];
+    setcookie('itemname', $itemname, time() + 3600);
+    setcookie('amount', $amount, time() + 3600);
+    header('Location: confirmation.php');
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -179,6 +191,8 @@ https://templatemo.com/tm-560-astro-motion
                                 <a href="item2.php"></a>
                             </figcaption>
                         </figure>
+                        
+
 
                     </div>
                     <div class="container-fluid">
