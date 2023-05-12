@@ -1,15 +1,25 @@
 <?php
-if (isset($_POST['submit'])) {
-    $itemname = $_POST['itemname'];
-    $amount = $_POST['amount'];
-    setcookie('itemname', $itemname, time() + 3600);
-    setcookie('amount', $amount, time() + 3600);
-    header('Location: confirm.php');
-    exit();
-}
+session_start();
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['itemname'])) {
+    // 設定選擇的項目
+    $_SESSION['itemname3'] = $_POST['itemname'];
+
+    // 跳轉到確認頁面
+    header('Location: ./confirm.php');
+    exit;
+}
 ?>
 
+<script>
+function submitForm(itemname) {
+  // 設定選擇的項目
+  document.getElementById("itemname").value = itemname;
+
+  // 提交表單
+  document.getElementById("myform").submit();
+}
+</script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,7 +72,8 @@ https://templatemo.com/tm-560-astro-motion
                                 <ul class="navbar-nav mb-2 mb-lg-0">
 
                                     <?php
-                                    session_start();
+                                    
+                                    
                                     if ($_SESSION['level'] == "admin") {
                                         ?>
                                         <li class="nav-item">
@@ -133,46 +144,49 @@ https://templatemo.com/tm-560-astro-motion
                     <div class="circle intro-circle-1"></div>
                     <div class="circle intro-circle-2"></div>
                     <div class="mx-auto tm-border-top gallery-slider ">
+                   
 
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <figure class="effect-julia item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <form id="myform" method="post">
+                                    <input type="hidden" id="itemname" name="itemname" value="">
+                                    <figure class="effect-julia item" onclick="submitForm('乳製品')">
                                         <img src="img/milk.jpg" alt="Image" />
                                         <figcaption>
                                             <div>
                                                 <p>乳製品</p>
-                                                </a>
+                                                
                                             </div>
-                                            <a href="count.php?itemname=乳製品"></a>
+                                           
                                         </figcaption>
                                     </figure>
-                                    <figure class="effect-julia item">
+                                    <figure class="effect-julia item" onclick="submitForm('茶')">
                                         <img src="img/tea.jpg" alt="Image" />
                                         <figcaption>
                                             <div>
                                                 <p>茶</p>
                                             </div>
-                                            <a href="count.php?itemname=茶"></a>
+                                            
                                         </figcaption>
                                     </figure>
-                                    <figure class="effect-julia item">
+                                    <figure class="effect-julia item" onclick="submitForm('果汁')">
                                         <img src="img/juice.jpg" alt="Image" />
                                         <figcaption>
                                             <div>
                                                 <p>果汁</p>
                                             </div>
-                                            <a href="count.php?itemname=果汁"></a>
+                                            
                                         </figcaption>
                                     </figure>
-                                    <figure class="effect-julia item">
+                                    <figure class="effect-julia item" onclick="submitForm('布丁果凍')">
                                         <img src="img/pudding.jpg" alt="Image" />
                                         <figcaption>
                                             <div>
                                                 <p>布丁果凍</p>
                                             </div>
-                                            <a href="count.php?itemname=布丁果凍"></a>
+                                            
                                         </figcaption>
                                     </figure>
                                     <figure class="effect-julia item">
@@ -185,19 +199,13 @@ https://templatemo.com/tm-560-astro-motion
                                         </figcaption>
                                     </figure>
                                     
-                                    
-
-                                </div>
-                            </div>
-                        </div>
-                        
+                                </form>
                     </div>
-
-
                 </div>
             </div>
         </div>
-
+    </div>
+</div>
         <div class="container-fluid">
             <footer class="row mx-auto tm-footer">
                 <div class="col-md-6 px-0">
