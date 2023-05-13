@@ -9,8 +9,8 @@ if ($row = mysqli_fetch_assoc($result)) {
   $_SESSION['account'] = $row['account'];
   $_SESSION[''] = $row['password'];
   $_SESSION['level'] = $row['level'];
-  header("location:index.php?method=message&message=登入成功");
+  header("location:volunteer.php?method=message&message=登入成功");
 } else {
-  header("location:index.php?method=message&message=登入失敗");
+  header("location:volunteer.php?method=message&message=登入失敗");
 }
 ?>

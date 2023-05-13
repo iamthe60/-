@@ -1,24 +1,3 @@
-<?php
-session_start();
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['itemname'])) {
-    
-    $_SESSION['itemname2'] = $_POST['itemname'];
-
-    
-    header('Location: ./item3.php');
-    exit;
-}
-?>
-<script>
-function submitForm(itemname) {
- 
-  document.getElementById("itemname").value = itemname;
-
-  
-  document.getElementById("myform").submit();
-}
-</script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +25,6 @@ https://templatemo.com/tm-560-astro-motion
 -->
 
 
-
 </head>
 
 <body>
@@ -71,9 +49,9 @@ https://templatemo.com/tm-560-astro-motion
                                 <ul class="navbar-nav mb-2 mb-lg-0">
 
                                 <?php
-
-                                if($_SESSION['level']=="admin"){
-                                ?>
+                  session_start();
+                 if($_SESSION['level']=="admin"){
+                     ?>
                                     <li class="nav-item selected">
                                         <a class="nav-link" aria-current="page" href="#0" data-no="1"
                                             style="padding-left: 50px; padding-right: 50px">首頁</a>
@@ -134,103 +112,67 @@ https://templatemo.com/tm-560-astro-motion
                     </div>
                 </div>
             </div>
+        </div>
 
-        
+        <div class="container-fluid tm-content-container">
+          <div class="position-relative page-width-1 tm-border-top tm-border-bottom"
+            style="margin-left:25% ; margin-top:auto; #cccccc solid;">
+            <div class="circle intro-circle-1"></div>
+            <div class="circle intro-circle-2"></div>
+            <div class="circle intro-circle-3"></div>
+            <div class="circle intro-circle-4"></div>
             <div class="container-fluid tm-content-container">
 
-
-                <div style=" padding-left: 10%;">
-                    <h1>第二區</h1>
-                    <h4>請點選領取的食物，若沒在這一區領取請點選下一頁</h4>
+              <div class="mx-auto page-width-2">
+                <div class="row">
+                  <div class="col-6.col-md-4">
+                    <h2 class="mb-6">志工登入</h2>
+                    <h2 class="mb-6">登入即可填寫班表意願</h2>
+                  </div>
                 </div>
-
-                <div class="mx-auto position-relative gallery-container">
-                    <div class="circle intro-circle-1"></div>
-                    <div class="circle intro-circle-2"></div>
-                    <div class="mx-auto tm-border-top gallery-slider ">
-                    <div class="container">
-                        <div class="row">
-                             <div class="col">
-                                    <form id="myform" method="post">
-                                <input type="hidden" id="itemname" name="itemname" value="">
-                        
-
-
-
-                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('蔬菜/水果')">
-                            <img src="img/veget.jpg" alt="Image" />
-                            <figcaption>
-                                <div>
-                                    <p>蔬菜/水果</p>
-                                    </a>
-                                </div>
-                                
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('餅乾/糖果')">
-                            <img src="img/cookie.jpg" alt="Image" />
-                            <figcaption>
-                                <div>
-                                    <p>餅乾/糖果</p>
-                                </div>
-                                
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('茶葉蛋')">
-                            <img src="img/egg.jpg" alt="Image" />
-                            <figcaption>
-                                <div>
-                                    <p>茶葉蛋</p>
-                                </div>
-                                
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('沙拉')">
-                            <img src="img/sala.jpg" alt="Image" />
-                            <figcaption>
-                                <div>
-                                    <p>沙拉</p>
-                                </div>
-                                
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('冰淇淋')">
-                            <img src="img/ice.jpg" alt="Image" />
-                            <figcaption>
-                                <div>
-                                    <p>冰淇淋</p>
-                                </div>
-                                
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item" style="margin-top:25px">
-                            <img src="img/x.jpg" alt="Image" />
-                            <figcaption>
-                                <div>
-                                    <p>不領取/下一頁</p>
-                                </div>
-                                <a href="item3.php"></a>
-                            </figcaption>
-                        </figure>
-                        </form>
+                <div class="row">
+                  <div class="col-6.col-md-4">
+                    <form action="volunteerlogincheck.php" method="post" class="contact-form">
+                      <div class="input-group tm-mb-30">
+                        <input name="account" type="text"
+                          class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
+                          placeholder="Account 帳號" required>
+                      </div>
+                      <div class="input-group tm-mb-30">
+                        <input name="password" type="text"
+                          class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
+                          placeholder="Password 密碼" required>
+                      </div>
+                      <div class="input-group justify-content-start">
+                        <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Login">
+                      </div>
+                    </form> 
+                    <div>
+                    <br></br>
+                    <a href="account_insert.php" class="btn btn-dark" type="button" >註冊志工帳號Sign up</a>
                     </div>
+                    
+                  </div>
                 </div>
+              </div>
+              
             </div>
-        </div>
+          </div>
+          </div>
+    <div class="container-fluid">
+      <footer class="row mx-auto tm-footer">
+      </footer>
     </div>
-</div>
-        <div class="container-fluid">
-            <footer class="row mx-auto tm-footer">
-                <div class="col-md-6 px-0">
-                    Copyright 2021 Astro Motion Company Limited. All rights reserved.
-                </div>
-                <div class="col-md-6 px-0 tm-footer-right">
-                    Designed by
-                    <a rel="sponsored" href="https://templatemo.com" target="_blank"
-                        class="tm-link-white">TemplateMo</a>
-                </div>
-            </footer>
-        </div>
+
+        
+
+
+
+
+
+
+        
+
     </div>
     <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
     <div id="loader-wrapper">
