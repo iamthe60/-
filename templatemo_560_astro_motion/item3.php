@@ -2,10 +2,10 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['itemname'])) {
-    // 設定選擇的項目
+   
     $_SESSION['itemname3'] = $_POST['itemname'];
 
-    // 跳轉到確認頁面
+   
     header('Location: ./confirm.php');
     exit;
 }
@@ -13,10 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['itemname'])) {
 
 <script>
 function submitForm(itemname) {
-  // 設定選擇的項目
+  
   document.getElementById("itemname").value = itemname;
 
-  // 提交表單
+  
   document.getElementById("myform").submit();
 }
 </script>
