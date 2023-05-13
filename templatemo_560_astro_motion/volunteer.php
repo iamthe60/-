@@ -48,12 +48,12 @@ https://templatemo.com/tm-560-astro-motion
                             <div class="collapse navbar-collapse" id="navbar-supported-content">
                                 <ul class="navbar-nav mb-2 mb-lg-0">
 
-                                    <?php
+                                <?php
                   session_start();
                  if($_SESSION['level']=="admin"){
                      ?>
-                                    <li class="nav-item ">
-                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
+                                    <li class="nav-item selected">
+                                        <a class="nav-link" aria-current="page" href="#0" data-no="1"
                                             style="padding-left: 50px; padding-right: 50px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
@@ -67,9 +67,9 @@ https://templatemo.com/tm-560-astro-motion
                                             style="padding-left: 50px; padding-right: 50px">上架/下架</a>
                                         <div class="circle"></div>
                                     </li>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" href="volunteer.php" data-no="4"
-                                            style="padding-left: 50px; padding-right: 50px">加入我們</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="volunteerlogin.php" data-no="4"
+                                            style="padding-left: 50px; padding-right: 50px">志工專區</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
@@ -92,8 +92,8 @@ https://templatemo.com/tm-560-astro-motion
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="volunteer.php" data-no="4"
-                                            style="padding-left: 85px; padding-right: 85px">加入我們</a>
+                                        <a class="nav-link" href="volunteerlogin.php" data-no="4"
+                                            style="padding-left: 85px; padding-right: 85px">志工專區</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
@@ -197,14 +197,6 @@ https://templatemo.com/tm-560-astro-motion
         </div>
         <div class="container-fluid">
             <footer class="row mx-auto tm-footer">
-                <div class="col-md-6 px-0">
-                    Copyright 2021 Astro Motion Company Limited. All rights reserved.
-                </div>
-                <div class="col-md-6 px-0 tm-footer-right">
-                    Designed by
-                    <a rel="sponsored" href="https://templatemo.com" target="_blank"
-                        class="tm-link-white">TemplateMo</a>
-                </div>
             </footer>
         </div>
     </div>
