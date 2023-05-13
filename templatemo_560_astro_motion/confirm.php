@@ -128,58 +128,38 @@ https://templatemo.com/tm-560-astro-motion
 
             </div>
             <div class="container-fluid tm-content-container">
-          <div class="position-relative page-width-1 "
-            style="margin-left:25% ; margin-top:auto; #cccccc solid;">
-            
-            <div class="container-fluid tm-content-container">
-            <div class="intro-left tm-bg-dark content-pad">
 
-              <div class="mx-auto page-width-2">
-                <div class="row">
-                  <div class="col-6.col-md-4">
-                  <p>You have selected the following items:</p>
-                                        <ul>
-                                            <li>Item Name: <?php echo $itemname1; ?></li>
-                                            <li>Item Name: <?php echo $itemname2; ?></li>
-                                            <li>Item Name: <?php echo $itemname3; ?></li>
-                                        </ul>
-                                        <p>If this information is correct, please click the "Confirm" button to proceed.</p>
-                                        <form action="confirm.php" method="post">
-                                        <?php 
-                                        $selected_items = $itemname1 . "," . $itemname2 . "," . $itemname3;
-                                        ?>
-
-                                        <input type="hidden" name="selected_item" value="<?php echo $selected_items; ?>">
-
-                                            <input type="submit" name="confirm" value="Confirm">
-                                        </form>
-                                        <p>If you want to make changes, please click the "Back" button to return to the previous page.</p>
-                                        <form action="item.php" method="post">
-                                            <input type="submit" name="back" value="Back">
-                                        </form>
-                           
-              </div>
-              
+            <div style=" padding-left: 10%;">
+                <h1>確認領取物資</h1>
+                
             </div>
-          </div>
-          </div>
-            
-                                        
-           
-           
-                    
-                    <div class="container-fluid">
-                        <footer class="row mx-auto tm-footer">
-                            <div class="col-md-6 px-0">
-                                Copyright 2021 Astro Motion Company Limited. All rights reserved.
-                            </div>
-                            <div class="col-md-6 px-0 tm-footer-right">
-                                Designed by
-                                <a rel="sponsored" href="https://templatemo.com" target="_blank"
-                                    class="tm-link-white">TemplateMo</a>
-                            </div>
-                        </footer>
-                    </div>
+            <div class="mx-auto position-relative gallery-container tm-border-bottom">
+                <div class="circle intro-circle-1"></div>
+                <div class="circle intro-circle-2"></div>
+                <div class="mx-auto tm-border-top gallery-slider ">
+                <div class="intro-left tm-bg-dark content-pad">
+                <p>You have selected the following items:</p>
+                <ul>
+                    <li>Item Name: <?php echo $itemname1; ?></li>
+                    <li>Item Name: <?php echo $itemname2; ?></li>
+                    <li>Item Name: <?php echo $itemname3; ?></li>
+                </ul>
+                <p>If this information is correct, please click the "Confirm" button to proceed.</p>
+                <form action="confirm.php" method="post">
+                <?php 
+                $selected_items = $itemname1 . "," . $itemname2 . "," . $itemname3;
+                ?>
+                <input type="hidden" name="selected_item" value="<?php echo $selected_items; ?>">
+                <input type="submit" name="confirm" value="Confirm">
+                </form>
+                <p>If you want to make changes, please click the "Back" button to return to the previous page.</p>
+                <form action="item.php" method="post">
+                <input type="submit" name="back" value="Back">
+
+                <div class="circle intro-circle-3"></div>
+                <div class="circle intro-circle-4"></div>
+                </li>
+
                 </div>
                 <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
                 <div id="loader-wrapper">
