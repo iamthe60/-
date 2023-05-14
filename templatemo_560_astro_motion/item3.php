@@ -156,7 +156,7 @@ https://templatemo.com/tm-560-astro-motion
                             <div class="col">
                                 <form id="myform" method="post">
                                     <input type="hidden" id="itemname" name="itemname" value="">
-                                    <figure class="effect-julia item" onclick="submitForm('乳製品')">
+                                    <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('乳製品')">
                                         <img src="img/milk.jpg" alt="Image" />
                                         <figcaption>
                                             <div>
@@ -166,7 +166,7 @@ https://templatemo.com/tm-560-astro-motion
                                            
                                         </figcaption>
                                     </figure>
-                                    <figure class="effect-julia item" onclick="submitForm('茶')">
+                                    <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('茶')">
                                         <img src="img/tea.jpg" alt="Image" />
                                         <figcaption>
                                             <div>
@@ -175,7 +175,7 @@ https://templatemo.com/tm-560-astro-motion
                                             
                                         </figcaption>
                                     </figure>
-                                    <figure class="effect-julia item" onclick="submitForm('果汁')">
+                                    <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('果汁')">
                                         <img src="img/juice.jpg" alt="Image" />
                                         <figcaption>
                                             <div>
@@ -184,7 +184,7 @@ https://templatemo.com/tm-560-astro-motion
                                             
                                         </figcaption>
                                     </figure>
-                                    <figure class="effect-julia item" onclick="submitForm('布丁果凍')">
+                                    <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('布丁果凍')">
                                         <img src="img/pudding.jpg" alt="Image" />
                                         <figcaption>
                                             <div>
@@ -193,7 +193,7 @@ https://templatemo.com/tm-560-astro-motion
                                             
                                         </figcaption>
                                     </figure>
-                                    <figure class="effect-julia item">
+                                    <figure class="effect-julia item" style="margin-top:25px">
                                         <img src="img/x.jpg" alt="Image" />
                                         <figcaption>
                                             <div>

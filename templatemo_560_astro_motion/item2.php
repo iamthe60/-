@@ -2,20 +2,20 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['itemname'])) {
-    // 設定選擇的項目
+    
     $_SESSION['itemname2'] = $_POST['itemname'];
 
-    // 跳轉到確認頁面
+    
     header('Location: ./item3.php');
     exit;
 }
 ?>
 <script>
 function submitForm(itemname) {
-  // 設定選擇的項目
+ 
   document.getElementById("itemname").value = itemname;
 
-  // 提交表單
+  
   document.getElementById("myform").submit();
 }
 </script>
@@ -157,7 +157,7 @@ https://templatemo.com/tm-560-astro-motion
 
 
 
-                        <figure class="effect-julia item" onclick="submitForm('蔬菜/水果')">
+                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('蔬菜/水果')">
                             <img src="img/veget.jpg" alt="Image" />
                             <figcaption>
                                 <div>
@@ -167,7 +167,7 @@ https://templatemo.com/tm-560-astro-motion
                                 
                             </figcaption>
                         </figure>
-                        <figure class="effect-julia item" onclick="submitForm('餅乾/糖果')">
+                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('餅乾/糖果')">
                             <img src="img/cookie.jpg" alt="Image" />
                             <figcaption>
                                 <div>
@@ -176,7 +176,7 @@ https://templatemo.com/tm-560-astro-motion
                                 
                             </figcaption>
                         </figure>
-                        <figure class="effect-julia item" onclick="submitForm('茶葉蛋')">
+                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('茶葉蛋')">
                             <img src="img/egg.jpg" alt="Image" />
                             <figcaption>
                                 <div>
@@ -185,7 +185,7 @@ https://templatemo.com/tm-560-astro-motion
                                 
                             </figcaption>
                         </figure>
-                        <figure class="effect-julia item" onclick="submitForm('沙拉')">
+                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('沙拉')">
                             <img src="img/sala.jpg" alt="Image" />
                             <figcaption>
                                 <div>
@@ -194,7 +194,7 @@ https://templatemo.com/tm-560-astro-motion
                                 
                             </figcaption>
                         </figure>
-                        <figure class="effect-julia item" onclick="submitForm('冰淇淋')">
+                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('冰淇淋')">
                             <img src="img/ice.jpg" alt="Image" />
                             <figcaption>
                                 <div>
@@ -203,7 +203,7 @@ https://templatemo.com/tm-560-astro-motion
                                 
                             </figcaption>
                         </figure>
-                        <figure class="effect-julia item">
+                        <figure class="effect-julia item" style="margin-top:25px">
                             <img src="img/x.jpg" alt="Image" />
                             <figcaption>
                                 <div>

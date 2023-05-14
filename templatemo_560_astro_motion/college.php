@@ -130,8 +130,8 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="mx-auto tm-border-top gallery-slider ">
 
                     <!-- 學院 -->
-                    <figure class="effect-julia item">
-                        <img src="img/teacher.jpg" alt="Image" />
+                    <figure class="effect-julia item"style="margin-top:25px">
+                        <img src="img/worker.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>教職員工</p>
@@ -140,32 +140,32 @@ https://templatemo.com/tm-560-astro-motion
                             <!-- <a href="item2.php"></a> -->
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
-                        <img src="img/word.jpg" alt="Image" />
+                    <figure class="effect-julia item"style="margin-top:25px">
+                        <img src="img/liberal.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>文學院</p>
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
-                        <img src="img/art.jpg" alt="Image" />
+                    <figure class="effect-julia item"style="margin-top:25px">
+                        <img src="img/artist.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>藝術學院</p>
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
-                        <img src="img/media.jpg" alt="Image" />
+                    <figure class="effect-julia item"style="margin-top:25px">
+                        <img src="img/smedia.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>傳播學院</p>
                             </div>
                         </figcaption>
                     </figure>
-                    <figure class="effect-julia item">
-                        <img src="img/teaching.jpg" alt="Image" />
+                    <figure class="effect-julia item"style="margin-top:25px">
+                        <img src="img/education.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>教育學院</p>
@@ -173,7 +173,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item"  style="margin-top:25px">
-                        <img src="img/code.jpg" alt="Image" />
+                        <img src="img/tech.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>理工學院</p>
@@ -181,7 +181,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item" style="margin-top:25px">
-                        <img src="img/eng.jpg" alt="Image" />
+                        <img src="img/language.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>外語學院</p>
@@ -189,7 +189,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item" style="margin-top:25px">
-                        <img src="img/life.jpg" alt="Image" />
+                        <img src="img/human.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>民生學院</p>
@@ -197,7 +197,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item" style="margin-top:25px">
-                        <img src="img/law.jpg" alt="Image" />
+                        <img src="img/Lawyer.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>法律學院</p>
@@ -205,7 +205,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item" style="margin-top:25px">
-                        <img src="img/wtf.jpg" alt="Image" />
+                        <img src="img/social.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>社科學院</p>
@@ -213,7 +213,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item" style="margin-top:25px">
-                        <img src="img/manage.jpg" alt="Image" />
+                        <img src="img/management.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>管理學院</p>
@@ -221,7 +221,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item" style="margin-top:25px">
-                        <img src="img/clothes.jpg" alt="Image" />
+                        <img src="img/fashion.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>織品服裝學院</p>
@@ -229,7 +229,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item" style="margin-top:25px">
-                        <img src="img/medical.jpg" alt="Image" />
+                        <img src="img/med.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>醫學院</p>
@@ -238,7 +238,7 @@ https://templatemo.com/tm-560-astro-motion
                     </figure>
 
                     <figure class="effect-julia item" style="margin-top:25px">
-                        <img src="img/study.jpg" alt="Image" />
+                        <img src="img/f.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>進修部</p>
@@ -246,7 +246,7 @@ https://templatemo.com/tm-560-astro-motion
                         </figcaption>
                     </figure>
                     <figure class="effect-julia item" style="margin-top:25px">
-                        <img src="img/guest.png" alt="Image" />
+                        <img src="img/g.jpg" alt="Image" />
                         <figcaption>
                             <div>
                                 <p>其他/訪客</p>
