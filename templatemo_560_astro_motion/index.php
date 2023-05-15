@@ -157,6 +157,12 @@ https://templatemo.com/tm-560-astro-motion
             </div>
         </div>
 
+
+        <?/*php
+        $query="SELECT SUM(area) FROM `item`";
+        */
+        ?>
+
         <div class="container-fluid tm-content-container">
             <ul class="cd-hero-slider mb-0 py-5">
                 <li class="px-3" data-page-no="1">
@@ -172,9 +178,15 @@ https://templatemo.com/tm-560-astro-motion
                                 <p class="mb-4">
                                     為了避免食物浪費，輔仁大學社科院與興毅基金會忠信食物銀行合作設立了全台第一座「校園食享冰箱」，食物的提供來源為各界的即期食品，提供地點主要在樹德樓1樓LW110教室以及進修部大樓ES502，每日14:30及18:10開放輔大教職員及學生領取。
                                 </p>
-
                                 <h2 class="mb-4">輔大平面地圖</h2>
                                 <p class="mb-4">- LW110教室</p>
+                                
+                                
+                                <!-- <p>剩餘:<?//php echo ['SUM(area)'];
+                                ?></p> -->
+
+
+
                             </div>
                             <div class="intro-right">
                                 <img src="img/refref.JPG" alt="Image" class="img-fluid intro-img-1" />
