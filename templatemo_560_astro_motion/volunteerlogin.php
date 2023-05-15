@@ -48,62 +48,61 @@ https://templatemo.com/tm-560-astro-motion
                             <div class="collapse navbar-collapse" id="navbar-supported-content">
                                 <ul class="navbar-nav mb-2 mb-lg-0">
 
-                                <?php
-                  session_start();
-                 if($_SESSION['level']=="admin"){
-                     ?>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="#0" data-no="1"
-                                            style="padding-left: 50px; padding-right: 50px">首頁</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="item.php" data-no="2"
-                                            style="padding-left: 50px; padding-right: 50px">領取物資</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="upload.php" data-no="3"
-                                            style="padding-left: 50px; padding-right: 50px">上架/下架</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="volunteerlogin.php" data-no="4"
-                                            style="padding-left: 50px; padding-right: 50px">志工專區</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="logouttest.php"
-                                            style="padding-left: 50px; padding-right: 50px">登出</a>
-                                        <div class="circle"></div>
-                                    </li>
                                     <?php
-                 } 
-                 else{
-                 ?>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
-                                            style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="inventory.php" data-no="6"
-                                            style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" href="volunteerlogin.php" data-no="4"
-                                            style="padding-left: 85px; padding-right: 85px">志工專區</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="login.php" data-no="5"
-                                            style="padding-left: 85px; padding-right: 85px">登入</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <?php
-                 }
-                 ?>
+                                    session_start();
+                                    if ($_SESSION['level'] == "admin") {
+                                        ?>
+                                        <li class="nav-item selected">
+                                            <a class="nav-link" aria-current="page" href="#0" data-no="1"
+                                                style="padding-left: 50px; padding-right: 50px">首頁</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="item.php" data-no="2"
+                                                style="padding-left: 50px; padding-right: 50px">領取物資</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="upload.php" data-no="3"
+                                                style="padding-left: 50px; padding-right: 50px">上架/下架</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="volunteerlogin.php" data-no="4"
+                                                style="padding-left: 50px; padding-right: 50px">志工專區</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="logouttest.php"
+                                                style="padding-left: 50px; padding-right: 50px">登出</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="index.php" data-no="1"
+                                                style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="inventory.php" data-no="6"
+                                                style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item selected">
+                                            <a class="nav-link" href="volunteerlogin.php" data-no="4"
+                                                style="padding-left: 85px; padding-right: 85px">志工專區</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="login.php" data-no="5"
+                                                style="padding-left: 85px; padding-right: 85px">登入</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <?php
+                                    }
+                                    ?>
 
                                     </li>
                                 </ul>
@@ -115,63 +114,40 @@ https://templatemo.com/tm-560-astro-motion
         </div>
 
         <div class="container-fluid tm-content-container">
-          <div class="position-relative page-width-1 tm-border-top tm-border-bottom"
-            style="margin-left:25% ; margin-top:auto; #cccccc solid;">
-            <div class="circle intro-circle-1"></div>
-            <div class="circle intro-circle-2"></div>
-            <div class="circle intro-circle-3"></div>
-            <div class="circle intro-circle-4"></div>
-            <div class="container-fluid tm-content-container">
+            <div class="position-relative page-width-1 tm-border-top tm-border-bottom"
+                style="margin-left:25% ; margin-top:auto; #cccccc solid;">
+                <div class="circle intro-circle-1"></div>
+                <div class="circle intro-circle-2"></div>
+                <div class="circle intro-circle-3"></div>
+                <div class="circle intro-circle-4"></div>
 
-              <div class="mx-auto page-width-2">
-                <div class="row">
-                  <div class="col-6.col-md-4">
-                    <h2 class="mb-6">志工登入</h2>
-                    <h2 class="mb-6">登入即可填寫班表意願</h2>
-                  </div>
+
+                <div class="mx-auto page-width-2">
+                    <div class="row">
+                        <h2 class="mb-6">登入即可填寫班表意願</h2>
+                    </div> <a href="login.php" class="btn btn-dark" type="button">志工登入</a>
+                    <p>
+                    </p>
+                    <a href="account_insert.php" class="btn btn-dark" type="button">註冊志工帳號Sign up</a>
                 </div>
-                <div class="row">
-                  <div class="col-6.col-md-4">
-                    <form action="volunteerlogincheck.php" method="post" class="contact-form">
-                      <div class="input-group tm-mb-30">
-                        <input name="account" type="text"
-                          class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                          placeholder="Account 帳號" required>
-                      </div>
-                      <div class="input-group tm-mb-30">
-                        <input name="password" type="text"
-                          class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                          placeholder="Password 密碼" required>
-                      </div>
-                      <div class="input-group justify-content-start">
-                        <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Login">
-                      </div>
-                    </form> 
-                    <div>
-                    <br></br>
-                    <a href="account_insert.php" class="btn btn-dark" type="button" >註冊志工帳號Sign up</a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              
+
             </div>
-          </div>
-          </div>
-    <div class="container-fluid">
-      <footer class="row mx-auto tm-footer">
-      </footer>
-    </div>
 
-        
+        </div>
 
+        <div class="container-fluid">
+            <footer class="row mx-auto tm-footer">
+            </footer>
+        </div>
 
 
 
 
 
-        
+
+
+
+
 
     </div>
     <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
