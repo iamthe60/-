@@ -8,7 +8,7 @@
   {
 	//這裡是新增的語法
 	$sql  = "INSERT INTO `login`(`account`, `password`, `level`) VALUES ('$account','$password','volunteer')";
-	echo "jj";
+	
 
   if(mysqli_query($link,$sql))
 	  {

@@ -103,7 +103,7 @@ https://templatemo.com/tm-560-astro-motion
                  ?>
                                     <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href="#0" data-no="1"
-                                            style="padding-left: 50px; padding-right: 50px">首頁</a>
+                                        style="padding-left: 85px; padding-right: 85px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item selected">
@@ -113,12 +113,12 @@ https://templatemo.com/tm-560-astro-motion
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="volunteer.php" data-no="4"
-                                            style="padding-left: 50px; padding-right: 50px">志工專區</a>
+                                        style="padding-left: 85px; padding-right: 85px">志工專區</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="logouttest.php"
-                                            style="padding-left: 50px; padding-right: 50px">登出</a>
+                                        style="padding-left: 85px; padding-right: 85px">登出</a>
                                         <div class="circle"></div>
                                     </li>
                                     <?php
