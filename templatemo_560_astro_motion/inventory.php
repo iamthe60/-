@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 -->
     <?
 
- $conn = new mysqli('localhost','root','e20030225','fjufreedge');
+ $conn = new mysqli('localhost','root','12345678','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -101,12 +101,12 @@ https://templatemo.com/tm-560-astro-motion
                  } 
                  else{
                  ?>
-                                    <li class="nav-item selected">
+                                    <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href="index.php" data-no="1"
                                             style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item  selected">
                                         <a class="nav-link" href="inventory.php" data-no="6"
                                             style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
                                         <div class="circle"></div>
@@ -160,7 +160,7 @@ https://templatemo.com/tm-560-astro-motion
                             </tr>
 
                             <?php
-                  $conn = new mysqli('localhost','root','','fjufreedge');
+                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
                   $query = "SELECT * FROM item";
                   $result = mysqli_query($conn,$query);
                   while($row=mysqli_fetch_array($result))

@@ -82,7 +82,7 @@ https://templatemo.com/tm-560-astro-motion
                  } 
                  else{
                  ?>
-                                    <li class="nav-item selected">
+                                    <li class="nav-item ">
                                         <a class="nav-link" aria-current="page" href="index.php" data-no="1"
                                             style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
                                         <div class="circle"></div>
@@ -97,7 +97,7 @@ https://templatemo.com/tm-560-astro-motion
                                             style="padding-left: 85px; padding-right: 85px">志工專區</a>
                                         <div class="circle"></div>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item selected">
                                         <a class="nav-link" href="login.php" data-no="5"
                                             style="padding-left: 85px; padding-right: 85px">登入</a>
                                         <div class="circle"></div>

@@ -7,8 +7,8 @@
   if($dbaction=="insert")
   {
 	//這裡是新增的語法
-	$sql  = "insert into login (account,password) values ('$account', '$password')";
-
+	$sql  = "INSERT INTO `login`(`account`, `password`, `level`) VALUES ('$account','$password','volunteer')";
+	
 
   if(mysqli_query($link,$sql))
 	  {
