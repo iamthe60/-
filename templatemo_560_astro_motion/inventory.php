@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 -->
     <?
 
- $conn = new mysqli('localhost','root','','fjufreedge');
+ $conn = new mysqli('localhost','root','12345678','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -103,7 +103,7 @@ https://templatemo.com/tm-560-astro-motion
                  ?>
                                     <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href="#0" data-no="1"
-                                        style="padding-left: 85px; padding-right: 85px">首頁</a>
+                                            style="padding-left: 85px; padding-right: 85px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item selected">
@@ -113,12 +113,12 @@ https://templatemo.com/tm-560-astro-motion
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="volunteer.php" data-no="4"
-                                        style="padding-left: 85px; padding-right: 85px">志工專區</a>
+                                            style="padding-left: 85px; padding-right: 85px">志工專區</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="logouttest.php"
-                                        style="padding-left: 85px; padding-right: 85px">登出</a>
+                                            style="padding-left: 85px; padding-right: 85px">登出</a>
                                         <div class="circle"></div>
                                     </li>
                                     <?php
@@ -184,7 +184,7 @@ https://templatemo.com/tm-560-astro-motion
                             </tr>
 
                             <?php
-                  $conn = new mysqli('localhost','root','','fjufreedge');
+                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
                   $query = "SELECT * FROM item";
                   $result = mysqli_query($conn,$query);
                   while($row=mysqli_fetch_array($result))
