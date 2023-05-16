@@ -154,11 +154,11 @@ https://templatemo.com/tm-560-astro-motion
                         
                     
                         <!-- 第一區 -->
-                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('麵包/蛋捲')">
+                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('麵包/蛋糕')">
                             <img src="img/bread.jpg" alt="Image" />
                             <figcaption>
                                 <div>
-                                    <p>麵包/蛋捲</p>
+                                    <p>麵包/蛋糕</p>
                                 </div>
                                 
                             </figcaption>
@@ -190,7 +190,7 @@ https://templatemo.com/tm-560-astro-motion
                                 
                             </figcaption>
                         </figure>
-                        <figure class="effect-julia item"  style="margin-top:25px" onclick="submitForm('蔬菜')">
+                        <figure class="effect-julia item"  style="margin-top:25px" onclick="submitForm('蔬果')">
                             <img src="img/vege.jpg" alt="Image" />
                             <figcaption>
                                 <div>

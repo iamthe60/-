@@ -134,12 +134,12 @@ https://templatemo.com/tm-560-astro-motion
                             <div class="input-group tm-mb-30">
                                 <input name="account" type="text"
                                     class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                                    placeholder="帳號Account">
+                                    placeholder="帳號 Account（學號）">
                             </div>
                             <div class="input-group tm-mb-30">
                                 <input name="password" type="text"
                                     class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                                    placeholder="密碼Password">
+                                    placeholder="密碼 Password">
                             </div>
 
                             <div class="input-group justify-content-start">

@@ -157,7 +157,7 @@ https://templatemo.com/tm-560-astro-motion
 
 
 
-                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('蔬菜/水果')">
+                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('蔬果')">
                             <img src="img/veget.jpg" alt="Image" />
                             <figcaption>
                                 <div>
@@ -167,7 +167,7 @@ https://templatemo.com/tm-560-astro-motion
                                 
                             </figcaption>
                         </figure>
-                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('餅乾/糖果')">
+                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('餅乾糖果')">
                             <img src="img/cookie.jpg" alt="Image" />
                             <figcaption>
                                 <div>

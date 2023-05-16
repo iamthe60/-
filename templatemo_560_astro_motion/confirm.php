@@ -145,7 +145,7 @@ https://templatemo.com/tm-560-astro-motion
                     <li>Item Name: <?php echo $itemname3; ?></li>
                 </ul>
                 <p>If this information is correct, please click the "Confirm" button to proceed.</p>
-                <form action="ads.php" method="post">
+                <form action="count.php" method="post">
                 <?php 
                 $selected_items = $itemname1 . "," . $itemname2 . "," . $itemname3;
                 ?>
