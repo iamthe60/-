@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$conn = new mysqli('localhost', 'root','12345678', 'fjufreedge');
+$conn = new mysqli('localhost', 'root', '', 'fjufreedge');
 
 $selected_items = $_POST['selected_item'];
 $items = explode(",", $selected_items);
@@ -15,18 +15,20 @@ foreach ($items as $item) {
         $value = $row['amount'] - 1;
         $update_query = "UPDATE item SET amount = '$value' WHERE name = '$item';";
         mysqli_query($conn, $update_query);
-        header("Location: item2.php");
     } elseif ($row['area'] == '2') {
         $value = $row['amount'] - 1;
         $update_query = "UPDATE item SET amount = '$value' WHERE name = '$item';";
         mysqli_query($conn, $update_query);
-        header("Location: item3.php");
     } else {
         $value = $row['amount'] - 1;
         $update_query = "UPDATE item SET amount = '$value' WHERE name = '$item';";
         mysqli_query($conn, $update_query);
-        header("Location: college.php");
     }
 }
+
+mysqli_close($conn);
+header("Location: college.php");
+exit();
 ?>
+
 

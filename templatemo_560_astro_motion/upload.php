@@ -137,14 +137,14 @@ https://templatemo.com/tm-560-astro-motion
 if (isset($_POST['password'])) {
   $password = $_POST['password'];
 
-  $link = mysqli_connect('localhost','root','12345678','fjufreedge');
+  $link = mysqli_connect('localhost','root','','fjufreedge');
   $sql = "select * from login where password = '$password'";
   $result = mysqli_query($link, $sql);
   if($row = mysqli_fetch_assoc($result)) {
     $_SESSION['password'] = $row['password'];
     $_SESSION['level'] = $row['level'];
 
-    $conn = new mysqli('localhost','root','12345678','fjufreedge');
+    $conn = new mysqli('localhost','root','','fjufreedge');
     if(isset($_POST['but_update'])){
       if(isset($_POST['update'])){
         foreach($_POST['update'] as $updatenum){
@@ -193,7 +193,7 @@ if (isset($_POST['password'])) {
                                 </th>
                         </tr>
                         <?php
-                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
+                  $conn = new mysqli('localhost','root','','fjufreedge');
                   $query = "SELECT * from item ;";
                   $result = mysqli_query($conn,$query);
 
