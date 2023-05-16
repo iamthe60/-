@@ -8336,11 +8336,13 @@ h1, h2, h3, h4, h5,
 #cancel-button {
   background: #cd4dcc; }
 
-#add-button {
-  display: block;
-  position: absolute;
-  right: 20px;
-  bottom: 20px; }
+  #add-button {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #99FF66 !important;
+}
 
 #add-button:hover, #ok-button:hover, #cancel-button:hover {
   -webkit-transform: scale(1.03);

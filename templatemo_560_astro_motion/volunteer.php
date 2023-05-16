@@ -202,15 +202,16 @@ https://templatemo.com/tm-560-astro-motion
                                         </tbody>
                                     </table>
                                 </div>
-                                <button class="button" id="add-button">Add Event</button>
+                                <button class="button" style="background-color:#99FF66 !important;" id="add-button">Add
+                                    Event</button>
                             </div>
                         </div>
-                        <div class="events-container">
+                        <div class="events-container" style="background-color:#99FF66 !important;">
                         </div>
                         <div class="dialog" id="dialog">
                             <h2 class="dialog-header"> Add New Event </h2>
                             <form class="form" id="form">
-                                <div class="form-container" align="center">
+                                <div class="form-container" align="center" style="background-color:#99FF66 !important;">
                                     <label class="form-label" id="valueFromMyButton" for="name">Event
                                         name</label>
                                     <input class="input" type="text" id="name" maxlength="36">
