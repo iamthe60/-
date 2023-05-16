@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="css/slick.css" type="text/css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
 
 
     <!--
@@ -83,7 +90,7 @@ https://templatemo.com/tm-560-astro-motion
                  ?>
                                     <li class="nav-item ">
                                         <a class="nav-link" aria-current="page" href="index.php" data-no="1"
-                                        style="padding-left: 85px; padding-right: 85px">首頁</a>
+                                            style="padding-left: 85px; padding-right: 85px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
@@ -93,12 +100,12 @@ https://templatemo.com/tm-560-astro-motion
                                     </li>
                                     <li class="nav-item selected">
                                         <a class="nav-link" href="volunteer.php" data-no="4"
-                                        style="padding-left: 85px; padding-right: 85px">志工專區</a>
+                                            style="padding-left: 85px; padding-right: 85px">志工專區</a>
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="logouttest.php"
-                                        style="padding-left: 85px; padding-right: 85px">登出</a>
+                                            style="padding-left: 85px; padding-right: 85px">登出</a>
                                         <div class="circle"></div>
                                     </li>
                                     <?php
@@ -147,52 +154,119 @@ https://templatemo.com/tm-560-astro-motion
 
             <div class="mx-auto page-width-2">
                 <div class="row justify-content-evenly">
-                    <div class="col-8">
-                        <h2>志工意願填寫</h2>
-                    </div>
-                  
-                </div>
-                <div class="row">
-                    <div class="col-md-8 tm-contact-left">
-                        <form action="insert_v.php" method="GET" class="contact-form">
 
-                            <!-- <div class="input-group tm-mb-30">
+                    <h2 class="heading-section">班表填寫/查詢</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content w-100">
+                        <div class="calendar-container">
+                            <div class="calendar">
+                                <div class="year-header">
+                                    <span class="left-button fa fa-chevron-left" id="prev"> </span>
+                                    <span class="year" id="label"></span>
+                                    <span class="right-button fa fa-chevron-right" id="next"> </span>
+                                </div>
+                                <table class="months-table w-100">
+                                    <tbody>
+                                        <tr class="months-row">
+                                            <td class="month">Jan</td>
+                                            <td class="month">Feb</td>
+                                            <td class="month">Mar</td>
+                                            <td class="month">Apr</td>
+                                            <td class="month">May</td>
+                                            <td class="month">Jun</td>
+                                            <td class="month">Jul</td>
+                                            <td class="month">Aug</td>
+                                            <td class="month">Sep</td>
+                                            <td class="month">Oct</td>
+                                            <td class="month">Nov</td>
+                                            <td class="month">Dec</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="days-table w-100">
+                                    <td class="day">Sun</td>
+                                    <td class="day">Mon</td>
+                                    <td class="day">Tue</td>
+                                    <td class="day">Wed</td>
+                                    <td class="day">Thu</td>
+                                    <td class="day">Fri</td>
+                                    <td class="day">Sat</td>
+                                </table>
+                                <div class="frame">
+                                    <table class="dates-table w-100">
+                                        <tbody class="tbody">
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button class="button" id="add-button">Add Event</button>
+                            </div>
+                        </div>
+                        <div class="events-container">
+                        </div>
+                        <div class="dialog" id="dialog">
+                            <h2 class="dialog-header"> Add New Event </h2>
+                            <form class="form" id="form">
+                                <div class="form-container" align="center">
+                                    <label class="form-label" id="valueFromMyButton" for="name">Event
+                                        name</label>
+                                    <input class="input" type="text" id="name" maxlength="36">
+                                    <label class="form-label" id="valueFromMyButton" for="count">Number
+                                        of people to invite</label>
+                                    <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
+                                    <input type="button" value="Cancel" class="button" id="cancel-button">
+                                    <input type="button" value="OK" class="button button-white" id="ok-button">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </div>
+    <div class="row">
+        <div class="col-md-8 tm-contact-left">
+            <form action="insert_v.php" method="GET" class="contact-form">
+
+                <!-- <div class="input-group tm-mb-30">
                                 <input name="time" type="time"
                                     class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
                                     placeholder="Time" required />
                             </div> -->
-                            <div >
+                <div>
 
-                     </div>
-
-
-                            <div class="input-group tm-mb-30">
-
-                                <input type="date" value="<?= isset($_POST['date']) ? $_POST['date'] : ''; ?>"
-                                    name="date" min="<?= date('Y-m-d'); ?>"
-                                    class="form-control rounded-0 border-top-0 border-end-0 border-start-0">
-
-                            </div>
-                            <div class="input-group justify-content-end">
-                                <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Send" name="send">
-                            </div>
-                        </form>
-                    </div>
-
-            
                 </div>
-            </div>
 
 
 
 
-
-
+            </form>
         </div>
-        <div class="container-fluid">
-            <footer class="row mx-auto tm-footer">
-            </footer>
-        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+    </div>
+    <div class="container-fluid">
+        <footer class="row mx-auto tm-footer">
+        </footer>
+    </div>
     </div>
     <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
     <div id="loader-wrapper">
