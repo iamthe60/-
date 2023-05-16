@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 -->
     <?
 
- $conn = new mysqli('localhost','root','','fjufreedge');
+ $conn = new mysqli('localhost','root','12345678','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -44,20 +44,18 @@ https://templatemo.com/tm-560-astro-motion
 
 ?>
 
-<script>
-document.getElementById("contiune").disabled=true;
-function enable_button(){
-    if(iagree.checked){
-         document.getElementById("contiune").disabled=false;
+    <script>
+    document.getElementById("contiune").disabled = true;
+
+    function enable_button() {
+        if (iagree.checked) {
+            document.getElementById("contiune").disabled = false;
+        }
+
+
+
     }
-   
-
-
-}
-
-
-
-</script>
+    </script>
 
 
 </head>
@@ -162,17 +160,19 @@ function enable_button(){
                             <div class="tm-bg-dark content-pad">
                                 <h2 class="mb-4">請不要浪費食物</h2>
                                 <div>
-                                <img src="img/ad.JPG" alt="Image" class="img-fluid"/>
-                                
-                            </div>
+                                    <img src="img/ad.JPG" alt="Image" class="img-fluid" />
+
+                                </div>
                                 <p class="mb-4">
                                     為了避免食物浪費，輔仁大學社科院與興毅基金會忠信食物銀行合作設立了全台第一座「校園食享冰箱」，食物的提供來源為各界的即期食品，提供地點主要在樹德樓1樓LW110教室以及進修部大樓ES502，每日14:30及18:10開放輔大教職員及學生領取。
                                 </p>
 
-                                <p class="mb-4"><input type="checkbox" id="iagree" onclick="enable_button()">我已閱讀完以上資訊</p>
-                                <input type="button" value="繼續" id="contiune" disabled="" onclick="location.href='index.php'"></button>
+                                <p class="mb-4"><input type="checkbox" id="iagree" onclick="enable_button()">我已閱讀完以上資訊
+                                </p>
+                                <input type="button" value="繼續" id="contiune" disabled=""
+                                    onclick="location.href='index.php'"></button>
                             </div>
-                            
+
 
                             <div class="circle intro-circle-1"></div>
                             <div class="circle intro-circle-2"></div>
