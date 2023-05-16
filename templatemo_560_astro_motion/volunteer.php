@@ -147,31 +147,25 @@ https://templatemo.com/tm-560-astro-motion
 
             <div class="mx-auto page-width-2">
                 <div class="row justify-content-evenly">
-                    <div class="col-4">
+                    <div class="col-8">
                         <h2>志工意願填寫</h2>
                     </div>
-                    <div class="col-4">
-                        <h2>聯絡我們Contact us</h2>
-                    </div>
+                  
                 </div>
                 <div class="row">
-                    <div class="col-md-6 tm-contact-left">
+                    <div class="col-md-8 tm-contact-left">
                         <form action="insert_v.php" method="GET" class="contact-form">
-                            <div class="input-group tm-mb-30">
-                                <input name="name" type="text"
-                                    class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                                    placeholder="Name" required />
-                            </div>
-                            <div class="input-group tm-mb-30">
-                                <input name="id" type="text"
-                                    class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                                    placeholder="Id" required />
-                            </div>
-                            <div class="input-group tm-mb-30">
+
+                            <!-- <div class="input-group tm-mb-30">
                                 <input name="time" type="time"
                                     class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
                                     placeholder="Time" required />
-                            </div>
+                            </div> -->
+                            <div >
+
+                     </div>
+
+
                             <div class="input-group tm-mb-30">
 
                                 <input type="date" value="<?= isset($_POST['date']) ? $_POST['date'] : ''; ?>"
@@ -179,39 +173,13 @@ https://templatemo.com/tm-560-astro-motion
                                     class="form-control rounded-0 border-top-0 border-end-0 border-start-0">
 
                             </div>
-                            <div class="input-group tm-mb-30">
-                                <input name="location" type="text"
-                                    class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
-                                    placeholder="Location" required />
-                            </div>
                             <div class="input-group justify-content-end">
                                 <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Send" name="send">
                             </div>
                         </form>
                     </div>
 
-                    <div class="col-md-6 tm-contact-right">
-                        <br></br>
-                        <p class="mb-4">
-                            有任何問題歡迎聯絡我們!
-                        </p>
-                        <div>
-                            Email:
-                            <a href="mailto:info@company.com" class="tm-link-white">info@company.com</a>
-                        </div>
-                        <div class="tm-mb-45">
-                            Tel:
-                            <a href="tel:0100200340" class="tm-link-white">010-020-0340</a>
-                        </div>
-                        <!-- Map -->
-                        <div class="map-outer">
-                            <div class="gmap-canvas">
-                                <iframe width="100%" height="400" id="gmap-canvas"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.9337615467116!2d121.43007997525291!3d25.036321877814927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7dd8be91eaf%3A0xe342a67d6574f896!2z5aSp5Li75pWZ6LyU5LuB5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1681382439705!5m2!1szh-TW!2stw"
-                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
+            
                 </div>
             </div>
 
