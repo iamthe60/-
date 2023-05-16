@@ -3,7 +3,7 @@
     $account = $_POST['account'];
     $password = $_POST['password'];
 
-    $link = mysqli_connect('localhost','root','','fjufreedge');
+    $link = mysqli_connect('localhost','root','12345678','fjufreedge');
   if($dbaction=="insert")
   {
 	//這裡是新增的語法
