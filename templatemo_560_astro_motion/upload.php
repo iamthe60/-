@@ -45,7 +45,7 @@ https://templatemo.com/tm-560-astro-motion
                             <div class="collapse navbar-collapse" id="navbar-supported-content">
                                 <ul class="navbar-nav mb-2 mb-lg-0">
 
-                                <?php
+                                    <?php
                   session_start();
                  if($_SESSION['level']=="admin"){
                      ?>
@@ -137,14 +137,14 @@ https://templatemo.com/tm-560-astro-motion
 if (isset($_POST['password'])) {
   $password = $_POST['password'];
 
-  $link = mysqli_connect('localhost','root','','fjufreedge');
+  $link = mysqli_connect('localhost','root','12345678','fjufreedge');
   $sql = "select * from login where password = '$password'";
   $result = mysqli_query($link, $sql);
   if($row = mysqli_fetch_assoc($result)) {
     $_SESSION['password'] = $row['password'];
     $_SESSION['level'] = $row['level'];
 
-    $conn = new mysqli('localhost','root','','fjufreedge');
+    $conn = new mysqli('localhost','root','12345678','fjufreedge');
     if(isset($_POST['but_update'])){
       if(isset($_POST['update'])){
         foreach($_POST['update'] as $updatenum){
@@ -193,7 +193,7 @@ if (isset($_POST['password'])) {
                                 </th>
                         </tr>
                         <?php
-                  $conn = new mysqli('localhost','root','','fjufreedge');
+                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
                   $query = "SELECT * from item ;";
                   $result = mysqli_query($conn,$query);
 
@@ -207,27 +207,28 @@ if (isset($_POST['password'])) {
                   ?>
                         <tr>
                             <td><input type='checkbox' name='update[]' value='<?= $num ?>'></td>
-                                <td>
-                                    <div>
-                                        <p><input type="file" accept="image/*" name='image_<?= $num ?>' value='<?= $image ?>'/></p>
-                                </td>
-                                <script>
-                                    $("input[type=file]").on("change", function () {
-                                        function getObjectURL(file) {
-                                            if (window.URL != undefined) {
-                                                url = window.URL.createObjectURL(file);
-                                                return url;
-                                            }
-                                        }
-                                        var objURL = getObjectURL(this.files[0]);
-                                        document.getElementById("image").src = objURL;
-                                        document.getElementById("imgBlob").textContent = objURL;
-                                    });
-                                </script>
-                                <td><input type='text' name='name_<?= $num ?>' value='<?= $name ?>'></td>
-                                <td><input type='text' size=3 name='area_<?= $num ?>' value='<?= $area ?>'></td>
-                                <td><input type='text' size=10 name='amount_<?= $num ?>' value='<?= $amount ?>'></td>
-                            </tr>
+                            <td>
+                                <div>
+                                    <p><input type="file" accept="image/*" name='image_<?= $num ?>'
+                                            value='<?= $image ?>' /></p>
+                            </td>
+                            <script>
+                            $("input[type=file]").on("change", function() {
+                                function getObjectURL(file) {
+                                    if (window.URL != undefined) {
+                                        url = window.URL.createObjectURL(file);
+                                        return url;
+                                    }
+                                }
+                                var objURL = getObjectURL(this.files[0]);
+                                document.getElementById("image").src = objURL;
+                                document.getElementById("imgBlob").textContent = objURL;
+                            });
+                            </script>
+                            <td><input type='text' name='name_<?= $num ?>' value='<?= $name ?>'></td>
+                            <td><input type='text' size=3 name='area_<?= $num ?>' value='<?= $area ?>'></td>
+                            <td><input type='text' size=10 name='amount_<?= $num ?>' value='<?= $amount ?>'></td>
+                        </tr>
                         <?php
                   }
                   ?>
