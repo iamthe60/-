@@ -1,10 +1,11 @@
 <?php
 session_start();
-$conn = new mysqli('localhost', 'root','12345678', 'fjufreedge');
+$conn = new mysqli('localhost', 'root','', 'fjufreedge');
 $selected_items = $_POST['selected_item'];
 $items =explode(",", $selected_items);
 for($i = 0 ;$i <3;$i++){
     $item=$items[$i];
+    if($item != "X"){
     $find_query = "SELECT area, amount FROM item WHERE name = '$item';";
     $find_result = mysqli_query($conn, $find_query);
     $row = mysqli_fetch_assoc($find_result);
@@ -24,6 +25,10 @@ for($i = 0 ;$i <3;$i++){
         mysqli_query($conn, $update_query);
         header("location:ads.php?method=message&message=刪減成功");
     }
+}
+else{
+    
+}
 }
 
 ?>

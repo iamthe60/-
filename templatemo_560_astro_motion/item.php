@@ -199,13 +199,13 @@ https://templatemo.com/tm-560-astro-motion
                                 
                             </figcaption>
                         </figure>
-                        <figure class="effect-julia item" style="margin-top:25px">
+                        <figure class="effect-julia item" style="margin-top:25px" onclick="submitForm('X')">
                             <img src="img/x.jpg" alt="Image" />
                             <figcaption>
                                 <div>
                                     <p>不領取/下一頁</p>
                                 </div>
-                                <a href="item2.php"></a>
+                            
                             </figcaption>
                         </figure>
                         </form>
