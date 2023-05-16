@@ -87,12 +87,12 @@ function enable_button(){
                   session_start();
                  if($_SESSION['level']=="admin"){
                      ?>
-                                    <li class="nav-item selected">
+                                    <li class="nav-item ">
                                         <a class="nav-link" aria-current="page" href="#0" data-no="1"
                                             style="padding-left: 50px; padding-right: 50px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item selected">
                                         <a class="nav-link" href="item.php" data-no="2"
                                             style="padding-left: 50px; padding-right: 50px">領取物資</a>
                                         <div class="circle"></div>
