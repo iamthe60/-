@@ -12,17 +12,17 @@ for($i = 0 ;$i <3;$i++){
         $value = $row['amount'] - 1;
         $update_query = "UPDATE item SET amount = '$value' WHERE name = '$item';";
         mysqli_query($conn, $update_query);
-        header("location:index.php?method=message&message=刪減成功");
+        header("location:ads.php?method=message&message=刪減成功");
     } elseif ($row['area'] == '2') {
         $value = $row['amount'] - 1;
         $update_query = "UPDATE item SET amount = '$value' WHERE name = '$item';";
         mysqli_query($conn, $update_query);
-        header("location:index.php?method=message&message=刪減成功");
+        header("location:ads.php?method=message&message=刪減成功");
     } else {
         $value = $row['amount'] - 1;
         $update_query = "UPDATE item SET amount = '$value' WHERE name = '$item';";
         mysqli_query($conn, $update_query);
-        header("location:index.php?method=message&message=刪減成功");
+        header("location:ads.php?method=message&message=刪減成功");
     }
 }
 ?>
