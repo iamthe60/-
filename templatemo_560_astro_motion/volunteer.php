@@ -165,10 +165,10 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="col-md-12">
                 <div class="container py-5" id="page-container">
         <div class="row">
-            <div class="col-md-9"  style="background-color:#FFFFFF">
+            <div class="col-md-9"  style="background-color:#E8E8E8">
                 <div id="calendar"></div>
             </div>
-            <div class="col-md-3" style="background-color:#FFFFFF" >
+            <div class="col-md-3" style="background-color:#E8E8E8; padding-top:50px" >
                 <div class="cardt rounded-0 shadow">
                     <div class="card-header bg-gradient bg-primary text-light">
                         <h5 class="card-title">Schedule Form</h5>
