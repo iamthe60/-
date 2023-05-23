@@ -145,125 +145,67 @@ https://templatemo.com/tm-560-astro-motion
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <div class="container-fluid tm-content-container">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <div class="container-fluid tm-content-container">
 
 
-            <div class="mx-auto page-width-2">
-                <div class="row justify-content-evenly">
-
+                <div class="mx-auto page-width-2">
+                    <!-- <div class="row justify-content-evenly">
                     <h2 class="heading-section">班表填寫/查詢</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="content w-100">
-                        <div class="calendar-container">
-                            <div class="calendar">
-                                <div class="year-header">
-                                    <span class="left-button fa fa-chevron-left" id="prev"> </span>
-                                    <span class="year" id="label"></span>
-                                    <span class="right-button fa fa-chevron-right" id="next"> </span>
-                                </div>
-                                <table class="months-table w-100">
-                                    <tbody>
-                                        <tr class="months-row">
-                                            <td class="month">Jan</td>
-                                            <td class="month">Feb</td>
-                                            <td class="month">Mar</td>
-                                            <td class="month">Apr</td>
-                                            <td class="month">May</td>
-                                            <td class="month">Jun</td>
-                                            <td class="month">Jul</td>
-                                            <td class="month">Aug</td>
-                                            <td class="month">Sep</td>
-                                            <td class="month">Oct</td>
-                                            <td class="month">Nov</td>
-                                            <td class="month">Dec</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
 
-                                <table class="days-table w-100">
-                                    <td class="day">Sun</td>
-                                    <td class="day">Mon</td>
-                                    <td class="day">Tue</td>
-                                    <td class="day">Wed</td>
-                                    <td class="day">Thu</td>
-                                    <td class="day">Fri</td>
-                                    <td class="day">Sat</td>
-                                </table>
-                                <div class="frame">
-                                    <table class="dates-table w-100">
-                                        <tbody class="tbody">
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <button class="button" style="background-color:#99FF66 !important;" id="add-button">Add
-                                    Event</button>
-                            </div>
+                </div> -->
+                </div>
+                <div class="row">
+                    <div class="container-fluid tm-content-container">
+
+                        <div class="page-width-1 page-left">
+                            <iframe frameborder="0" noresize="noresize"
+                                style="position: absolute; background: transparent; width: 1200px; height:690px;"
+                                src="index 2.php" frameborder="0">
+                            </iframe>
                         </div>
-                        <div class="events-container" style="background-color:#99FF66 !important;">
-                        </div>
-                        <div class="dialog" id="dialog">
-                            <h2 class="dialog-header"> Add New Event </h2>
-                            <form class="form" id="form">
-                                <div class="form-container" align="center" style="background-color:#99FF66 !important;">
-                                    <label class="form-label" id="valueFromMyButton" for="name">Event
-                                        name</label>
-                                    <input class="input" type="text" id="name" maxlength="36">
-                                    <label class="form-label" id="valueFromMyButton" for="count">Number
-                                        of people to invite</label>
-                                    <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
-                                    <input type="button" value="Cancel" class="button" id="cancel-button">
-                                    <input type="button" value="OK" class="button button-white" id="ok-button">
-                                </div>
-                            </form>
-                        </div>
+
                     </div>
                 </div>
+                <script src=" js/jquery.min.js">
+                </script>
+                <script src="js/popper.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script src="js/main.js"></script>
+
             </div>
-        </div>
-        </section>
+            <div class="row">
+                <div class="col-md-8 tm-contact-left">
+                    <form action="insert_v.php" method="GET" class="contact-form">
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-
-    </div>
-    <div class="row">
-        <div class="col-md-8 tm-contact-left">
-            <form action="insert_v.php" method="GET" class="contact-form">
-
-                <!-- <div class="input-group tm-mb-30">
+                        <!-- <div class="input-group tm-mb-30">
                                 <input name="time" type="time"
                                     class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
                                     placeholder="Time" required />
                             </div> -->
-                <div>
+                        <div>
 
+                        </div>
+
+
+
+
+                    </form>
                 </div>
 
 
-
-
-            </form>
+            </div>
         </div>
 
 
-    </div>
-    </div>
-
-
 
 
 
 
     </div>
+
     <div class="container-fluid">
         <footer class="row mx-auto tm-footer">
         </footer>
