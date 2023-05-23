@@ -19,10 +19,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fullcalendar/lib/main.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./fullcalendar/lib/main.min.js"></script>
+   
     <!--
     
 TemplateMo 560 Astro Motion
@@ -30,7 +33,7 @@ TemplateMo 560 Astro Motion
 https://templatemo.com/tm-560-astro-motion
 
 -->
-
+<?php include('db-connect.php') ?>
 
 </head>
 
@@ -160,70 +163,101 @@ https://templatemo.com/tm-560-astro-motion
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="content w-100">
-                        <div class="calendar-container">
-                            <div class="calendar">
-                                <div class="year-header">
-                                    <span class="left-button fa fa-chevron-left" id="prev"> </span>
-                                    <span class="year" id="label"></span>
-                                    <span class="right-button fa fa-chevron-right" id="next"> </span>
+                <div class="container py-5" id="page-container">
+        <div class="row">
+            <div class="col-md-9"  style="background-color:#FFFFFF">
+                <div id="calendar"></div>
+            </div>
+            <div class="col-md-3" style="background-color:#FFFFFF" >
+                <div class="cardt rounded-0 shadow">
+                    <div class="card-header bg-gradient bg-primary text-light">
+                        <h5 class="card-title">Schedule Form</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <form action="save_schedule.php" method="post" id="schedule-form">
+                                <input type="hidden" name="id" value="">
+                                <div class="form-group mb-2">
+                                    <label for="title" class="control-label">Title</label>
+                                    <input type="text" class="form-control form-control-sm rounded-0" name="title" id="title" required>
                                 </div>
-                                <table class="months-table w-100">
-                                    <tbody>
-                                        <tr class="months-row">
-                                            <td class="month">Jan</td>
-                                            <td class="month">Feb</td>
-                                            <td class="month">Mar</td>
-                                            <td class="month">Apr</td>
-                                            <td class="month">May</td>
-                                            <td class="month">Jun</td>
-                                            <td class="month">Jul</td>
-                                            <td class="month">Aug</td>
-                                            <td class="month">Sep</td>
-                                            <td class="month">Oct</td>
-                                            <td class="month">Nov</td>
-                                            <td class="month">Dec</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="days-table w-100">
-                                    <td class="day">Sun</td>
-                                    <td class="day">Mon</td>
-                                    <td class="day">Tue</td>
-                                    <td class="day">Wed</td>
-                                    <td class="day">Thu</td>
-                                    <td class="day">Fri</td>
-                                    <td class="day">Sat</td>
-                                </table>
-                                <div class="frame">
-                                    <table class="dates-table w-100">
-                                        <tbody class="tbody">
-                                        </tbody>
-                                    </table>
+                                <div class="form-group mb-2">
+                                    <label for="description" class="control-label">Description</label>
+                                    <textarea rows="3" class="form-control form-control-sm rounded-0" name="description" id="description" required></textarea>
                                 </div>
-                                <button class="button" style="background-color:#99FF66 !important;" id="add-button">Add
-                                    Event</button>
-                            </div>
-                        </div>
-                        <div class="events-container" style="background-color:#99FF66 !important;">
-                        </div>
-                        <div class="dialog" id="dialog">
-                            <h2 class="dialog-header"> Add New Event </h2>
-                            <form class="form" id="form">
-                                <div class="form-container" align="center" style="background-color:#99FF66 !important;">
-                                    <label class="form-label" id="valueFromMyButton" for="name">Event
-                                        name</label>
-                                    <input class="input" type="text" id="name" maxlength="36">
-                                    <label class="form-label" id="valueFromMyButton" for="count">Number
-                                        of people to invite</label>
-                                    <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
-                                    <input type="button" value="Cancel" class="button" id="cancel-button">
-                                    <input type="button" value="OK" class="button button-white" id="ok-button">
+                                <div class="form-group mb-2">
+                                    <label for="start_datetime" class="control-label">Start</label>
+                                    <input type="datetime-local" class="form-control form-control-sm rounded-0" name="start_datetime" id="start_datetime" required>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="end_datetime" class="control-label">End</label>
+                                    <input type="datetime-local" class="form-control form-control-sm rounded-0" name="end_datetime" id="end_datetime" required>
                                 </div>
                             </form>
                         </div>
                     </div>
+                    <div class="card-footer">
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-sm rounded-0" type="submit" form="schedule-form"><i class="fa fa-save"></i> Save</button>
+                            <button class="btn btn-default border btn-sm rounded-0" type="reset" form="schedule-form"><i class="fa fa-reset"></i> Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event Details Modal -->
+    <div class="modal fade" tabindex="-1" data-bs-backdrop="static" id="event-details-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-header rounded-0">
+                    <h5 class="modal-title">Schedule Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body rounded-0">
+                    <div class="container-fluid">
+                        <dl>
+                            <dt class="text-muted">Title</dt>
+                            <dd id="title" class="fw-bold fs-4"></dd>
+                            <dt class="text-muted">Description</dt>
+                            <dd id="description" class=""></dd>
+                            <dt class="text-muted">Start</dt>
+                            <dd id="start" class=""></dd>
+                            <dt class="text-muted">End</dt>
+                            <dd id="end" class=""></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="modal-footer rounded-0">
+                    <div class="text-end">
+                        <button type="button" class="btn btn-primary btn-sm rounded-0" id="edit" data-id="">Edit</button>
+                        <button type="button" class="btn btn-danger btn-sm rounded-0" id="delete" data-id="">Delete</button>
+                        <button type="button" class="btn btn-secondary btn-sm rounded-0" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event Details Modal -->
+
+<?php 
+$schedules = $conn->query("SELECT * FROM `schedule_list`");
+$sched_res = [];
+foreach($schedules->fetch_all(MYSQLI_ASSOC) as $row){
+    $row['sdate'] = date("F d, Y h:i A",strtotime($row['start_datetime']));
+    $row['edate'] = date("F d, Y h:i A",strtotime($row['end_datetime']));
+    $sched_res[$row['id']] = $row;
+}
+?>
+<?php 
+if(isset($conn)) $conn->close();
+?>
+</body>
+<script>
+    var scheds = $.parseJSON('<?= json_encode($sched_res) ?>')
+</script>
+<script src="./js/script.js"></script>
+       
                 </div>
             </div>
         </div>
