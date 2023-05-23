@@ -168,7 +168,7 @@ https://templatemo.com/tm-560-astro-motion
             <div class="col-md-9"  style="background-color:#FFFFFF">
                 <div id="calendar"></div>
             </div>
-            <div class="col-md-3" style="background-color:#FFFFFF" >
+            <div class="col-md-3" style="background-color:#FFFFF" >
                 <div class="cardt rounded-0 shadow">
                     <div class="card-header bg-gradient bg-primary text-light">
                         <h5 class="card-title">Schedule Form</h5>
