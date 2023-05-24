@@ -19,13 +19,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./fullcalendar/lib/main.min.css">
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./fullcalendar/lib/main.min.js"></script>
-   
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/fullcalendar.css" />
+    <link rel="stylesheet" href="css/style2.css" !important />
+
+
     <!--
     
 TemplateMo 560 Astro Motion
@@ -155,124 +154,236 @@ https://templatemo.com/tm-560-astro-motion
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <div class="container-fluid tm-content-container">
 
 
-            <div class="mx-auto page-width-2">
-                <div class="row justify-content-evenly">
 
-                    <h2 class="heading-section">班表填寫/查詢</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-              
-      
-    </div>
-    <!-- Event Details Modal -->
-    <div class="modal fade" tabindex="-1" data-bs-backdrop="static" id="event-details-modal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-0">
-                <div class="modal-header rounded-0">
-                    <h5 class="modal-title">Schedule Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body rounded-0">
-                    <div class="container-fluid">
-                        <dl>
-                            <dt class="text-muted">Title</dt>
-                            <dd id="title" class="fw-bold fs-4"></dd>
-                            <dt class="text-muted">Description</dt>
-                            <dd id="description" class=""></dd>
-                            <dt class="text-muted">Start</dt>
-                            <dd id="start" class=""></dd>
-                            <dt class="text-muted">End</dt>
-                            <dd id="end" class=""></dd>
-                        </dl>
+            <div class="row justify-content-evenly">
+                <div class="container-fluid tm-content-container">
+                    <div class="page-width-1 page-left">
+                        <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container"
+                            style="margin-left:35% ;width:100%;">
+                            <h2 class="heading-section">班表填寫/查詢</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="modal-footer rounded-0">
-                    <div class="text-end">
-                        <button type="button" class="btn btn-primary btn-sm rounded-0" id="edit" data-id="">Edit</button>
-                        <button type="button" class="btn btn-danger btn-sm rounded-0" id="delete" data-id="">Delete</button>
-                        <button type="button" class="btn btn-secondary btn-sm rounded-0" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Event Details Modal -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <br />
+                            <h1 align="center">jQuery Event Booking Using Fullcalendar With PHP</h1>
+                            <br />
+                            <div class="booking">
+                                <div id="event_calendar"></div>
+                            </div>
 
-<?php 
-$schedules = $conn->query("SELECT * FROM `schedule_list`");
-$sched_res = [];
-foreach($schedules->fetch_all(MYSQLI_ASSOC) as $row){
-    $row['sdate'] = date("F d, Y h:i A",strtotime($row['start_datetime']));
-    $row['edate'] = date("F d, Y h:i A",strtotime($row['end_datetime']));
-    $sched_res[$row['id']] = $row;
-}
-?>
-<?php 
-if(isset($conn)) $conn->close();
-?>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+                            </script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js">
+                            </script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js">
+                            </script>
+                            <script>
+                            $(document).ready(function() {
+                                var calendar = $('#event_calendar').fullCalendar({
+                                    editable: true,
+                                    header: {
+                                        left: 'prev,next today',
+                                        center: 'title',
+                                        right: 'month,agendaWeek,agendaDay'
+                                    },
+                                    events: 'fetch.php',
+                                    selectable: true,
+                                    selectHelper: true,
+                                    select: function(start, end, allDay) {
+                                        var title = prompt("Enter Event Name");
+                                        if (title) {
+                                            var start = $.fullCalendar.formatDate(start,
+                                                "Y-MM-DD HH:mm:ss");
+                                            var end = $.fullCalendar.formatDate(end,
+                                                "Y-MM-DD HH:mm:ss");
+                                            $.ajax({
+                                                url: "insert.php",
+                                                type: "POST",
+                                                data: {
+                                                    title: title,
+                                                    start: start,
+                                                    end: end
+                                                },
+                                                success: function() {
+                                                    calendar.fullCalendar(
+                                                        'refetchEvents');
+                                                    alert("Event Booked Successfully");
+                                                }
+                                            })
+                                        }
+                                    },
+                                    editable: true,
+                                    eventResize: function(event) {
+                                        var start = $.fullCalendar.formatDate(event.start,
+                                            "Y-MM-DD HH:mm:ss");
+                                        var end = $.fullCalendar.formatDate(event.end,
+                                            "Y-MM-DD HH:mm:ss");
+                                        var title = event.title;
+                                        var id = event.id;
+                                        $.ajax({
+                                            url: "update.php",
+                                            type: "POST",
+                                            data: {
+                                                title: title,
+                                                start: start,
+                                                end: end,
+                                                id: id
+                                            },
+                                            success: function() {
+                                                calendar.fullCalendar('refetchEvents');
+                                                alert('Event Updated Successfully');
+                                            }
+                                        })
+                                    },
+
+                                    eventDrop: function(event) {
+                                        var start = $.fullCalendar.formatDate(event.start,
+                                            "Y-MM-DD HH:mm:ss");
+                                        var end = $.fullCalendar.formatDate(event.end,
+                                            "Y-MM-DD HH:mm:ss");
+                                        var title = event.title;
+                                        var id = event.id;
+                                        $.ajax({
+                                            url: "update.php",
+                                            type: "POST",
+                                            data: {
+                                                title: title,
+                                                start: start,
+                                                end: end,
+                                                id: id
+                                            },
+                                            success: function() {
+                                                calendar.fullCalendar('refetchEvents');
+                                                alert("Event Updated Successfully");
+                                            }
+                                        });
+                                    },
+
+                                    eventClick: function(event) {
+                                        if (confirm("Are you sure you want to cancel the event?")) {
+                                            var id = event.id;
+                                            $.ajax({
+                                                url: "delete.php",
+                                                type: "POST",
+                                                data: {
+                                                    id: id
+                                                },
+                                                success: function() {
+                                                    calendar.fullCalendar(
+                                                        'refetchEvents');
+                                                    alert("Event Removed Successfully");
+                                                }
+                                            })
+                                        }
+                                    },
+
+                                });
+                            });
+                            </script>
+
+
+                        </div>
+                        <!-- Event Details Modal -->
+                        <div class="modal fade" tabindex="-1" data-bs-backdrop="static" id="event-details-modal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content rounded-0">
+                                    <div class="modal-header rounded-0">
+                                        <h5 class="modal-title">Schedule Details</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body rounded-0">
+                                        <div class="container-fluid">
+                                            <dl>
+                                                <dt class="text-muted">Title</dt>
+                                                <dd id="title" class="fw-bold fs-4"></dd>
+                                                <dt class="text-muted">Description</dt>
+                                                <dd id="description" class=""></dd>
+                                                <dt class="text-muted">Start</dt>
+                                                <dd id="start" class=""></dd>
+                                                <dt class="text-muted">End</dt>
+                                                <dd id="end" class=""></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer rounded-0">
+                                        <div class="text-end">
+                                            <button type="button" class="btn btn-primary btn-sm rounded-0" id="edit"
+                                                data-id="">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm rounded-0" id="delete"
+                                                data-id="">Delete</button>
+                                            <button type="button" class="btn btn-secondary btn-sm rounded-0"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Event Details Modal -->
+
+
+
 </body>
-<script>
-    var scheds = $.parseJSON('<?= json_encode($sched_res) ?>')
-</script>
+
 <script src="./js/script.js"></script>
-       
-                </div>
-            </div>
-        </div>
-        </section>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+</div>
+</div>
+</div>
+</section>
 
-    </div>
-    <div class="row">
-        <div class="col-md-8 tm-contact-left">
-            <form action="insert_v.php" method="GET" class="contact-form">
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 
-                <!-- <div class="input-group tm-mb-30">
+</div>
+<div class="row">
+    <div class="col-md-8 tm-contact-left">
+        <form action="insert_v.php" method="GET" class="contact-form">
+
+            <!-- <div class="input-group tm-mb-30">
                                 <input name="time" type="time"
                                     class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
                                     placeholder="Time" required />
                             </div> -->
-                <div>
+            <div>
 
-                </div>
-
-
+            </div>
 
 
-            </form>
-        </div>
 
 
-    </div>
+        </form>
     </div>
 
 
+</div>
+</div>
 
 
 
 
-    </div>
-    <div class="container-fluid">
-        <footer class="row mx-auto tm-footer">
-        </footer>
-    </div>
-    </div>
-    <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.js"></script>
-    <script src="js/templatemo-script.js"></script>
+
+
+</div>
+<div class="container-fluid">
+    <footer class="row mx-auto tm-footer">
+    </footer>
+</div>
+</div>
+<!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/templatemo-script.js"></script>
 </body>
 
 </html>
