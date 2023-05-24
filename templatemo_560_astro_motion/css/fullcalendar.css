@@ -16,6 +16,8 @@
 
 body .fc { /* extra precedence to overcome jqui */
 	font-size: 1em;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 
@@ -824,6 +826,9 @@ a.fc-more:hover {
 
 .fc-toolbar.fc-header-toolbar {
 	margin-bottom: 1em;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .fc-toolbar.fc-footer-toolbar {
@@ -1003,6 +1008,7 @@ a.fc-more:hover {
 
 .fc-ltr .fc-axis {
 	text-align: right;
+
 }
 
 .fc-rtl .fc-axis {

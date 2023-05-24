@@ -161,7 +161,10 @@ https://templatemo.com/tm-560-astro-motion
        
         <div class="container-fluid tm-content-container">
            
-               
+        <div style=" padding-left: 28%;">
+                    <h2>班表填寫</h2>
+                  
+                </div>
                     <div class="page-width-1 page-left">
                         <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container"
                             style="margin-left:35% ;width:100%; height:800px">
