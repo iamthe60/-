@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 -->
     <?
 
- $conn = new mysqli('localhost','root','','fjufreedge');
+ $conn = new mysqli('localhost','root','e20030225','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -72,79 +72,79 @@ https://templatemo.com/tm-560-astro-motion
                   session_start();
                  if($_SESSION['level']=="admin"){
                      ?>
-                                    <li class="nav-item ">
-                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
-                                            style="padding-left: 50px; padding-right: 50px">首頁</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="item.php" data-no="2"
-                                            style="padding-left: 50px; padding-right: 50px">領取物資</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="upload.php" data-no="3"
-                                            style="padding-left: 50px; padding-right: 50px">上架/下架</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" href="volunteerlogin.php" data-no="4"
-                                            style="padding-left: 50px; padding-right: 50px">志工專區</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="logouttest.php"
-                                            style="padding-left: 50px; padding-right: 50px">登出</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <?php
+                                <li class="nav-item ">
+                                    <a class="nav-link" aria-current="page" href="index.php" data-no="1"
+                                        style="padding-left: 50px; padding-right: 50px">首頁</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="item.php" data-no="2"
+                                        style="padding-left: 50px; padding-right: 50px">領取物資</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="upload.php" data-no="3"
+                                        style="padding-left: 50px; padding-right: 50px">上架/下架</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <li class="nav-item selected">
+                                    <a class="nav-link" href="volunteerlogin.php" data-no="4"
+                                        style="padding-left: 50px; padding-right: 50px">志工專區</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="logouttest.php"
+                                        style="padding-left: 50px; padding-right: 50px">登出</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <?php
                  } 
                  else if($_SESSION['level']=="volunteer"){
                  ?>
-                                    <li class="nav-item ">
-                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
-                                            style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="inventory.php" data-no="6"
-                                            style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" href="volunteer.php" data-no="4"
-                                            style="padding-left: 85px; padding-right: 85px">志工專區</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="logouttest.php"
-                                            style="padding-left: 85px; padding-right: 85px">登出</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <?php
+                                <li class="nav-item ">
+                                    <a class="nav-link" aria-current="page" href="index.php" data-no="1"
+                                        style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="inventory.php" data-no="6"
+                                        style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <li class="nav-item selected">
+                                    <a class="nav-link" href="volunteer.php" data-no="4"
+                                        style="padding-left: 85px; padding-right: 85px">志工專區</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="logouttest.php"
+                                        style="padding-left: 85px; padding-right: 85px">登出</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <?php
                                     }else{ 
                                         ?>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
-                                            style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="inventory.php" data-no="6"
-                                            style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="volunteerlogin.php" data-no="4"
-                                            style="padding-left: 85px; padding-right: 85px">志工專區</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="login.php" data-no="5"
-                                            style="padding-left: 85px; padding-right: 85px">登入</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <?php
+                                <li class="nav-item selected">
+                                    <a class="nav-link" aria-current="page" href="index.php" data-no="1"
+                                        style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="inventory.php" data-no="6"
+                                        style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="volunteerlogin.php" data-no="4"
+                                        style="padding-left: 85px; padding-right: 85px">志工專區</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.php" data-no="5"
+                                        style="padding-left: 85px; padding-right: 85px">登入</a>
+                                    <div class="circle"></div>
+                                </li>
+                                <?php
                  }
                  ?>
 
@@ -154,45 +154,43 @@ https://templatemo.com/tm-560-astro-motion
                     </nav>
                 </div>
             </div>
-            
-    
-&nbsp;&nbsp;&nbsp;
 
-       
-        <div class="container-fluid tm-content-container">
-           
-        <div style=" padding-left: 28%;">
+
+            &nbsp;&nbsp;&nbsp;
+
+
+            <div class="container-fluid tm-content-container">
+
+                <div style=" padding-left: 28%;">
                     <h2>班表填寫</h2>
-                  
+
                 </div>
-                    <div class="page-width-1 page-left">
-                        <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container"
-                            style="margin-left:35% ;width:100%; height:800px">
-                            <div class="circle intro-circle-1"></div>
-                            <div class="circle intro-circle-2"></div>
-                            <div class="circle intro-circle-3"></div>
-                            <div class="circle intro-circle-4"></div>
-                            
-                           
-                            <iframe frameborder="0"
-             noresize="noresize"
-             style="position: absolute; background: transparent; width: 100%; height:700px;"
-             src="index2.php"
-             frameborder="0">
-         </iframe>
-  
-                     <div class="circle intro-circle-1"></div>
-                            <div class="circle intro-circle-2"></div>
-                            <div class="circle intro-circle-3"></div>
-                            <div class="circle intro-circle-4"></div>
-                        </div>
+                <div class="page-width-1 page-left">
+                    <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container"
+                        style="margin-left:35% ;width: 900px;; height:800px">
+                        <div class="circle intro-circle-1"></div>
+                        <div class="circle intro-circle-2"></div>
+                        <div class="circle intro-circle-3"></div>
+                        <div class="circle intro-circle-4"></div>
 
+
+                        <iframe frameborder="0" noresize="noresize"
+                            style="position: absolute; background: transparent; width: 900px; height:900px;"
+                            src="index2.php" frameborder="0">
+                        </iframe>
+
+                        <div class="circle intro-circle-1"></div>
+                        <div class="circle intro-circle-2"></div>
+                        <div class="circle intro-circle-3"></div>
+                        <div class="circle intro-circle-4"></div>
                     </div>
-             
 
+                </div>
+
+
+            </div>
         </div>
-        </div>
-               
+
 
     </div>
     <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
