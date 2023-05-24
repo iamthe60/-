@@ -158,9 +158,13 @@ https://templatemo.com/tm-560-astro-motion
                 <div class="page-width-1 page-left">
                     <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container"
                         style="margin-left:35% ;width:100%;">
+                        <br />
+                        <h1 align="center">jQuery Event Booking Using Fullcalendar With PHP</h1>
+                        <br />
                         <div class="booking">
                             <div id="event_calendar"></div>
                         </div>
+
 
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
