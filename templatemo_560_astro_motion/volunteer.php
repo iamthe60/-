@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 -->
     <?
 
- $conn = new mysqli('localhost','root','e20030225','fjufreedge');
+ $conn = new mysqli('localhost','root','','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -72,8 +72,8 @@ https://templatemo.com/tm-560-astro-motion
                   session_start();
                  if($_SESSION['level']=="admin"){
                      ?>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="#0" data-no="1"
+                                    <li class="nav-item ">
+                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
                                             style="padding-left: 50px; padding-right: 50px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
@@ -87,7 +87,7 @@ https://templatemo.com/tm-560-astro-motion
                                             style="padding-left: 50px; padding-right: 50px">上架/下架</a>
                                         <div class="circle"></div>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item selected">
                                         <a class="nav-link" href="volunteerlogin.php" data-no="4"
                                             style="padding-left: 50px; padding-right: 50px">志工專區</a>
                                         <div class="circle"></div>
@@ -101,8 +101,8 @@ https://templatemo.com/tm-560-astro-motion
                  } 
                  else if($_SESSION['level']=="volunteer"){
                  ?>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="#0" data-no="1"
+                                    <li class="nav-item ">
+                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
                                             style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
@@ -111,7 +111,7 @@ https://templatemo.com/tm-560-astro-motion
                                             style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
                                         <div class="circle"></div>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item selected">
                                         <a class="nav-link" href="volunteer.php" data-no="4"
                                             style="padding-left: 85px; padding-right: 85px">志工專區</a>
                                         <div class="circle"></div>
@@ -155,49 +155,42 @@ https://templatemo.com/tm-560-astro-motion
                     </div>
                 </div>
             </div>
-        </div>
+            
+    
+&nbsp;&nbsp;&nbsp;
 
-
-        <?/*php
-        $query="SELECT SUM(area) FROM `item`";
-        */
-        ?>
-
+       
         <div class="container-fluid tm-content-container">
-            <ul class="cd-hero-slider mb-0 py-5">
-                <li class="px-3" data-page-no="1">
+           
+               
                     <div class="page-width-1 page-left">
                         <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container"
-                            style="margin-left:35% ;width:100%;">
+                            style="margin-left:35% ;width:100%; height:800px">
                             <div class="circle intro-circle-1"></div>
                             <div class="circle intro-circle-2"></div>
                             <div class="circle intro-circle-3"></div>
                             <div class="circle intro-circle-4"></div>
-                            <div class="intro-left tm-bg-dark content-pad">
-                            </div>
-                            <div class="intro-right">
-
-                            </div>
-
-                            <div class="circle intro-circle-1"></div>
+                            
+                           
+                            <iframe frameborder="0"
+             noresize="noresize"
+             style="position: absolute; background: transparent; width: 100%; height:700px;"
+             src="index2.php"
+             frameborder="0">
+         </iframe>
+  
+                     <div class="circle intro-circle-1"></div>
                             <div class="circle intro-circle-2"></div>
                             <div class="circle intro-circle-3"></div>
                             <div class="circle intro-circle-4"></div>
                         </div>
 
                     </div>
-                </li>
-
-                <!-- Image Carousel -->
-
-
-
-
-
-            </ul>
+             
 
         </div>
-
+        </div>
+               
 
     </div>
     <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
