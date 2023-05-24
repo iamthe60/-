@@ -51,24 +51,24 @@ https://templatemo.com/tm-560-astro-motion
     <video autoplay muted loop id="bg-video">
         <source src="video/refri_video.mp4" type="video/mp4" />
     </video>
-    <div class="page-container">
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="cd-slider-nav">
-                        <nav class="navbar navbar-expand-lg" id="tm-nav">
-                            <a class="navbar-brand" href="#">輔大食享冰箱</a>
 
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbar-supported-content">
-                                <ul class="navbar-nav mb-2 mb-lg-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="cd-slider-nav">
+                    <nav class="navbar navbar-expand-lg" id="tm-nav">
+                        <a class="navbar-brand" href="#">輔大食享冰箱</a>
 
-                                    <?php
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-supported-content">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+
+                                <?php
                   session_start();
                  if($_SESSION['level']=="admin"){
                      ?>
@@ -148,11 +148,10 @@ https://templatemo.com/tm-560-astro-motion
                  }
                  ?>
 
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
             
