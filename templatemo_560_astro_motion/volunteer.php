@@ -33,7 +33,7 @@ TemplateMo 560 Astro Motion
 https://templatemo.com/tm-560-astro-motion
 
 -->
-<?php include('db-connect.php') ?>
+
 
 </head>
 
