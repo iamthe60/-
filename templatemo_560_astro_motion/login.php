@@ -136,7 +136,7 @@ https://templatemo.com/tm-560-astro-motion
                   <div class="col-6.col-md-4">
                     <form action="loginchecktest.php" method="post" class="contact-form">
                       <div class="input-group tm-mb-30">
-                        <input name="account" type="text"
+                        <input name="id" type="text"
                           class="form-control rounded-0 border-top-0 border-end-0 border-start-0"
                           placeholder="Account 帳號（學號）" required>
                       </div>
