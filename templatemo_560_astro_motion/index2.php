@@ -25,7 +25,7 @@
                 selectable: true,
                 selectHelper: true,
                 select: function (start, end, allDay) {
-                    var options = ["13:00:00", "17:00:00"]; // 可选的选项
+                    var options = ["13:00", "17:00"]; // 可选的选项
                     var firstOption = options[0]; // 获取数组中的第一个元素
                     var secondOption = options[1]; 
 
