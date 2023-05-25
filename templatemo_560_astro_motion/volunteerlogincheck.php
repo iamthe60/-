@@ -2,7 +2,7 @@
 session_start();
 $id = $_POST['id'];
 $password = $_POST['password'];
-$link = mysqli_connect('localhost', 'root','', 'fjufreedge');
+$link = mysqli_connect('localhost', 'root','e20030225', 'fjufreedge');
 $sql = "select distinct * from login where id = '$id' and password = '$password'";
 $result = mysqli_query($link, $sql);
 if ($row = mysqli_fetch_assoc($result)) {

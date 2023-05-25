@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 -->
     <?
 
- $conn = new mysqli('localhost','root','','fjufreedge');
+ $conn = new mysqli('localhost','root','e20030225','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){

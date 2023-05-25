@@ -42,26 +42,40 @@
                         "確認排班": function() {
                             var selectedOption = selectElement.val();
                             if (selectedOption) {
-                                var start = $.fullCalendar.formatDate(start,
+                                var formattedStart = moment(start).format(
                                     "Y-MM-DD HH:mm:ss");
-                                var end = $.fullCalendar.formatDate(end,
+                                var formattedEnd = moment(end).format(
                                     "Y-MM-DD HH:mm:ss");
                                 $.ajax({
                                     url: "insert.php",
                                     type: "POST",
                                     data: {
                                         title: selectedOption,
-                                        start: start,
-                                        end: end
+                                        start: formattedStart,
+                                        end: formattedEnd
                                     },
-                                    success: function() {
-                                        calendar.fullCalendar(
-                                            'refetchEvents');
-                                        alert("Event Booked Successfully");
+                                    success: function(response) {
+                                        if (response === "success") {
+                                            calendar.fullCalendar(
+                                                'refetchEvents');
+                                            alert(
+                                                "Event Booked Successfully"
+                                                );
+                                        } else {
+                                            alert(
+                                                "Failed to book event. Please try again."
+                                                );
+                                        }
+                                    },
+                                    error: function() {
+                                        alert(
+                                            "An error occurred while booking the event. Please try again."
+                                            );
                                     }
                                 });
                                 dialog.dialog("close");
                             }
+
                         },
                         "取消": function() {
                             dialog.dialog("close");
