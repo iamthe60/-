@@ -50,9 +50,7 @@ body {
 	padding-top: 20px;
 }
 .fc-button-group button {
-	border-color: #5a45ff !important;
-	color: #5a45ff !important;
-	background: none;
+	border-color: #5a45ff;
 	box-shadow: none;
 	text-transform: capitalize;
 }
@@ -61,14 +59,15 @@ body {
 	white-space: nowrap;
 	overflow: hidden;
 	background: #5a45ff;
-	color: #ffffff;
+	font-style: #ffffff;
 	padding: 4px;
 }
 .fc-toolbar .fc-state-active,
 .fc-toolbar .ui-state-active {
 	background: #5a45ff;
-	color: #FFF;
+	color: #FFF !important;
 }
+
 .fc-today-button {
 	background: #2a2a2f;
 	color: #fff;
@@ -81,6 +80,6 @@ body {
 }
 .fc-event,
 .fc-event-dot {
-	background-color: #5a45ff !important;
+	background-color: #5a45ff;
 	border: none;
 }
