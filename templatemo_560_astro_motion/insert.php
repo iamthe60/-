@@ -1,6 +1,6 @@
 <?php
 include('conn.php');
-
+$id=$_SESSION['id'];
 if (isset($_POST["title"]) && isset($_POST["start"]) && isset($_POST["end"])) {
     $title = $_POST["title"];
     $start = $_POST["start"];
@@ -9,7 +9,7 @@ if (isset($_POST["title"]) && isset($_POST["start"]) && isset($_POST["end"])) {
     $query = "INSERT INTO events (title, start_event, end_event) VALUES (:title, :start_event, :end_event)";
     $statement = $connect->prepare($query);
     $statement->execute(array(
-        ':title' => $title,
+        ':title' => $id." ".$title,
         ':start_event' => $start,
         ':end_event' => $end
     ));

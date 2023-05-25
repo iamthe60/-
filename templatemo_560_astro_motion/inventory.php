@@ -25,7 +25,7 @@ https://templatemo.com/tm-560-astro-motion
 -->
     <?
 
- $conn = new mysqli('localhost','root','e20030225','fjufreedge');
+ $conn = new mysqli('localhost','root','12345678','fjufreedge');
  if(isset($_POST['but_update'])){
     if(isset($_POST['update'])){
       foreach($_POST['update'] as $updatenum){
@@ -184,7 +184,7 @@ https://templatemo.com/tm-560-astro-motion
                             </tr>
 
                             <?php
-                  $conn = new mysqli('localhost','root','e20030225','fjufreedge');
+                  $conn = new mysqli('localhost','root','12345678','fjufreedge');
                   $query = "SELECT * FROM item";
                   $result = mysqli_query($conn,$query);
                   while($row=mysqli_fetch_array($result))

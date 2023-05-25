@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = new mysqli('localhost', 'root','e20030225', 'fjufreedge');
+$conn = new mysqli('localhost', 'root','12345678', 'fjufreedge');
 $selected_items = $_POST['selected_item'];
 $items =explode(",", $selected_items);
 for($i = 0 ;$i <3;$i++){
