@@ -25,7 +25,19 @@
             selectable: true,
             selectHelper: true,
             select: function(start, end, allDay) {
-                var options = ["Option 1", "Option 2"]; // 可选的选项
+                var options = [
+                    moment().set({
+                        hour: 14,
+                        minute: 0,
+                        second: 0
+                    }).format("Y-MM-DD HH:mm:ss"),
+                    moment().set({
+                        hour: 16,
+                        minute: 0,
+                        second: 0
+                    }).format("Y-MM-DD HH:mm:ss")
+                ]; // 可選的選項，直接設定為時間的格式
+
                 var selectElement = $("<select></select>");
 
                 for (var i = 0; i < options.length; i++) {
@@ -42,17 +54,13 @@
                         "確認排班": function() {
                             var selectedOption = selectElement.val();
                             if (selectedOption) {
-                                var formattedStart = moment(start).format(
-                                    "Y-MM-DD HH:mm:ss");
-                                var formattedEnd = moment(end).format(
-                                    "Y-MM-DD HH:mm:ss");
                                 $.ajax({
                                     url: "insert.php",
                                     type: "POST",
                                     data: {
                                         title: selectedOption,
-                                        start: formattedStart,
-                                        end: formattedEnd
+                                        start: selectedOption,
+                                        end: selectedOption
                                     },
                                     success: function(response) {
                                         if (response === "success") {
@@ -75,7 +83,6 @@
                                 });
                                 dialog.dialog("close");
                             }
-
                         },
                         "取消": function() {
                             dialog.dialog("close");
