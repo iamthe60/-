@@ -31,7 +31,7 @@
                     selectable: true,
                     selectHelper: true,
                     select: function (start, end, allDay) {
-                        var options = ["13:00", "17:00"]; // 可选的选项
+                        var options = ["13:00:00", "17:00:00"]; // 可选的选项
                         var firstOption = options[0]; // 获取数组中的第一个元素
                         var secondOption = options[1];
 
@@ -227,11 +227,11 @@
                                                             calendar.fullCalendar(
                                                                 'refetchEvents');
                                                             alert(
-                                                                "Event Booked Successfully"
+                                                                "填寫成功"
                                                             );
                                                         } else {
                                                             alert(
-                                                                "Failed to book event. Please try again."
+                                                                "已額滿"
                                                             );
                                                         }
                                                     },
@@ -256,7 +256,7 @@
                                                             calendar.fullCalendar(
                                                                 'refetchEvents');
                                                             alert(
-                                                                "Event Booked Successfully"
+                                                                "填寫成功"
                                                             );
                                                         } else {
                                                             alert(
@@ -266,7 +266,7 @@
                                                     },
                                                     error: function () {
                                                         alert(
-                                                            "An error occurred while booking the event. Please try again."
+                                                            "已額滿"
                                                         );
                                                     }
                                                 });
