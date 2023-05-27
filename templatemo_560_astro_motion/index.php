@@ -73,7 +73,7 @@ https://templatemo.com/tm-560-astro-motion
                  if($_SESSION['level']=="admin"){
                      ?>
                                     <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="#0" data-no="1"
+                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
                                             style="padding-left: 50px; padding-right: 50px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
@@ -88,7 +88,7 @@ https://templatemo.com/tm-560-astro-motion
                                         <div class="circle"></div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="volunteerlogin.php" data-no="4"
+                                        <a class="nav-link" href="volunteer.php" data-no="4"
                                             style="padding-left: 50px; padding-right: 50px">志工專區</a>
                                         <div class="circle"></div>
                                     </li>

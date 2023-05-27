@@ -8,13 +8,14 @@
   if($dbaction=="insert")
   {
 	//這裡是新增的語法
-	$sql  = "INSERT INTO `login`(`id`, ˋnameˋ, `password`, `level`) VALUES ('$id',ˋ$nameˋ,'$password','volunteer')";
+	$sql  = "INSERT INTO `login`(`id`, `name`, `password`, `level`) VALUES ('$id','$name','$password','volunteer')";
 	
 
   if(mysqli_query($link,$sql))
 	  {
 	    //echo "新增成功";
-		header("Location:volunteerlogin.php?message=新增完成");
+		// header("Location:volunteerlogin.php?message=新增完成");
+		echo "<script>alert('新增成功！點按確認鍵前往登入'); location.href = 'login.php';</script>";
 	  }
 	else
 	  {
