@@ -136,25 +136,25 @@ https://templatemo.com/tm-560-astro-motion
             <div class="mx-auto position-relative gallery-container tm-border-bottom">
                 <div class="circle intro-circle-1"></div>
                 <div class="circle intro-circle-2"></div>
-                <div class="mx-auto tm-border-top gallery-slider ">
+                <div class="mx-auto tm-border-top gallery-slider" style="padding-left:30%";>
                 <div class="intro-left tm-bg-dark content-pad">
-                <p>You have selected the following items:</p>
+                <p>您以選擇以下三項食品:</p>
                 <ul>
-                    <li>Item Name: <?php echo $itemname1; ?></li>
-                    <li>Item Name: <?php echo $itemname2; ?></li>
-                    <li>Item Name: <?php echo $itemname3; ?></li>
+                    <li>第一區: <?php echo $itemname1; ?></li>
+                    <li>第二區: <?php echo $itemname2; ?></li>
+                    <li>第三區: <?php echo $itemname3; ?></li>
                 </ul>
-                <p>If this information is correct, please click the "Confirm" button to proceed.</p>
+                <p>若上述商品無誤，請點擊"確認"按鈕以繼續。</p>
                 <form action="count.php" method="post">
                 <?php 
                 $selected_items = $itemname1 . "," . $itemname2 . "," . $itemname3;
                 ?>
                 <input type="hidden" name="selected_item" value="<?php echo $selected_items; ?>">
-                <input type="submit" name="confirm" value="Confirm">
+                <input type="submit" name="confirm" value="確認">
                 </form>
-                <p>If you want to make changes, please click the "Back" button to return to the previous page.</p>
+                <p>若要重新進行選擇，請點擊"返回"以回到之前的頁面。</p>
                 <form action="item.php" method="post">
-                <input type="submit" name="back" value="Back">
+                <input type="submit" name="back" value="返回">
 
                 <div class="circle intro-circle-3"></div>
                 <div class="circle intro-circle-4"></div>
