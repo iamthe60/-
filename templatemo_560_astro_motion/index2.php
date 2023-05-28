@@ -149,6 +149,7 @@
     </script>
     <?php
     } else if ($_SESSION['level'] == "volunteer") {
+        $currentUserId = $_SESSION['name'];
     ?>
     <script>
     $(document).ready(function() {
@@ -166,7 +167,6 @@
                 var options = ["13:00", "17:00"];
                 var firstOption = options[0];
                 var secondOption = options[1];
-
                 var selectElement = $("<select></select>");
 
                 for (var i = 0; i < options.length; i++) {
@@ -181,32 +181,40 @@
                     title: "選擇時段",
                     buttons: {
                         "確認排班": function() {
+                            var currentUserId = "<?php echo $currentUserId; ?>";
                             var selectedOption = selectElement.val();
                             if (selectedOption) {
-                                var formattedStart = moment(start).format(
-                                    "Y-MM-DD 13:00:00");
-                                var formattedEnd = moment(start).format(
-                                    "Y-MM-DD 13:00:00");
-                                var formattedStart_2 = moment(start).format(
-                                    "Y-MM-DD 17:00:00");
-                                var formattedEnd_2 = moment(start).format(
-                                    "Y-MM-DD 17:00:00");
+                                var formattedStart, formattedEnd;
 
+                                if (selectedOption === firstOption) {
+                                    formattedStart = moment(start).format(
+                                        "Y-MM-DD 13:00:00");
+                                    formattedEnd = moment(start).format(
+                                        "Y-MM-DD 13:00:00");
+                                } else if (selectedOption === secondOption) {
+                                    formattedStart = moment(start).format(
+                                        "Y-MM-DD 17:00:00");
+                                    formattedEnd = moment(start).format(
+                                        "Y-MM-DD 17:00:00");
+                                }
 
                                 $.ajax({
                                     url: "insert.php",
                                     type: "POST",
                                     data: {
-                                        title: selectedOption,
+                                        title: currentUserId,
                                         start: formattedStart,
                                         end: formattedEnd
                                     },
                                     success: function(response) {
-                                        alert(response);
                                         if (response === "success") {
-                                            alert("填寫成功");
-                                        } else {
+                                            calendar.fullCalendar(
+                                                'refetchEvents');
+                                            alert("排班成功");
+                                        } else if (response === "已額滿") {
                                             alert("已額滿");
+                                        } else {
+                                            alert("發生錯誤");
                                         }
                                     },
                                     error: function() {
