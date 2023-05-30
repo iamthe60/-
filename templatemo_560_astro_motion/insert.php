@@ -7,16 +7,17 @@ if (isset($_POST["title"]) && isset($_POST["start"]) && isset($_POST["end"])) {
     $start = $_POST["start"];
     $end = $_POST["end"];
 
-    $countQuery = "SELECT COUNT(start_event) AS COUNT FROM events WHERE start_event = :start";
+    $selectQuery = "SELECT COUNT(*) AS COUNT FROM events WHERE title = :title AND start_event = :start";
     $insertQuery = "INSERT INTO events (title, start_event, end_event) VALUES (:title, :start_event, :end_event)";
 
-    $statement = $connect->prepare($countQuery);
-    $statement->bindParam(':start', $start);
-    $statement->execute();
-    $countResult = $statement->fetch(PDO::FETCH_ASSOC);
+    $selectStatement = $connect->prepare($selectQuery);
+    $selectStatement->bindParam(':title', $title);
+    $selectStatement->bindParam(':start', $start);
+    $selectStatement->execute();
+    $countResult = $selectStatement->fetch(PDO::FETCH_ASSOC);
     $count = $countResult['COUNT'];
 
-    if ($count < 2) {
+    if ($count == 0) {
         $insertStatement = $connect->prepare($insertQuery);
         $insertStatement->bindParam(':title', $title);
         $insertStatement->bindParam(':start_event', $start);
@@ -28,10 +29,6 @@ if (isset($_POST["title"]) && isset($_POST["start"]) && isset($_POST["end"])) {
         } else {
             echo "error";
         }
-    } else {
-        echo "已額滿";
-    }
-} else {
-    echo "缺少必要參數";
-}
+    } 
+} 
 ?>
