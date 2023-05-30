@@ -214,7 +214,7 @@
                                         } else if (response === "已額滿") {
                                             alert("已額滿");
                                         } else {
-                                            alert("發生錯誤");
+                                            alert("已經排過該時段");
                                         }
                                     },
                                     error: function() {
