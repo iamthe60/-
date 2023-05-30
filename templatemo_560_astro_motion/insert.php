@@ -15,22 +15,6 @@ if (isset($_POST["title"]) && isset($_POST["start"]) && isset($_POST["end"])) {
     $statement->execute();
     $countResult = $statement->fetch(PDO::FETCH_ASSOC);
     $count = $countResult['COUNT'];
-    
-    $id = $_POST["id"];
-
-   $existingQuery = "SELECT COUNT(*) AS COUNT FROM events WHERE id != :id AND (start_event BETWEEN :start AND :end OR end_event BETWEEN :start AND :end)";
-       $existingStatement = $connect->prepare($existingQuery);
-$existingStatement->bindParam(':id', $id);
-$existingStatement->bindParam(':start', $start);
-$existingStatement->bindParam(':end', $end);
-$existingStatement->execute();
-$existingResult = $existingStatement->fetch(PDO::FETCH_ASSOC);
-$existingCount = $existingResult['COUNT'];
-
-if ($existingCount > 0) {
-    echo "該時間段已排班";
-    exit;
-}
 
     if ($count < 2) {
         $insertStatement = $connect->prepare($insertQuery);
@@ -47,6 +31,7 @@ if ($existingCount > 0) {
     } else {
         echo "已額滿";
     }
-
+} else {
+    echo "缺少必要參數";
 }
 ?>
