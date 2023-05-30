@@ -25,24 +25,24 @@ https://templatemo.com/tm-560-astro-motion
 -->
     <?
 
- $conn = new mysqli('localhost','root','12345678','fjufreedge');
- if(isset($_POST['but_update'])){
-    if(isset($_POST['update'])){
-      foreach($_POST['update'] as $updatenum){
-        $amount = $_POST['amount_'.$updatenum];
-        $name = $_POST['name_'.$updatenum];
-        $area = $_POST['area_'.$updatenum];
+    $conn = new mysqli('localhost', 'root', '', 'fjufreedge');
+    if (isset($_POST['but_update'])) {
+        if (isset($_POST['update'])) {
+            foreach ($_POST['update'] as $updatenum) {
+                $amount = $_POST['amount_' . $updatenum];
+                $name = $_POST['name_' . $updatenum];
+                $area = $_POST['area_' . $updatenum];
 
-        if($name !='' && $area != '' ){
-          $updateUser = "UPDATE item SET `amount`='".$amount."' WHERE `num`=".$updatenum;
-          mysqli_query($conn,$updateUser);
+                if ($name != '' && $area != '') {
+                    $updateUser = "UPDATE item SET `amount`='" . $amount . "' WHERE `num`=" . $updatenum;
+                    mysqli_query($conn, $updateUser);
+                }
+            }
         }
-      }
     }
- }
 
 
-?>
+    ?>
 
 
 </head>
@@ -69,84 +69,83 @@ https://templatemo.com/tm-560-astro-motion
                                 <ul class="navbar-nav mb-2 mb-lg-0">
 
                                     <?php
-                  session_start();
-                 if($_SESSION['level']=="admin"){
-                     ?>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
-                                            style="padding-left: 50px; padding-right: 50px">首頁</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="item.php" data-no="2"
-                                            style="padding-left: 50px; padding-right: 50px">領取物資</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="upload.php" data-no="3"
-                                            style="padding-left: 50px; padding-right: 50px">上架/下架</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="volunteer.php" data-no="4"
-                                            style="padding-left: 50px; padding-right: 50px">志工專區</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="logouttest.php"
-                                            style="padding-left: 50px; padding-right: 50px">登出</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <?php
-                 } 
-                 else if($_SESSION['level']=="volunteer"){
-                 ?>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="#0" data-no="1"
-                                            style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="inventory.php" data-no="6"
-                                            style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="volunteer.php" data-no="4"
-                                            style="padding-left: 85px; padding-right: 85px">志工專區</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="logouttest.php"
-                                            style="padding-left: 85px; padding-right: 85px">登出</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <?php
-                                    }else{ 
+                                    session_start();
+                                    if ($_SESSION['level'] == "admin") {
                                         ?>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
-                                            style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="inventory.php" data-no="6"
-                                            style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="volunteerlogin.php" data-no="4"
-                                            style="padding-left: 85px; padding-right: 85px">志工專區</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="login.php" data-no="5"
-                                            style="padding-left: 85px; padding-right: 85px">登入</a>
-                                        <div class="circle"></div>
-                                    </li>
-                                    <?php
-                 }
-                 ?>
+                                        <li class="nav-item selected">
+                                            <a class="nav-link" aria-current="page" href="index.php" data-no="1"
+                                                style="padding-left: 50px; padding-right: 50px">首頁</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="item.php" data-no="2"
+                                                style="padding-left: 50px; padding-right: 50px">領取物資</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="upload.php" data-no="3"
+                                                style="padding-left: 50px; padding-right: 50px">上架/下架</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="volunteer.php" data-no="4"
+                                                style="padding-left: 50px; padding-right: 50px">志工專區</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="logouttest.php"
+                                                style="padding-left: 50px; padding-right: 50px">登出</a>
+                                            <div class="circle"></div>
+                                        </li>
+                                        <?php
+                                    } else if ($_SESSION['level'] == "volunteer") {
+                                        ?>
+                                            <li class="nav-item selected">
+                                                <a class="nav-link" aria-current="page" href="index.php" data-no="1"
+                                                    style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
+                                                <div class="circle"></div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="inventory.php" data-no="6"
+                                                    style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
+                                                <div class="circle"></div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="volunteer.php" data-no="4"
+                                                    style="padding-left: 85px; padding-right: 85px">志工專區</a>
+                                                <div class="circle"></div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="logouttest.php"
+                                                    style="padding-left: 85px; padding-right: 85px">登出</a>
+                                                <div class="circle"></div>
+                                            </li>
+                                        <?php
+                                    } else {
+                                        ?>
+                                            <li class="nav-item selected">
+                                                <a class="nav-link" aria-current="page" href="index.php" data-no="1"
+                                                    style="padding-left: 85px; padding-right: 85px;padding-right: 85px">首頁</a>
+                                                <div class="circle"></div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="inventory.php" data-no="6"
+                                                    style="padding-left: 85px; padding-right: 85px">庫存查詢</a>
+                                                <div class="circle"></div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="volunteerlogin.php" data-no="4"
+                                                    style="padding-left: 85px; padding-right: 85px">志工專區</a>
+                                                <div class="circle"></div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="login.php" data-no="5"
+                                                    style="padding-left: 85px; padding-right: 85px">登入</a>
+                                                <div class="circle"></div>
+                                            </li>
+                                        <?php
+                                    }
+                                    ?>
 
                                     </li>
                                 </ul>
@@ -158,34 +157,76 @@ https://templatemo.com/tm-560-astro-motion
         </div>
 
 
-        <?/*php
-        $query="SELECT SUM(area) FROM `item`";
-        */
+        <? /*php
+         $query="SELECT SUM(area) FROM `item`";
+         */
         ?>
 
         <div class="container-fluid tm-content-container">
             <ul class="cd-hero-slider mb-0 py-5">
                 <li class="px-3" data-page-no="1">
+                    <div class="d-flex position-relative intro-container" style="margin-left:400px ;width:100%;">
+
+                        <h2>
+                            <div>
+                                <script>
+                                    date = new Date().toLocaleDateString();
+                                    document.write(date);
+                                </script>
+                            </div>
+                             今日領取時間公告：
+                           
+                             <?php 
+                             $link = mysqli_connect('localhost','root','12345678','fjufreedge');
+                             $sql= "SELECT * FROM `time` ORDER BY `updatetime` DESC LIMIT 1;";
+                             $result = mysqli_query($link, $sql);
+                             $row = mysqli_fetch_assoc($result);
+                             echo $row['time'];
+
+                         
+                                if($_SESSION['level']=='admin'){
+
+?>
+                            <form action="announcement_insert.php" method="post">
+                            <input type=hidden name="dbaction" value="insert">
+                            <input type="text" name="time" placeholder="ex. 14:00" size="15"></input>
+                            <input type="submit" name="but_time" class="btn btn-primary tm-btn-pad-2"
+                                style="height:40px; margin-bottom: 1%;" value="上傳">
+                        <?php }else{}  ?>
+                               
+                                </form>
+                                <p><font size="3px" style="padding-left=500px;padding-left: 500px;">最後更新時間： 
+                                    <?php 
+                                    $link = mysqli_connect('localhost','root','12345678','fjufreedge');
+                                    $sql= "SELECT MAX(updatetime) FROM `time`;";
+                                    $result = mysqli_query($link, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    echo $row['MAX(updatetime)'];
+
+                                    
+                                    
+                                    ?></font></p>
+                        </h2>
+
+                    </div>
+
                     <div class="page-width-1 page-left">
+
                         <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container"
                             style="margin-left:35% ;width:100%;">
+
                             <div class="circle intro-circle-1"></div>
                             <div class="circle intro-circle-2"></div>
                             <div class="circle intro-circle-3"></div>
                             <div class="circle intro-circle-4"></div>
+
                             <div class="intro-left tm-bg-dark content-pad">
                                 <h2 class="mb-4">About us</h2>
                                 <p class="mb-4">
                                     為了避免食物浪費，輔仁大學社科院與興毅基金會忠信食物銀行合作設立了全台第一座「校園食享冰箱」，食物的提供來源為各界的即期食品，提供地點主要在樹德樓1樓LW110教室以及進修部大樓ES502，每日14:30及18:10開放輔大教職員及學生領取。
                                 </p>
-                                <h2 class="mb-4">輔大平面地圖</h2>
+                                <h2 class="mb-4">輔大食享冰箱領取地點</h2>
                                 <p class="mb-4">- LW110教室</p>
-
-
-                                <!-- <p>剩餘:<?//php echo ['SUM(area)'];
-                                ?></p> -->
-
-
 
                             </div>
                             <div class="intro-right">

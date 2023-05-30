@@ -49,17 +49,17 @@ https://templatemo.com/tm-560-astro-motion
                   session_start();
                  if($_SESSION['level']=="admin"){
                      ?>
-                                    <li class="nav-item selected">
-                                        <a class="nav-link" aria-current="page" href="#0" data-no="1"
+                                    <li class="nav-item ">
+                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
                                             style="padding-left: 50px; padding-right: 50px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item ">
                                         <a class="nav-link" href="item.php" data-no="2"
                                             style="padding-left: 50px; padding-right: 50px">領取物資</a>
                                         <div class="circle"></div>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item selected">
                                         <a class="nav-link" href="upload.php" data-no="3"
                                             style="padding-left: 50px; padding-right: 50px">上架/下架</a>
                                         <div class="circle"></div>
@@ -209,22 +209,9 @@ if (isset($_POST['password'])) {
                             <td><input type='checkbox' name='update[]' value='<?= $num ?>'></td>
                             <td>
                                 <div>
-                                    <p><input type="file" accept="image/*" name='image_<?= $num ?>'
-                                            value='<?= $image ?>' /></p>
+                                    <p><img src="img/<?php echo $row['image']?>"width="150px" height="150px"></p>
                             </td>
-                            <script>
-                            $("input[type=file]").on("change", function() {
-                                function getObjectURL(file) {
-                                    if (window.URL != undefined) {
-                                        url = window.URL.createObjectURL(file);
-                                        return url;
-                                    }
-                                }
-                                var objURL = getObjectURL(this.files[0]);
-                                document.getElementById("image").src = objURL;
-                                document.getElementById("imgBlob").textContent = objURL;
-                            });
-                            </script>
+                            
                             <td><input type='text' name='name_<?= $num ?>' value='<?= $name ?>'></td>
                             <td><input type='text' size=3 name='area_<?= $num ?>' value='<?= $area ?>'></td>
                             <td><input type='text' size=10 name='amount_<?= $num ?>' value='<?= $amount ?>'></td>

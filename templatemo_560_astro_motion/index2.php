@@ -245,7 +245,6 @@
 <body>
     <div class="booking">
         <div id="event_calendar">
-            <a>ftyfyihppkp</a>
         </div>
     </div>
 </body>

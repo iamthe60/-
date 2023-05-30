@@ -86,7 +86,7 @@ https://templatemo.com/tm-560-astro-motion
                  if($_SESSION['level']=="admin"){
                      ?>
                                     <li class="nav-item ">
-                                        <a class="nav-link" aria-current="page" href="#0" data-no="1"
+                                        <a class="nav-link" aria-current="page" href="index.php" data-no="1"
                                             style="padding-left: 50px; padding-right: 50px">首頁</a>
                                         <div class="circle"></div>
                                     </li>
@@ -170,7 +170,7 @@ https://templatemo.com/tm-560-astro-motion
                                 <p class="mb-4"><input type="checkbox" id="iagree" onclick="enable_button()">我已閱讀完以上資訊
                                 </p>
                                 <input type="button" value="繼續" id="contiune" disabled=""
-                                    onclick="location.href='index.php'"></button>
+                                    onclick="location.href='item.php'"></button>
                             </div>
 
 

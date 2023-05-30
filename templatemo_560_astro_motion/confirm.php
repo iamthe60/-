@@ -10,7 +10,7 @@ if (isset($_POST['selected_item'])) {
     exit;
 }
 
-$itemname = $_SESSION['selected_item'];
+// $itemname = $_SESSION['selected_item'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
