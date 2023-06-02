@@ -3,7 +3,7 @@ $dbaction = $_POST['dbaction'];
 $today = date('Y/m/d H:i:s');
 $date = date("Y/n/j");  
 $time = $_POST['time'];
-$link = mysqli_connect('localhost','root','12345678','fjufreedge');
+$link = mysqli_connect('localhost','root','e20030225','fjufreedge');
   if($dbaction=="insert")
   {
 	//這裡是新增的語法
